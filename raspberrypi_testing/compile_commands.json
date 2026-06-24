@@ -1,1 +1,12 @@
-[]
+[
+    {
+        "command": "cc -c -Wall -Werror -Wpedantic -I./include -I/usr/include/libnl3 -o src/main.o src/main.c",
+        "directory": "/home/shakko/Documents/RadioPhobia/raspberrypi_testing",
+        "file": "/home/shakko/Documents/RadioPhobia/raspberrypi_testing/src/main.c"
+    },
+    {
+        "command": "cc -c -Wall -Werror -Wpedantic -I./include -I/usr/include/libnl3 -o src/utils.o src/utils.c",
+        "directory": "/home/shakko/Documents/RadioPhobia/raspberrypi_testing",
+        "file": "/home/shakko/Documents/RadioPhobia/raspberrypi_testing/src/utils.c"
+    }
+]

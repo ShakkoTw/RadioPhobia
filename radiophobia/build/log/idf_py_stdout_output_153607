@@ -1,0 +1,2247 @@
+Command: /home/shakko/.espressif/tools/python/v6.0.1/venv/bin/python /home/shakko/.espressif/v6.0.1/esp-idf/tools/idf_monitor.py -p /dev/ttyUSB0 -b 115200 --toolchain-prefix  --target esp32c5 --revision 100 --decode-panic backtrace /home/shakko/Documents/RadioPhobia/radiophobia/build/radiophobia.elf /home/shakko/Documents/RadioPhobia/radiophobia/build/bootloader/bootloader.elf -m '/home/shakko/.espressif/tools/python/v6.0.1/venv/bin/python' '/home/shakko/.espressif/v6.0.1/esp-idf/tools/idf.py' '-B'
+ESP-ROM:esp32c5-eco2-20250121
+Build:Jan 21 2025
+rst:0x1 (POWERON),boot:0x18 (SPI_FAST_FLASH_BOOT)
+SPI mode:DIO, clock div:1
+load:0x408556c0,len:0x1668
+load:0x4084bba0,len:0xda4
+load:0x4084e5a0,len:0x324c
+entry 0x4084bbaa
+[0;32mI (23) boot: ESP-IDF v6.0.1 2nd stage bootloader[0m
+[0;32mI (23) boot: compile time Jun 22 2026 01:15:32[0m
+[0;32mI (24) boot: chip revision: v1.0[0m
+[0;32mI (25) boot: efuse block revision: v0.3[0m
+[0;32mI (27) boot.esp32c5: SPI Speed      : 80MHz[0m
+[0;32mI (31) boot.esp32c5: SPI Mode       : DIO[0m
+[0;32mI (35) boot.esp32c5: SPI Flash Size : 2MB[0m
+[0;32mI (38) boot: Enabling RNG early entropy source...[0m
+[0;32mI (43) boot: Partition Table:[0m
+[0;32mI (45) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (52) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (58) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (65) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (72) boot: End of partition table[0m
+[0;32mI (75) esp_image: segment 0: paddr=00010020 vaddr=420b0020 size=22f4ch (143180) map[0m
+[0;32mI (107) esp_image: segment 1: paddr=00032f74 vaddr=40800000 size=0d0a4h ( 53412) load[0m
+[0;32mI (118) esp_image: segment 2: paddr=00040020 vaddr=42000020 size=aa990h (698768) map[0m
+[0;32mI (238) esp_image: segment 3: paddr=000ea9b8 vaddr=4080d0a4 size=064fch ( 25852) load[0m
+[0;32mI (244) esp_image: segment 4: paddr=000f0ebc vaddr=40813600 size=04350h ( 17232) load[0m
+[0;32mI (253) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (253) boot: Disabling RNG early entropy source...[0m
+[0;32mI (265) MSPI Timing: Enter flash timing tuning[0m
+[0;32mI (266) cpu_start: Unicore app[0m
+[0;32mI (274) cpu_start: GPIO 12 and 11 are used as console UART I/O pins[0m
+[0;32mI (274) cpu_start: Pro cpu start user code[0m
+[0;32mI (274) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (276) app_init: Application information:[0m
+[0;32mI (280) app_init: Project name:     radiophobia[0m
+[0;32mI (284) app_init: App version:      0.1[0m
+[0;32mI (288) app_init: Compile time:     Jun 23 2026 02:38:50[0m
+[0;32mI (293) app_init: ELF file SHA256:  f2026e8da...[0m
+[0;32mI (297) app_init: ESP-IDF:          v6.0.1[0m
+[0;32mI (301) efuse_init: Min chip rev:     v1.0[0m
+[0;32mI (305) efuse_init: Max chip rev:     v1.99 [0m
+[0;32mI (309) efuse_init: Chip rev:         v1.0[0m
+[0;32mI (313) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (319) heap_init: At 4081DC10 len 0003E990 (250 KiB): RAM[0m
+[0;32mI (324) heap_init: At 4085C5A0 len 00002F58 (11 KiB): RAM[0m
+[0;32mI (329) heap_init: At 50000000 len 00003FE8 (15 KiB): RTCRAM[0m
+[0;32mI (335) spi_flash: detected chip: generic[0m
+[0;32mI (338) spi_flash: flash io: dio[0m
+[0;33mW (341) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (354) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (360) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;33mW (366) spi_flash: CPU frequency is set to 240MHz. esp_flash_write_encrypted() will automatically limit CPU frequency to 80MHz during execution.[0m
+[0;32mI (379) coexist: coex firmware version: b00e8cb[0m
+[0;32mI (383) coexist: coexist rom version 78e5c6e42[0m
+[0;32mI (388) main_task: Started on CPU0[0m
+[0;32mI (388) main_task: Calling app_main()[0m
+[0;32mI (398) pp: pp rom version: 78a72e9d5[0m
+[0;32mI (398) net80211: net80211 rom version: 78a72e9d5[0m
+[0;32mI (408) wifi:wifi driver task: 40824138, prio:23, stack:6656, core=0[0m
+[0;32mI (408) wifi:wifi firmware version: b37c951[0m
+[0;32mI (408) wifi:wifi certification version: v7.0[0m
+[0;32mI (408) wifi:config NVS flash: disabled[0m
+[0;32mI (418) wifi:config nano formatting: disabled[0m
+[0;32mI (418) wifi:mac_version:HAL_MAC_ESP32AX_752MP_ECO2,ut_version:N, band mode:0x3[0m
+[0;32mI (428) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (428) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (438) wifi:Init management short buffer num: 32[0m
+[0;32mI (438) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (448) wifi:Init static tx FG buffer num: 2[0m
+[0;32mI (448) wifi:Init static rx buffer size: 1700 (rxctrl:64, csi:512)[0m
+[0;32mI (458) wifi:Init static rx buffer num: 10[0m
+[0;32mI (458) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (458) wifi_init: rx ba win: 6[0m
+[0;32mI (468) wifi_init: accept mbox: 6[0m
+[0;32mI (468) wifi_init: tcpip mbox: 32[0m
+[0;32mI (468) wifi_init: udp mbox: 6[0m
+[0;32mI (478) wifi_init: tcp mbox: 6[0m
+[0;32mI (478) wifi_init: tcp tx win: 5760[0m
+[0;32mI (478) wifi_init: tcp rx win: 5760[0m
+[0;32mI (478) wifi_init: tcp mss: 1440[0m
+[0;32mI (488) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (488) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (498) wifi_init: WiFi SLP IRAM OP enabled[0m
+[0;32mI (498) phy_init: phy_version 108,cdfe9643,Dec  2 2025,11:38:11[0m
+[0;32mI (1088) wifi:11ax coex: WDEVAX_PTI0(0x55777555), WDEVAX_PTI1(0x00003377).[0m
+
+[0;32mI (1088) wifi:mode : sta (d0:cf:13:e4:9c:c4)[0m
+[0;32mI (1088) wifi:enable tsf[0m
+[0;32mI (16298) scan: Total APs scanned = 8, actual AP number ap_info holds = 8[0m
+[0;32mI (16298) scan: SSID 		Le3Stanze[0m
+[0;32mI (16298) scan: BSSID/MAC 	A4:91:B1:4C:75:C7[0m
+[0;32mI (16298) scan: RSSI 		-26[0m
+[0;32mI (16298) scan: Authmode 	WIFI_AUTH_WPA2_PSK[0m
+[0;32mI (16298) scan: Pairwise Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (16308) scan: Group Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (16308) scan: Channel 		1[0m
+[0;32mI (16318) scan: Band 		2.4 GHz[0m
+[0;32mI (16318) scan: SSID 		Le3Stanze[0m
+[0;32mI (16318) scan: BSSID/MAC 	A6:91:B1:4C:75:D0[0m
+[0;32mI (16328) scan: RSSI 		-34[0m
+[0;32mI (16328) scan: Authmode 	WIFI_AUTH_WPA2_PSK[0m
+[0;32mI (16328) scan: Pairwise Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (16338) scan: Group Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (16338) scan: Channel 		100[0m
+[0;32mI (16338) scan: Band 		5 GHz[0m
+[0;32mI (16348) scan: SSID 		Wind3 HUB - DD0AF1[0m
+[0;32mI (16348) scan: BSSID/MAC 	FC:40:09:DD:0A:F1[0m
+[0;32mI (16358) scan: RSSI 		-66[0m
+[0;32mI (16358) scan: Authmode 	WIFI_AUTH_WPA2_PSK[0m
+[0;32mI (16358) scan: Pairwise Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (16368) scan: Group Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (16368) scan: Channel 		13[0m
+[0;32mI (16368) scan: Band 		2.4 GHz[0m
+[0;32mI (16378) scan: SSID 		DIRECT-KZ-FireTV_4133[0m
+[0;32mI (16378) scan: BSSID/MAC 	16:91:38:FB:CC:59[0m
+[0;32mI (16378) scan: RSSI 		-66[0m
+[0;32mI (16388) scan: Authmode 	WIFI_AUTH_WPA2_PSK[0m
+[0;32mI (16388) scan: Pairwise Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (16398) scan: Group Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (16398) scan: Channel 		13[0m
+[0;32mI (16398) scan: Band 		2.4 GHz[0m
+[0;32mI (16408) scan: SSID 		Wind3 HUB - 2B0DEA[0m
+[0;32mI (16408) scan: BSSID/MAC 	98:00:6A:2B:0D:EA[0m
+[0;32mI (16408) scan: RSSI 		-77[0m
+[0;32mI (16418) scan: Authmode 	WIFI_AUTH_WPA2_PSK[0m
+[0;32mI (16418) scan: Pairwise Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (16418) scan: Group Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (16428) scan: Channel 		6[0m
+[0;32mI (16428) scan: Band 		2.4 GHz[0m
+[0;32mI (16428) scan: SSID 		Wind3 HUB - DD0AF1[0m
+[0;32mI (16438) scan: BSSID/MAC 	FC:40:09:DD:0A:F2[0m
+[0;32mI (16438) scan: RSSI 		-81[0m
+[0;32mI (16438) scan: Authmode 	WIFI_AUTH_WPA2_PSK[0m
+[0;32mI (16448) scan: Pairwise Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (16448) scan: Group Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (16458) scan: Channel 		52[0m
+[0;32mI (16458) scan: Band 		5 GHz[0m
+[0;32mI (16458) scan: SSID 		FASTWEB-VM0ORB[0m
+[0;32mI (16468) scan: BSSID/MAC 	F4:23:9C:C2:9D:A3[0m
+[0;32mI (16468) scan: RSSI 		-82[0m
+[0;32mI (16468) scan: Authmode 	WIFI_AUTH_WPA2_PSK[0m
+[0;32mI (16478) scan: Pairwise Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (16478) scan: Group Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (16488) scan: Channel 		1[0m
+[0;32mI (16488) scan: Band 		2.4 GHz[0m
+[0;32mI (16488) scan: SSID 		SUN2000L-210107380010HC000369[0m
+[0;32mI (16498) scan: BSSID/MAC 	EC:68:19:C1:7A:E6[0m
+[0;32mI (16498) scan: RSSI 		-82[0m
+[0;32mI (16498) scan: Authmode 	WIFI_AUTH_WPA2_PSK[0m
+[0;32mI (16508) scan: Pairwise Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (16508) scan: Group Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (16518) scan: Channel 		3[0m
+[0;32mI (16518) scan: Band 		2.4 GHz[0m
+[0;32mI (16518) deauth: DEAUTH IN ESECUZIONE[0m
+ESP_ERROR_CHECK failed: esp_err_t 0x101 (ESP_ERR_NO_MEM) at 0x4200ec84
+file: "components/wifiStuff/deauther.c" line 30
+func: deauther
+expression: esp_wifi_80211_tx(WIFI_IF_STA, &deauthPacket, sizeof(deauthPacket), false)
+
+abort() was called at PC 0x4080a20d on core 0
+Core  0 register dump:
+MEPC    : 0x4080a254  RA      : 0x4080a216  SP      : 0x40820710  GP      : 0x40813e04  
+TP      : 0x40820fb0  T0      : 0x37363534  T1      : 0x7271706f  T2      : 0x33323130  
+S0/FP   : 0x40820730  S1      : 0x40820730  A0      : 0x40820730  A1      : 0x40817998  
+A2      : 0x00000001  A3      : 0x4082075d  A4      : 0x00000000  A5      : 0x4082075e  
+A6      : 0x00000000  A7      : 0x76757473  S2      : 0x40820764  S3      : 0xffffff9c  
+S4      : 0x420b76e4  S5      : 0x00000001  S6      : 0x51eb851f  S7      : 0x00000000  
+S8      : 0x00000000  S9      : 0x00000000  S10     : 0x00000000  S11     : 0x00000000  
+T3      : 0x6e6d6c6b  T4      : 0x6a696867  T5      : 0x66656463  T6      : 0x62613938  
+MSTATUS : 0x00001881  MTVEC   : 0x40800003  MCAUSE  : 0x00000002  MTVAL   : 0x00000000  
+MHARTID : 0x00000000  
+
+Stack memory:
+40820710: 0x51eb851f 0x00000001 0x4080a210 0x4080977a 0x408173f0 0x40820764 0x4081740c 0x40820762
+40820730: 0x726f6261 0x20292874 0x20736177 0x6c6c6163 0x61206465 0x43502074 0x34783020 0x61303830
+40820750: 0x20643032 0x63206e6f 0x2065726f 0x00000030 0x00300000 0x30383034 0x64303261 0x420b7600
+40820770: 0x420b76c3 0x000026f0 0x000026f1 0x4080a210 0x420b76c3 0x000026f0 0x000026f1 0x4200ec88
+40820790: 0x1f2f3f4f 0x000000c0 0x6b746804 0xaf988dfb 0xec84b165 0xb165af98 0x0000ec84 0x00000007
+408207b0: 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x408207d0 0x40820f60 0x4200e4d4
+408207d0: 0x4cb191a4 0x654cc775 0x61745333 0x00657a6e 0x00000000 0x00000000 0x00000000 0x00000000
+408207f0: 0x00000000 0x01000000 0x00000000 0x000000e6 0x00000003 0x00000004 0x00000004 0x00000000
+40820810: 0x00000007 0x01205449 0x0000140d 0x00000000 0x00000000 0x00000000 0x00000001 0x00000000
+40820830: 0x4cb191a6 0x654cd075 0x61745333 0x00657a6e 0x00000000 0x00000000 0x00000000 0x00000000
+000
+40820870: 0x00000034 0x00205449 0x00000000 0x00000000 0x00001ffe 0x00000000 0x00000003 0x0000006a
+40820890: 0xdd0940fc 0x6957f10a 0x2033646e 0x20425548 0x4444202d 0x31464130 0x00000000 0x00000000
+408208b0: 0x00000000 0x0d000000 0x00000000 0x000000be 0x00000003 0x00000004 0x00000004 0x00000000
+408208d0: 0x00000007 0x01205449 0x0000140d 0x00000000 0x00000000 0x00000000 0x00000001 0x00000000
+408208f0: 0xfb389116 0x494459cc 0x54434552 0x2d5a4b2d 0x65726946 0x345f5654 0x00333331 0x00000000
+40820910: 0x00000000 0x0d000000 0x00000000 0x000000be 0x00000003 0x00000004 0x00000004 0x00000000
+40820930: 0x00000086 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000001 0x00000000
+40820950: 0x2b6a0098 0x6957ea0d 0x2033646e 0x20425548 0x4232202d 0x41454430 0x00000000 0x00000000
+40820970: 0x00000000 0x06000000 0x00000000 0x000000b3 0x00000003 0x00000004 0x00000004 0x00000000
+40820990: 0x00000087 0x01205449 0x0000140d 0x00000000 0x00000000 0x00000000 0x00000001 0x00000000
+408209b0: 0xdd0940fc 0x6957f20a 0x2033646e 0x20425548 0x4444202d 0x31464130 0x00000000 0x00000000
+408209d0: 0x00000000 0x34000000 0x00000001 0x000000af 0x00000003 0x00000004 0x00000004 0x00000000
+408209f0: 0x000000b4 0x00205449 0x00000000 0x00000000 0x000e3ffe 0x00000000 0x00000003 0x0000003a
+0000000
+40820a30: 0x00000000 0x01000000 0x00000000 0x000000ae 0x00000003 0x00000004 0x00000004 0x00000000
+40820a50: 0x000000c6 0x01045449 0x0000140d 0x00000000 0x00000000 0x00000030 0x00000001 0x00000000
+40820a70: 0xc11968ec 0x5553e67a 0x3030324e 0x322d4c30 0x30313031 0x30383337 0x48303130 0x30303043
+40820a90: 0x00393633 0x03000000 0x00000000 0x000000ae 0x00000003 0x00000004 0x00000004 0x00000000
+40820ab0: 0x00000007 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000001 0x00000000
+40820ad0: 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+40820af0: 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+
+
+
+ELF file SHA256: f2026e8da
+
+Rebooting...
+ESP-ROM:esp32c5-eco2-20250121
+Build:Jan 21 2025
+rst:0xc (SW_CPU),boot:0x18 (SPI_FAST_FLASH_BOOT)
+Core0 Saved PC:0x4080a32c
+SPI mode:DIO, clock div:1
+load:0x408556c0,len:0x1668
+load:0x4084bba0,len:0xda4
+load:0x4084e5a0,len:0x324c
+entry 0x4084bbaa
+[0;32mI (27) boot: ESP-IDF v6.0.1 2nd stage bootloader[0m
+[0;32mI (28) boot: compile time Jun 22 2026 01:15:32[0m
+[0;32mI (29) boot: chip revision: v1.0[0m
+[0;32mI (29) boot: efuse block revision: v0.3[0m
+[0;32mI (31) boot.esp32c5: SPI Speed      : 80MHz[0m
+[0;32mI (35) boot.esp32c5: SPI Mode       : DIO[0m
+[0;32mI (39) boot.esp32c5: SPI Flash Size : 2MB[0m
+[0;32mI (43) boot: Enabling RNG early entropy source...[0m
+[0;32mI (47) boot: Partition Table:[0m
+[0;32mI (50) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (56) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (62) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (69) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (76) boot: End of partition table[0m
+[0;32mI (79) esp_image: segment 0: paddr=00010020 vaddr=420b0020 size=22f4ch (143180) map[0m
+[0;32mI (117) esp_image: segment 1: paddr=00032f74 vaddr=40800000 size=0d0a4h ( 53412) load[0m
+[0;32mI (131) esp_image: segment 2: paddr=00040020 vaddr=42000020 size=aa990h (698768) map[0m
+[0;32mI (275) esp_image: segment 3: paddr=000ea9b8 vaddr=4080d0a4 size=064fch ( 25852) load[0m
+[0;32mI (282) esp_image: segment 4: paddr=000f0ebc vaddr=40813600 size=04350h ( 17232) load[0m
+[0;32mI (295) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (295) boot: Disabling RNG early entropy source...[0m
+[0;32mI (306) MSPI Timing: Enter flash timing tuning[0m
+[0;32mI (307) cpu_start: Unicore app[0m
+[0;32mI (316) cpu_start: GPIO 12 and 11 are used as console UART I/O pins[0m
+[0;32mI (316) cpu_start: Pro cpu start user code[0m
+[0;32mI (316) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (318) app_init: Application information:[0m
+[0;32mI (322) app_init: Project name:     radiophobia[0m
+[0;32mI (326) app_init: App version:      0.1[0m
+[0;32mI (330) app_init: Compile time:     Jun 23 2026 02:38:50[0m
+[0;32mI (335) app_init: ELF file SHA256:  f2026e8da...[0m
+[0;32mI (339) app_init: ESP-IDF:          v6.0.1[0m
+[0;32mI (343) efuse_init: Min chip rev:     v1.0[0m
+[0;32mI (347) efuse_init: Max chip rev:     v1.99 [0m
+[0;32mI (351) efuse_init: Chip rev:         v1.0[0m
+[0;32mI (355) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (361) heap_init: At 4081DC10 len 0003E990 (250 KiB): RAM[0m
+[0;32mI (366) heap_init: At 4085C5A0 len 00002F58 (11 KiB): RAM[0m
+[0;32mI (371) heap_init: At 50000000 len 00003FE8 (15 KiB): RTCRAM[0m
+[0;32mI (377) spi_flash: detected chip: generic[0m
+[0;32mI (380) spi_flash: flash io: dio[0m
+[0;33mW (383) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (396) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (402) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;33mW (408) spi_flash: CPU frequency is set to 240MHz. esp_flash_write_encrypted() will automatically limit CPU frequency to 80MHz during execution.[0m
+[0;32mI (421) coexist: coex firmware version: b00e8cb[0m
+[0;32mI (425) coexist: coexist rom version 78e5c6e42[0m
+[0;32mI (430) main_task: Started on CPU0[0m
+[0;32mI (430) main_task: Calling app_main()[0m
+[0;32mI (440) pp: pp rom version: 78a72e9d5[0m
+[0;32mI (440) net80211: net80211 rom version: 78a72e9d5[0m
+[0;32mI (450) wifi:wifi driver task: 40824138, prio:23, stack:6656, core=0[0m
+[0;32mI (450) wifi:wifi firmware version: b37c951[0m
+[0;32mI (450) wifi:wifi certification version: v7.0[0m
+[0;32mI (450) wifi:config NVS flash: disabled[0m
+[0;32mI (460) wifi:config nano formatting: disabled[0m
+[0;32mI (460) wifi:mac_version:HAL_MAC_ESP32AX_752MP_ECO2,ut_version:N, band mode:0x3[0m
+[0;32mI (470) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (470) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (480) wifi:Init management short buffer num: 32[0m
+[0;32mI (480) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (490) wifi:Init static tx FG buffer num: 2[0m
+[0;32mI (490) wifi:Init static rx buffer size: 1700 (rxctrl:64, csi:512)[0m
+[0;32mI (500) wifi:Init static rx buffer num: 10[0m
+[0;32mI (500) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (500) wifi_init: rx ba win: 6[0m
+[0;32mI (510) wifi_init: accept mbox: 6[0m
+[0;32mI (510) wifi_init: tcpip mbox: 32[0m
+[0;32mI (510) wifi_init: udp mbox: 6[0m
+[0;32mI (520) wifi_init: tcp mbox: 6[0m
+[0;32mI (520) wifi_init: tcp tx win: 5760[0m
+[0;32mI (520) wifi_init: tcp rx win: 5760[0m
+[0;32mI (520) wifi_init: tcp mss: 1440[0m
+[0;32mI (530) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (530) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (540) wifi_init: WiFi SLP IRAM OP enabled[0m
+[0;32mI (540) phy_init: phy_version 108,cdfe9643,Dec  2 2025,11:38:11[0m
+[0;32mI (1130) wifi:11ax coex: WDEVAX_PTI0(0x55777555), WDEVAX_PTI1(0x00003377).[0m
+
+[0;32mI (1130) wifi:mode : sta (d0:cf:13:e4:9c:c4)[0m
+[0;32mI (1130) wifi:enable tsf[0m
+[0;32mI (16340) scan: Total APs scanned = 10, actual AP number ap_info holds = 10[0m
+[0;32mI (16340) scan: SSID 		Le3Stanze[0m
+[0;32mI (16340) scan: BSSID/MAC 	A4:91:B1:4C:75:C7[0m
+[0;32mI (16340) scan: RSSI 		-24[0m
+[0;32mI (16340) scan: Authmode 	WIFI_AUTH_WPA2_PSK[0m
+[0;32mI (16340) scan: Pairwise Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (16350) scan: Group Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (16350) scan: Channel 		1[0m
+[0;32mI (16360) scan: Band 		2.4 GHz[0m
+[0;32mI (16360) scan: SSID 		Le3Stanze[0m
+[0;32mI (16360) scan: BSSID/MAC 	A6:91:B1:4C:75:D0[0m
+[0;32mI (16370) scan: RSSI 		-24[0m
+[0;32mI (16370) scan: Authmode 	WIFI_AUTH_WPA2_PSK[0m
+[0;32mI (16370) scan: Pairwise Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (16380) scan: Group Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (16380) scan: Channel 		100[0m
+[0;32mI (16390) scan: Band 		5 GHz[0m
+[0;32mI (16390) scan: SSID 		DIRECT-KZ-FireTV_4133[0m
+[0;32mI (16390) scan: BSSID/MAC 	16:91:38:FB:CC:59[0m
+[0;32mI (16400) scan: RSSI 		-67[0m
+[0;32mI (16400) scan: Authmode 	WIFI_AUTH_WPA2_PSK[0m
+[0;32mI (16400) scan: Pairwise Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (16410) scan: Group Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (16410) scan: Channel 		13[0m
+[0;32mI (16410) scan: Band 		2.4 GHz[0m
+[0;32mI (16420) scan: SSID 		Wind3 HUB - DD0AF1[0m
+[0;32mI (16420) scan: BSSID/MAC 	FC:40:09:DD:0A:F1[0m
+[0;32mI (16420) scan: RSSI 		-69[0m
+[0;32mI (16430) scan: Authmode 	WIFI_AUTH_WPA2_PSK[0m
+[0;32mI (16430) scan: Pairwise Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (16440) scan: Group Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (16440) scan: Channel 		13[0m
+[0;32mI (16440) scan: Band 		2.4 GHz[0m
+[0;32mI (16450) scan: SSID 		FASTWEB-VM0ORB[0m
+[0;32mI (16450) scan: BSSID/MAC 	04:71:53:67:66:45[0m
+[0;32mI (16450) scan: RSSI 		-75[0m
+[0;32mI (16460) scan: Authmode 	WIFI_AUTH_WPA2_PSK[0m
+[0;32mI (16460) scan: Pairwise Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (16460) scan: Group Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (16470) scan: Channel 		1[0m
+[0;32mI (16470) scan: Band 		2.4 GHz[0m
+[0;32mI (16470) scan: SSID 		Wind3 HUB - 2B0DEA[0m
+[0;32mI (16480) scan: BSSID/MAC 	98:00:6A:2B:0D:EA[0m
+[0;32mI (16480) scan: RSSI 		-76[0m
+[0;32mI (16480) scan: Authmode 	WIFI_AUTH_WPA2_PSK[0m
+[0;32mI (16490) scan: Pairwise Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (16490) scan: Group Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (16500) scan: Channel 		6[0m
+[0;32mI (16500) scan: Band 		2.4 GHz[0m
+[0;32mI (16500) scan: SSID 		Wind3 HUB - DD0AF1[0m
+[0;32mI (16510) scan: BSSID/MAC 	FC:40:09:DD:0A:F2[0m
+[0;32mI (16510) scan: RSSI 		-80[0m
+[0;32mI (16510) scan: Authmode 	WIFI_AUTH_WPA2_PSK[0m
+[0;32mI (16520) scan: Pairwise Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (16520) scan: Group Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (16530) scan: Channel 		52[0m
+[0;32mI (16530) scan: Band 		5 GHz[0m
+[0;32mI (16530) scan: SSID 		FASTWEB-VM0ORB[0m
+[0;32mI (16540) scan: BSSID/MAC 	F4:23:9C:C2:9D:A3[0m
+[0;32mI (16540) scan: RSSI 		-82[0m
+[0;32mI (16540) scan: Authmode 	WIFI_AUTH_WPA2_PSK[0m
+[0;32mI (16550) scan: Pairwise Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (16550) scan: Group Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (16560) scan: Channel 		1[0m
+[0;32mI (16560) scan: Band 		2.4 GHz[0m
+[0;32mI (16560) scan: SSID 		SUN2000L-210107380010HC000369[0m
+[0;32mI (16570) scan: BSSID/MAC 	EC:68:19:C1:7A:E6[0m
+[0;32mI (16570) scan: RSSI 		-82[0m
+[0;32mI (16570) scan: Authmode 	WIFI_AUTH_WPA2_PSK[0m
+[0;32mI (16580) scan: Pairwise Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (16580) scan: Group Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (16590) scan: Channel 		3[0m
+[0;32mI (16590) scan: Band 		2.4 GHz[0m
+[0;32mI (16590) scan: SSID 		SKYWIFI_NVD9K[0m
+[0;32mI (16590) scan: BSSID/MAC 	00:A3:88:86:FD:14[0m
+[0;32mI (16600) scan: RSSI 		-85[0m
+[0;32mI (16600) scan: Authmode 	WIFI_AUTH_WPA2_PSK[0m
+[0;32mI (16600) scan: Pairwise Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (16610) scan: Group Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (16610) scan: Channel 		11[0m
+[0;32mI (16620) scan: Band 		2.4 GHz[0m
+[0;32mI (16620) deauth: DEAUTH IN ESECUZIONE[0m
+ESP_ERROR_CHECK failed: esp_err_t 0x101 (ESP_ERR_NO_MEM) at 0x4200ec84
+file: "components/wifiStuff/deauther.c" line 30
+func: deauther
+expression: esp_wifi_80211_tx(WIFI_IF_STA, &deauthPacket, sizeof(deauthPacket), false)
+
+abort() was called at PC 0x4080a20d on core 0
+Core  0 register dump:
+MEPC    : 0x4080a254  RA      : 0x4080a216  SP      : 0x40820710  GP      : 0x40813e04  
+TP      : 0x40820fb0  T0      : 0x37363534  T1      : 0x7271706f  T2      : 0x33323130  
+S0/FP   : 0x40820730  S1      : 0x40820730  A0      : 0x40820730  A1      : 0x40817998  
+A2      : 0x00000001  A3      : 0x4082075d  A4      : 0x00000000  A5      : 0x4082075e  
+A6      : 0x00000000  A7      : 0x76757473  S2      : 0x40820764  S3      : 0xffffff9c  
+S4      : 0x420b76e4  S5      : 0x00000001  S6      : 0x51eb851f  S7      : 0x00000000  
+S8      : 0x00000000  S9      : 0x00000000  S10     : 0x00000000  S11     : 0x00000000  
+T3      : 0x6e6d6c6b  T4      : 0x6a696867  T5      : 0x66656463  T6      : 0x62613938  
+MSTATUS : 0x00001881  MTVEC   : 0x40800003  MCAUSE  : 0x00000002  MTVAL   : 0x00000000  
+MHARTID : 0x00000000  
+
+Stack memory:
+40820710: 0x51eb851f 0x00000001 0x4080a210 0x4080977a 0x408173f0 0x40820764 0x4081740c 0x40820762
+40820730: 0x726f6261 0x20292874 0x20736177 0x6c6c6163 0x61206465 0x43502074 0x34783020 0x61303830
+40820750: 0x20643032 0x63206e6f 0x2065726f 0x00000030 0x00300000 0x30383034 0x64303261 0x420b7600
+40820770: 0x420b76c3 0x000026f0 0x000026f1 0x4080a210 0x420b76c3 0x000026f0 0x000026f1 0x4200ec88
+40820790: 0x1f2f3f4f 0x000000c0 0x6b746804 0xaf988dfb 0xec84b165 0xb165af98 0x0000ec84 0x00000007
+408207b0: 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x408207d0 0x40820f60 0x4200e4d4
+408207d0: 0x4cb191a4 0x654cc775 0x61745333 0x00657a6e 0x00000000 0x00000000 0x00000000 0x00000000
+408207f0: 0x00000000 0x01000000 0x00000000 0x000000e8 0x00000003 0x00000004 0x00000004 0x00000000
+40820810: 0x00000007 0x01205449 0x0000140d 0x00000000 0x00000000 0x00000000 0x00000001 0x00000000
+40820830: 0x4cb191a6 0x654cd075 0x61745333 0x00657a6e 0x00000000 0x00000000 0x00000000 0x00000000
+40820850: 0x00000000 0x64000000 0x00000001 0x000000e8 0x00000003 0x00000004 0x00000004 0x00000000
+0000006a
+40820890: 0xfb389116 0x494459cc 0x54434552 0x2d5a4b2d 0x65726946 0x345f5654 0x00333331 0x00000000
+408208b0: 0x00000000 0x0d000000 0x00000000 0x000000bd 0x00000003 0x00000004 0x00000004 0x00000000
+408208d0: 0x00000086 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000001 0x00000000
+408208f0: 0xdd0940fc 0x6957f10a 0x2033646e 0x20425548 0x4444202d 0x31464130 0x00000000 0x00000000
+40820910: 0x00000000 0x0d000000 0x00000000 0x000000bb 0x00000003 0x00000004 0x00000004 0x00000000
+40820930: 0x00000007 0x01205449 0x0000140d 0x00000000 0x00000000 0x00000000 0x00000001 0x00000000
+40820950: 0x67537104 0x41464566 0x45575453 0x4d562d42 0x42524f30 0x00000000 0x00000000 0x00000000
+40820970: 0x00000000 0x01000000 0x00000000 0x000000b5 0x00000003 0x00000004 0x00000004 0x00000000
+40820990: 0x000000c6 0x00000000 0x00000000 0x00000000 0x00000000 0x00000005 0x00000001 0x00000000
+408209b0: 0x2b6a0098 0x6957ea0d 0x2033646e 0x20425548 0x4232202d 0x41454430 0x00000000 0x00000000
+408209d0: 0x00000000 0x06000000 0x00000000 0x000000b4 0x00000003 0x00000004 0x00000004 0x00000000
+408209f0: 0x00000087 0x01205449 0x0000140d 0x00000000 0x00000000 0x00000000 0x00000001 0x00000000
+40820a10: 0xdd0940fc 0x6957f20a 0x2033646e 0x20425548 0x4444202d 0x31464130 0x00000000 0x00000000
+40820a30: 0x00000000 0x34000000 0x00000001 0x000000b0 0x00000003 0x00000004 0x00000004 0x00000000
+000003a
+40820a70: 0xc29c23f4 0x4146a39d 0x45575453 0x4d562d42 0x42524f30 0x00000000 0x00000000 0x00000000
+40820a90: 0x00000000 0x01000000 0x00000000 0x000000ae 0x00000003 0x00000004 0x00000004 0x00000000
+40820ab0: 0x000000c6 0x01045449 0x0000140d 0x00000000 0x00000000 0x00000030 0x00000001 0x00000000
+40820ad0: 0xc11968ec 0x5553e67a 0x3030324e 0x322d4c30 0x30313031 0x30383337 0x48303130 0x30303043
+40820af0: 0x00393633 0x03000000 0x00000000 0x000000ae 0x00000003 0x00000004 0x00000004 0x00000000
+
+
+
+ELF file SHA256: f2026e8da
+
+Rebooting...
+ESP-ROM:esp32c5-eco2-20250121
+Build:Jan 21 2025
+rst:0xc (SW_CPU),boot:0x18 (SPI_FAST_FLASH_BOOT)
+Core0 Saved PC:0x4080a32c
+SPI mode:DIO, clock div:1
+load:0x408556c0,len:0x1668
+load:0x4084bba0,len:0xda4
+load:0x4084e5a0,len:0x324c
+entry 0x4084bbaa
+[0;32mI (27) boot: ESP-IDF v6.0.1 2nd stage bootloader[0m
+[0;32mI (28) boot: compile time Jun 22 2026 01:15:32[0m
+[0;32mI (29) boot: chip revision: v1.0[0m
+[0;32mI (29) boot: efuse block revision: v0.3[0m
+[0;32mI (31) boot.esp32c5: SPI Speed      : 80MHz[0m
+[0;32mI (35) boot.esp32c5: SPI Mode       : DIO[0m
+[0;32mI (39) boot.esp32c5: SPI Flash Size : 2MB[0m
+[0;32mI (43) boot: Enabling RNG early entropy source...[0m
+[0;32mI (47) boot: Partition Table:[0m
+[0;32mI (50) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (56) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (62) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (69) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (76) boot: End of partition table[0m
+[0;32mI (79) esp_image: segment 0: paddr=00010020 vaddr=420b0020 size=22f4ch (143180) map[0m
+[0;32mI (117) esp_image: segment 1: paddr=00032f74 vaddr=40800000 size=0d0a4h ( 53412) load[0m
+[0;32mI (131) esp_image: segment 2: paddr=00040020 vaddr=42000020 size=aa990h (698768) map[0m
+[0;32mI (275) esp_image: segment 3: paddr=000ea9b8 vaddr=4080d0a4 size=064fch ( 25852) load[0m
+[0;32mI (282) esp_image: segment 4: paddr=000f0ebc vaddr=40813600 size=04350h ( 17232) load[0m
+[0;32mI (295) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (295) boot: Disabling RNG early entropy source...[0m
+[0;32mI (306) MSPI Timing: Enter flash timing tuning[0m
+[0;32mI (307) cpu_start: Unicore app[0m
+[0;32mI (316) cpu_start: GPIO 12 and 11 are used as console UART I/O pins[0m
+[0;32mI (316) cpu_start: Pro cpu start user code[0m
+[0;32mI (316) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (318) app_init: Application information:[0m
+[0;32mI (322) app_init: Project name:     radiophobia[0m
+[0;32mI (326) app_init: App version:      0.1[0m
+[0;32mI (330) app_init: Compile time:     Jun 23 2026 02:38:50[0m
+[0;32mI (335) app_init: ELF file SHA256:  f2026e8da...[0m
+[0;32mI (339) app_init: ESP-IDF:          v6.0.1[0m
+[0;32mI (343) efuse_init: Min chip rev:     v1.0[0m
+[0;32mI (347) efuse_init: Max chip rev:     v1.99 [0m
+[0;32mI (351) efuse_init: Chip rev:         v1.0[0m
+[0;32mI (355) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (361) heap_init: At 4081DC10 len 0003E990 (250 KiB): RAM[0m
+[0;32mI (366) heap_init: At 4085C5A0 len 00002F58 (11 KiB): RAM[0m
+[0;32mI (371) heap_init: At 50000000 len 00003FE8 (15 KiB): RTCRAM[0m
+[0;32mI (377) spi_flash: detected chip: generic[0m
+[0;32mI (380) spi_flash: flash io: dio[0m
+[0;33mW (383) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (396) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (402) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;33mW (408) spi_flash: CPU frequency is set to 240MHz. esp_flash_write_encrypted() will automatically limit CPU frequency to 80MHz during execution.[0m
+[0;32mI (421) coexist: coex firmware version: b00e8cb[0m
+[0;32mI (425) coexist: coexist rom version 78e5c6e42[0m
+[0;32mI (430) main_task: Started on CPU0[0m
+[0;32mI (430) main_task: Calling app_main()[0m
+[0;32mI (440) pp: pp rom version: 78a72e9d5[0m
+[0;32mI (440) net80211: net80211 rom version: 78a72e9d5[0m
+[0;32mI (450) wifi:wifi driver task: 40824138, prio:23, stack:6656, core=0[0m
+[0;32mI (450) wifi:wifi firmware version: b37c951[0m
+[0;32mI (450) wifi:wifi certification version: v7.0[0m
+[0;32mI (450) wifi:config NVS flash: disabled[0m
+[0;32mI (460) wifi:config nano formatting: disabled[0m
+[0;32mI (460) wifi:mac_version:HAL_MAC_ESP32AX_752MP_ECO2,ut_version:N, band mode:0x3[0m
+[0;32mI (470) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (470) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (480) wifi:Init management short buffer num: 32[0m
+[0;32mI (480) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (490) wifi:Init static tx FG buffer num: 2[0m
+[0;32mI (490) wifi:Init static rx buffer size: 1700 (rxctrl:64, csi:512)[0m
+[0;32mI (500) wifi:Init static rx buffer num: 10[0m
+[0;32mI (500) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (500) wifi_init: rx ba win: 6[0m
+[0;32mI (510) wifi_init: accept mbox: 6[0m
+[0;32mI (510) wifi_init: tcpip mbox: 32[0m
+[0;32mI (510) wifi_init: udp mbox: 6[0m
+[0;32mI (520) wifi_init: tcp mbox: 6[0m
+[0;32mI (520) wifi_init: tcp tx win: 5760[0m
+[0;32mI (520) wifi_init: tcp rx win: 5760[0m
+[0;32mI (520) wifi_init: tcp mss: 1440[0m
+[0;32mI (530) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (530) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (540) wifi_init: WiFi SLP IRAM OP enabled[0m
+[0;32mI (540) phy_init: phy_version 108,cdfe9643,Dec  2 2025,11:38:11[0m
+[0;32mI (1130) wifi:11ax coex: WDEVAX_PTI0(0x55777555), WDEVAX_PTI1(0x00003377).[0m
+
+[0;32mI (1140) wifi:mode : sta (d0:cf:13:e4:9c:c4)[0m
+[0;32mI (1140) wifi:enable tsf[0m
+[0;32mI (16340) scan: Total APs scanned = 10, actual AP number ap_info holds = 10[0m
+[0;32mI (16340) scan: SSID 		Le3Stanze[0m
+[0;32mI (16340) scan: BSSID/MAC 	A6:91:B1:4C:75:D0[0m
+[0;32mI (16340) scan: RSSI 		-24[0m
+[0;32mI (16340) scan: Authmode 	WIFI_AUTH_WPA2_PSK[0m
+[0;32mI (16340) scan: Pairwise Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (16350) scan: Group Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (16350) scan: Channel 		100[0m
+[0;32mI (16360) scan: Band 		5 GHz[0m
+[0;32mI (16360) scan: SSID 		Le3Stanze[0m
+[0;32mI (16360) scan: BSSID/MAC 	A4:91:B1:4C:75:C7[0m
+[0;32mI (16370) scan: RSSI 		-25[0m
+[0;32mI (16370) scan: Authmode 	WIFI_AUTH_WPA2_PSK[0m
+[0;32mI (16370) scan: Pairwise Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (16380) scan: Group Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (16380) scan: Channel 		1[0m
+[0;32mI (16380) scan: Band 		2.4 GHz[0m
+[0;32mI (16390) scan: SSID 		DIRECT-KZ-FireTV_4133[0m
+[0;32mI (16390) scan: BSSID/MAC 	16:91:38:FB:CC:59[0m
+[0;32mI (16400) scan: RSSI 		-67[0m
+[0;32mI (16400) scan: Authmode 	WIFI_AUTH_WPA2_PSK[0m
+[0;32mI (16400) scan: Pairwise Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (16410) scan: Group Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (16410) scan: Channel 		13[0m
+[0;32mI (16410) scan: Band 		2.4 GHz[0m
+[0;32mI (16420) scan: SSID 		Wind3 HUB - DD0AF1[0m
+[0;32mI (16420) scan: BSSID/MAC 	FC:40:09:DD:0A:F1[0m
+[0;32mI (16420) scan: RSSI 		-68[0m
+[0;32mI (16430) scan: Authmode 	WIFI_AUTH_WPA2_PSK[0m
+[0;32mI (16430) scan: Pairwise Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (16440) scan: Group Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (16440) scan: Channel 		13[0m
+[0;32mI (16440) scan: Band 		2.4 GHz[0m
+[0;32mI (16450) scan: SSID 		FASTWEB-VM0ORB[0m
+[0;32mI (16450) scan: BSSID/MAC 	04:71:53:67:66:45[0m
+[0;32mI (16450) scan: RSSI 		-76[0m
+[0;32mI (16460) scan: Authmode 	WIFI_AUTH_WPA2_PSK[0m
+[0;32mI (16460) scan: Pairwise Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (16460) scan: Group Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (16470) scan: Channel 		1[0m
+[0;32mI (16470) scan: Band 		2.4 GHz[0m
+[0;32mI (16470) scan: SSID 		Wind3 HUB - 2B0DEA[0m
+[0;32mI (16480) scan: BSSID/MAC 	98:00:6A:2B:0D:EA[0m
+[0;32mI (16480) scan: RSSI 		-78[0m
+[0;32mI (16480) scan: Authmode 	WIFI_AUTH_WPA2_PSK[0m
+[0;32mI (16490) scan: Pairwise Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (16490) scan: Group Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (16500) scan: Channel 		6[0m
+[0;32mI (16500) scan: Band 		2.4 GHz[0m
+[0;32mI (16500) scan: SSID 		Wind3 HUB - DD0AF1[0m
+[0;32mI (16510) scan: BSSID/MAC 	FC:40:09:DD:0A:F2[0m
+[0;32mI (16510) scan: RSSI 		-81[0m
+[0;32mI (16510) scan: Authmode 	WIFI_AUTH_WPA2_PSK[0m
+[0;32mI (16520) scan: Pairwise Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (16520) scan: Group Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (16530) scan: Channel 		52[0m
+[0;32mI (16530) scan: Band 		5 GHz[0m
+[0;32mI (16530) scan: SSID 		FASTWEB-VM0ORB[0m
+[0;32mI (16540) scan: BSSID/MAC 	F4:23:9C:C2:9D:A3[0m
+[0;32mI (16540) scan: RSSI 		-82[0m
+[0;32mI (16540) scan: Authmode 	WIFI_AUTH_WPA2_PSK[0m
+[0;32mI (16550) scan: Pairwise Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (16550) scan: Group Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (16560) scan: Channel 		1[0m
+[0;32mI (16560) scan: Band 		2.4 GHz[0m
+[0;32mI (16560) scan: SSID 		SUN2000L-210107380010HC000369[0m
+[0;32mI (16570) scan: BSSID/MAC 	EC:68:19:C1:7A:E6[0m
+[0;32mI (16570) scan: RSSI 		-83[0m
+[0;32mI (16570) scan: Authmode 	WIFI_AUTH_WPA2_PSK[0m
+[0;32mI (16580) scan: Pairwise Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (16580) scan: Group Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (16590) scan: Channel 		3[0m
+[0;32mI (16590) scan: Band 		2.4 GHz[0m
+[0;32mI (16590) scan: SSID 		SKYWIFI_NVD9K[0m
+[0;32mI (16590) scan: BSSID/MAC 	00:A3:88:86:FD:14[0m
+[0;32mI (16600) scan: RSSI 		-84[0m
+[0;32mI (16600) scan: Authmode 	WIFI_AUTH_WPA2_PSK[0m
+[0;32mI (16600) scan: Pairwise Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (16610) scan: Group Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (16610) scan: Channel 		11[0m
+[0;32mI (16620) scan: Band 		2.4 GHz[0m
+[0;32mI (16620) deauth: DEAUTH IN ESECUZIONE[0m
+ESP_ERROR_CHECK failed: esp_err_t 0x101 (ESP_ERR_NO_MEM) at 0x4200ec84
+file: "components/wifiStuff/deauther.c" line 30
+func: deauther
+expression: esp_wifi_80211_tx(WIFI_IF_STA, &deauthPacket, sizeof(deauthPacket), false)
+
+abort() was called at PC 0x4080a20d on core 0
+Core  0 register dump:
+MEPC    : 0x4080a254  RA      : 0x4080a216  SP      : 0x40820710  GP      : 0x40813e04  
+TP      : 0x40820fb0  T0      : 0x37363534  T1      : 0x7271706f  T2      : 0x33323130  
+S0/FP   : 0x40820730  S1      : 0x40820730  A0      : 0x40820730  A1      : 0x40817998  
+A2      : 0x00000001  A3      : 0x4082075d  A4      : 0x00000000  A5      : 0x4082075e  
+A6      : 0x00000000  A7      : 0x76757473  S2      : 0x40820764  S3      : 0xffffff9c  
+S4      : 0x420b76e4  S5      : 0x00000001  S6      : 0x51eb851f  S7      : 0x00000000  
+S8      : 0x00000000  S9      : 0x00000000  S10     : 0x00000000  S11     : 0x00000000  
+T3      : 0x6e6d6c6b  T4      : 0x6a696867  T5      : 0x66656463  T6      : 0x62613938  
+MSTATUS : 0x00001881  MTVEC   : 0x40800003  MCAUSE  : 0x00000002  MTVAL   : 0x00000000  
+MHARTID : 0x00000000  
+
+add symbol table from file "/home/shakko/Documents/RadioPhobia/radiophobia/build/bootloader/bootloader.elf"
+panic_abort (details=0x40820730 "abort() was called at PC 0x4080a20d on core 0") at /home/shakko/.espressif/v6.0.1/esp-idf/components/esp_system/panic.c:473
+473	    asm("unimp");   // should be an invalid operation on RISC-V targets
+#0  panic_abort (details=0x40820730 "abort() was called at PC 0x4080a20d on core 0") at /home/shakko/.espressif/v6.0.1/esp-idf/components/esp_system/panic.c:473
+#1  0x4080a216 in esp_system_abort (details=0x40820730 "abort() was called at PC 0x4080a20d on core 0") at /home/shakko/.espressif/v6.0.1/esp-idf/components/esp_system/port/esp_system_chip.c:87
+#2  0x4080977a in abort () at /home/shakko/.espressif/v6.0.1/esp-idf/components/esp_libc/src/abort.c:38
+#3  0x4080a210 in _esp_error_check_failed (rc=<optimized out>, file=<optimized out>, line=<optimized out>, function=<optimized out>, expression=<optimized out>) at /home/shakko/.espressif/v6.0.1/esp-idf/components/esp_system/esp_err.c:49
+#4  0x4200ec88 in deauther () at /home/shakko/Documents/RadioPhobia/radiophobia/components/wifiStuff/deauther.c:30
+#5  0x4200e4d4 in app_main () at /home/shakko/Documents/RadioPhobia/radiophobia/main/radiophobia.c:24
+#6  0x00000000 in ?? ()
+Backtrace stopped: frame did not save the PC
+
+40820870: 0x00000007 0x01205449 0x0000140d 0x00000000 0x00000000 0x00000000 0x00000001 0x00000000
+40820890: 0xfb389116 0x494459cc 0x54434552 0x2d5a4b2d 0x65726946 0x345f5654 0x00333331 0x00000000
+408208b0: 0x00000000 0x0d000000 0x00000000 0x000000bd 0x00000003 0x00000004 0x00000004 0x00000000
+408208d0: 0x00000086 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000001 0x00000000
+408208f0: 0xdd0940fc 0x6957f10a 0x2033646e 0x20425548 0x4444202d 0x31464130 0x00000000 0x00000000
+40820910: 0x00000000 0x0d000000 0x00000000 0x000000bc 0x00000003 0x00000004 0x00000004 0x00000000
+40820930: 0x00000007 0x01205449 0x0000140d 0x00000000 0x00000000 0x00000000 0x00000001 0x00000000
+40820950: 0x67537104 0x41464566 0x45575453 0x4d562d42 0x42524f30 0x00000000 0x00000000 0x00000000
+40820970: 0x00000000 0x01000000 0x00000000 0x000000b4 0x00000003 0x00000004 0x00000004 0x00000000
+40820990: 0x000000c6 0x00000000 0x00000000 0x00000000 0x00000000 0x00000005 0x00000001 0x00000000
+408209b0: 0x2b6a0098 0x6957ea0d 0x2033646e 0x20425548 0x4232202d 0x41454430 0x00000000 0x00000000
+408209d0: 0x00000000 0x06000000 0x00000000 0x000000b2 0x00000003 0x00000004 0x00000004 0x00000000
+408209f0: 0x00000087 0x01205449 0x0000140d 0x00000000 0x00000000 0x00000000 0x00000001 0x00000000
+40820a10: 0xdd0940fc 0x6957f20a 0x2033646e 0x20425548 0x4444202d 0x31464130 0x00000000 0x00000000
+40820a30: 0x00000000 0x34000000 0x00000001 0x000000af 0x00000003 0x00000004 0x00000004 0x00000000
+40820a50: 0x000000b4 0x00205449 0x00000000 0x00000000 0x000e3ffe 0x00000000 0x00000003 0x0000003a
+40820a70: 0xc29c23f4 0x4146a39d 0x45575453 0x4d562d42 0x42524f30 0x00000000 0x00000000 0x00000000
+40820a90: 0x00000000 0x01000000 0x00000000 0x000000ae 0x00000003 0x00000004 0x00000004 0x00000000
+40820ab0: 0x000000c6 0x01045449 0x0000140d 0x00000000 0x00000000 0x00000030 0x00000001 0x00000000
+40820ad0: 0xc11968ec 0x5553e67a 0x3030324e 0x322d4c30 0x30313031 0x30383337 0x48303130 0x30303043
+40820af0: 0x00393633 0x03000000 0x00000000 0x000000ad 0x00000003 0x00000004 0x00000004 0x00000000
+
+
+
+ELF file SHA256: f2026e8da
+
+Rebooting...
+ESP-ROM:esp32c5-eco2-20250121
+Build:Jan 21 2025
+rst:0xc (SW_CPU),boot:0x18 (SPI_FAST_FLASH_BOOT)
+Core0 Saved PC:0x4080a32c
+SPI mode:DIO, clock div:1
+load:0x408556c0,len:0x1668
+load:0x4084bba0,len:0xda4
+load:0x4084e5a0,len:0x324c
+entry 0x4084bbaa
+[0;32mI (27) boot: ESP-IDF v6.0.1 2nd stage bootloader[0m
+[0;32mI (28) boot: compile time Jun 22 2026 01:15:32[0m
+[0;32mI (29) boot: chip revision: v1.0[0m
+[0;32mI (29) boot: efuse block revision: v0.3[0m
+[0;32mI (31) boot.esp32c5: SPI Speed      : 80MHz[0m
+[0;32mI (35) boot.esp32c5: SPI Mode       : DIO[0m
+[0;32mI (39) boot.esp32c5: SPI Flash Size : 2MB[0m
+[0;32mI (43) boot: Enabling RNG early entropy source...[0m
+[0;32mI (47) boot: Partition Table:[0m
+[0;32mI (50) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (56) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (62) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (69) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (76) boot: End of partition table[0m
+[0;32mI (79) esp_image: segment 0: paddr=00010020 vaddr=420b0020 size=22f4ch (143180) map[0m
+[0;32mI (117) esp_image: segment 1: paddr=00032f74 vaddr=40800000 size=0d0a4h ( 53412) load[0m
+[0;32mI (131) esp_image: segment 2: paddr=00040020 vaddr=42000020 size=aa990h (698768) map[0m
+[0;32mI (275) esp_image: segment 3: paddr=000ea9b8 vaddr=4080d0a4 size=064fch ( 25852) load[0m
+[0;32mI (282) esp_image: segment 4: paddr=000f0ebc vaddr=40813600 size=04350h ( 17232) load[0m
+[0;32mI (295) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (295) boot: Disabling RNG early entropy source...[0m
+[0;32mI (306) MSPI Timing: Enter flash timing tuning[0m
+[0;32mI (307) cpu_start: Unicore app[0m
+[0;32mI (316) cpu_start: GPIO 12 and 11 are used as console UART I/O pins[0m
+[0;32mI (316) cpu_start: Pro cpu start user code[0m
+[0;32mI (316) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (318) app_init: Application information:[0m
+[0;32mI (322) app_init: Project name:     radiophobia[0m
+[0;32mI (326) app_init: App version:      0.1[0m
+[0;32mI (330) app_init: Compile time:     Jun 23 2026 02:38:50[0m
+[0;32mI (335) app_init: ELF file SHA256:  f2026e8da...[0m
+[0;32mI (339) app_init: ESP-IDF:          v6.0.1[0m
+[0;32mI (343) efuse_init: Min chip rev:     v1.0[0m
+[0;32mI (347) efuse_init: Max chip rev:     v1.99 [0m
+[0;32mI (351) efuse_init: Chip rev:         v1.0[0m
+[0;32mI (355) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (361) heap_init: At 4081DC10 len 0003E990 (250 KiB): RAM[0m
+[0;32mI (366) heap_init: At 4085C5A0 len 00002F58 (11 KiB): RAM[0m
+[0;32mI (371) heap_init: At 50000000 len 00003FE8 (15 KiB): RTCRAM[0m
+[0;32mI (377) spi_flash: detected chip: generic[0m
+[0;32mI (380) spi_flash: flash io: dio[0m
+[0;33mW (383) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (396) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (402) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;33mW (408) spi_flash: CPU frequency is set to 240MHz. esp_flash_write_encrypted() will automatically limit CPU frequency to 80MHz during execution.[0m
+[0;32mI (421) coexist: coex firmware version: b00e8cb[0m
+[0;32mI (425) coexist: coexist rom version 78e5c6e42[0m
+[0;32mI (430) main_task: Started on CPU0[0m
+[0;32mI (430) main_task: Calling app_main()[0m
+[0;32mI (440) pp: pp rom version: 78a72e9d5[0m
+[0;32mI (440) net80211: net80211 rom version: 78a72e9d5[0m
+[0;32mI (450) wifi:wifi driver task: 40824138, prio:23, stack:6656, core=0[0m
+[0;32mI (450) wifi:wifi firmware version: b37c951[0m
+[0;32mI (450) wifi:wifi certification version: v7.0[0m
+[0;32mI (450) wifi:config NVS flash: disabled[0m
+[0;32mI (460) wifi:config nano formatting: disabled[0m
+[0;32mI (460) wifi:mac_version:HAL_MAC_ESP32AX_752MP_ECO2,ut_version:N, band mode:0x3[0m
+[0;32mI (470) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (470) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (480) wifi:Init management short buffer num: 32[0m
+[0;32mI (480) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (490) wifi:Init static tx FG buffer num: 2[0m
+[0;32mI (490) wifi:Init static rx buffer size: 1700 (rxctrl:64, csi:512)[0m
+[0;32mI (500) wifi:Init static rx buffer num: 10[0m
+[0;32mI (500) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (500) wifi_init: rx ba win: 6[0m
+[0;32mI (510) wifi_init: accept mbox: 6[0m
+[0;32mI (510) wifi_init: tcpip mbox: 32[0m
+[0;32mI (510) wifi_init: udp mbox: 6[0m
+[0;32mI (520) wifi_init: tcp mbox: 6[0m
+[0;32mI (520) wifi_init: tcp tx win: 5760[0m
+[0;32mI (520) wifi_init: tcp rx win: 5760[0m
+[0;32mI (520) wifi_init: tcp mss: 1440[0m
+[0;32mI (530) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (530) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (540) wifi_init: WiFi SLP IRAM OP enabled[0m
+[0;32mI (540) phy_init: phy_version 108,cdfe9643,Dec  2 2025,11:38:11[0m
+[0;32mI (1140) wifi:11ax coex: WDEVAX_PTI0(0x55777555), WDEVAX_PTI1(0x00003377).[0m
+
+[0;32mI (1140) wifi:mode : sta (d0:cf:13:e4:9c:c4)[0m
+[0;32mI (1140) wifi:enable tsf[0m
+[0;32mI (16340) scan: Total APs scanned = 9, actual AP number ap_info holds = 9[0m
+[0;32mI (16340) scan: SSID 		Le3Stanze[0m
+[0;32mI (16340) scan: BSSID/MAC 	A4:91:B1:4C:75:C7[0m
+[0;32mI (16340) scan: RSSI 		-21[0m
+[0;32mI (16340) scan: Authmode 	WIFI_AUTH_WPA2_PSK[0m
+[0;32mI (16340) scan: Pairwise Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (16350) scan: Group Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (16350) scan: Channel 		1[0m
+[0;32mI (16360) scan: Band 		2.4 GHz[0m
+[0;32mI (16360) scan: SSID 		Le3Stanze[0m
+[0;32mI (16360) scan: BSSID/MAC 	A6:91:B1:4C:75:D0[0m
+[0;32mI (16370) scan: RSSI 		-27[0m
+[0;32mI (16370) scan: Authmode 	WIFI_AUTH_WPA2_PSK[0m
+[0;32mI (16370) scan: Pairwise Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (16380) scan: Group Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (16380) scan: Channel 		100[0m
+[0;32mI (16380) scan: Band 		5 GHz[0m
+[0;32mI (16390) scan: SSID 		Wind3 HUB - DD0AF1[0m
+[0;32mI (16390) scan: BSSID/MAC 	FC:40:09:DD:0A:F1[0m
+[0;32mI (16400) scan: RSSI 		-66[0m
+[0;32mI (16400) scan: Authmode 	WIFI_AUTH_WPA2_PSK[0m
+[0;32mI (16400) scan: Pairwise Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (16410) scan: Group Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (16410) scan: Channel 		13[0m
+[0;32mI (16410) scan: Band 		2.4 GHz[0m
+[0;32mI (16420) scan: SSID 		DIRECT-KZ-FireTV_4133[0m
+[0;32mI (16420) scan: BSSID/MAC 	16:91:38:FB:CC:59[0m
+[0;32mI (16420) scan: RSSI 		-67[0m
+[0;32mI (16430) scan: Authmode 	WIFI_AUTH_WPA2_PSK[0m
+[0;32mI (16430) scan: Pairwise Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (16440) scan: Group Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (16440) scan: Channel 		13[0m
+[0;32mI (16440) scan: Band 		2.4 GHz[0m
+[0;32mI (16450) scan: SSID 		FASTWEB-VM0ORB[0m
+[0;32mI (16450) scan: BSSID/MAC 	04:71:53:67:66:45[0m
+[0;32mI (16450) scan: RSSI 		-76[0m
+[0;32mI (16460) scan: Authmode 	WIFI_AUTH_WPA2_PSK[0m
+[0;32mI (16460) scan: Pairwise Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (16460) scan: Group Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (16470) scan: Channel 		1[0m
+[0;32mI (16470) scan: Band 		2.4 GHz[0m
+[0;32mI (16470) scan: SSID 		Wind3 HUB - 2B0DEA[0m
+[0;32mI (16480) scan: BSSID/MAC 	98:00:6A:2B:0D:EA[0m
+[0;32mI (16480) scan: RSSI 		-79[0m
+[0;32mI (16480) scan: Authmode 	WIFI_AUTH_WPA2_PSK[0m
+[0;32mI (16490) scan: Pairwise Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (16490) scan: Group Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (16500) scan: Channel 		6[0m
+[0;32mI (16500) scan: Band 		2.4 GHz[0m
+[0;32mI (16500) scan: SSID 		Wind3 HUB - DD0AF1[0m
+[0;32mI (16510) scan: BSSID/MAC 	FC:40:09:DD:0A:F2[0m
+[0;32mI (16510) scan: RSSI 		-81[0m
+[0;32mI (16510) scan: Authmode 	WIFI_AUTH_WPA2_PSK[0m
+[0;32mI (16520) scan: Pairwise Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (16520) scan: Group Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (16530) scan: Channel 		52[0m
+[0;32mI (16530) scan: Band 		5 GHz[0m
+[0;32mI (16530) scan: SSID 		FASTWEB-VM0ORB[0m
+[0;32mI (16540) scan: BSSID/MAC 	F4:23:9C:C2:9D:A3[0m
+[0;32mI (16540) scan: RSSI 		-82[0m
+[0;32mI (16540) scan: Authmode 	WIFI_AUTH_WPA2_PSK[0m
+[0;32mI (16550) scan: Pairwise Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (16550) scan: Group Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (16560) scan: Channel 		1[0m
+[0;32mI (16560) scan: Band 		2.4 GHz[0m
+[0;32mI (16560) scan: SSID 		SUN2000L-210107380010HC000369[0m
+[0;32mI (16570) scan: BSSID/MAC 	EC:68:19:C1:7A:E6[0m
+[0;32mI (16570) scan: RSSI 		-82[0m
+[0;32mI (16570) scan: Authmode 	WIFI_AUTH_WPA2_PSK[0m
+[0;32mI (16580) scan: Pairwise Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (16580) scan: Group Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (16590) scan: Channel 		3[0m
+[0;32mI (16590) scan: Band 		2.4 GHz[0m
+[0;32mI (16590) deauth: DEAUTH IN ESECUZIONE[0m
+ESP_ERROR_CHECK failed: esp_err_t 0x101 (ESP_ERR_NO_MEM) at 0x4200ec84
+file: "components/wifiStuff/deauther.c" line 30
+func: deauther
+expression: esp_wifi_80211_tx(WIFI_IF_STA, &deauthPacket, sizeof(deauthPacket), false)
+
+abort() was called at PC 0x4080a20d on core 0
+Core  0 register dump:
+MEPC    : 0x4080a254  RA      : 0x4080a216  SP      : 0x40820710  GP      : 0x40813e04  
+TP      : 0x40820fb0  T0      : 0x37363534  T1      : 0x7271706f  T2      : 0x33323130  
+S0/FP   : 0x40820730  S1      : 0x40820730  A0      : 0x40820730  A1      : 0x40817998  
+A2      : 0x00000001  A3      : 0x4082075d  A4      : 0x00000000  A5      : 0x4082075e  
+A6      : 0x00000000  A7      : 0x76757473  S2      : 0x40820764  S3      : 0xffffff9c  
+S4      : 0x420b76e4  S5      : 0x00000001  S6      : 0x51eb851f  S7      : 0x00000000  
+S8      : 0x00000000  S9      : 0x00000000  S10     : 0x00000000  S11     : 0x00000000  
+T3      : 0x6e6d6c6b  T4      : 0x6a696867  T5      : 0x66656463  T6      : 0x62613938  
+MSTATUS : 0x00001881  MTVEC   : 0x40800003  MCAUSE  : 0x00000002 
+ MTVAL   : 0x00000000  
+MHARTID : 0x00000000  
+
+add symbol table from file "/home/shakko/Documents/RadioPhobia/radiophobia/build/bootloader/bootloader.elf"
+panic_abort (details=0x40820730 "abort() was called at PC 0x4080a20d on core 0") at /home/shakko/.espressif/v6.0.1/esp-idf/components/esp_system/panic.c:473
+473	    asm("unimp");   // should be an invalid operation on RISC-V targets
+#0  panic_abort (details=0x40820730 "abort() was called at PC 0x4080a20d on core 0") at /home/shakko/.espressif/v6.0.1/esp-idf/components/esp_system/panic.c:473
+#1  0x4080a216 in esp_system_abort (details=0x40820730 "abort() was called at PC 0x4080a20d on core 0") at /home/shakko/.espressif/v6.0.1/esp-idf/components/esp_system/port/esp_system_chip.c:87
+#2  0x4080977a in abort () at /home/shakko/.espressif/v6.0.1/esp-idf/components/esp_libc/src/abort.c:38
+#3  0x4080a210 in _esp_error_check_failed (rc=<optimized out>, file=<optimized out>, line=<optimized out>, function=<optimized out>, expression=<optimized out>) at /home/shakko/.espressif/v6.0.1/esp-idf/components/esp_system/esp_err.c:49
+#4  0x4200ec88 in deauther () at /home/shakko/Documents/RadioPhobia/radiophobia/components/wifiStuff/deauther.c:30
+#5  0x4200e4d4 in app_main () at /home/shakko/Documents/RadioPhobia/radiophobia/main/radiophobia.c:24
+#6  0x00000000 in ?? ()
+Backtrace stopped: frame did not save the PC
+
+40820910: 0x00000000 0x0d000000 0x00000000 0x000000bd 0x00000003 0x00000004 0x00000004 0x00000000
+40820930: 0x00000086 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000001 0x00000000
+40820950: 0x67537104 0x41464566 0x45575453 0x4d562d42 0x42524f30 0x00000000 0x00000000 0x00000000
+40820970: 0x00000000 0x01000000 0x00000000 0x000000b4 0x00000003 0x00000004 0x00000004 0x00000000
+40820990: 0x000000c6 0x00000000 0x00000000 0x00000000 0x00000000 0x00000005 0x00000001 0x00000000
+408209b0: 0x2b6a0098 0x6957ea0d 0x2033646e 0x20425548 0x4232202d 0x41454430 0x00000000 0x00000000
+408209d0: 0x00000000 0x06000000 0x00000000 0x000000b1 0x00000003 0x00000004 0x00000004 0x00000000
+408209f0: 0x00000087 0x01205449 0x0000140d 0x00000000 0x00000000 0x00000000 0x00000001 0x00000000
+40820a10: 0xdd0940fc 0x6957f20a 0x2033646e 0x20425548 0x4444202d 0x31464130 0x00000000 0x00000000
+40820a30: 0x00000000 0x34000000 0x00000001 0x000000af 0x00000003 0x00000004 0x00000004 0x00000000
+40820a50: 0x000000b4 0x00205449 0x00000000 0x00000000 0x000e3ffe 0x00000000 0x00000003 0x0000003a
+40820a70: 0xc29c23f4 0x4146a39d 0x45575453 0x4d562d42 0x42524f30 0x00000000 0x00000000 0x00000000
+40820a90: 0x00000000 0x01000000 0x00000000 0x000000ae 0x00000003 0x00000004 0x00000004 0x00000000
+40820ab0: 0x000000c6 0x01045449 0x0000140d 0x00000000 0x00000000 0x00000030 0x00000001 0x00000000
+40820ad0: 0xc11968ec 0x5553e67a 0x3030324e 0x322d4c30 0x30313031 0x30383337 0x48303130 0x30303043
+40820af0: 0x00393633 0x03000000 0x00000000 0x000000ae 0x00000003 0x00000004 0x00000004 0x00000000
+
+
+
+ELF file SHA256: f2026e8da
+
+Rebooting...
+ESP-ROM:esp32c5-eco2-20250121
+Build:Jan 21 2025
+rst:0xc (SW_CPU),boot:0x18 (SPI_FAST_FLASH_BOOT)
+Core0 Saved PC:0x4080a32c
+SPI mode:DIO, clock div:1
+load:0x408556c0,len:0x1668
+load:0x4084bba0,len:0xda4
+load:0x4084e5a0,len:0x324c
+entry 0x4084bbaa
+[0;32mI (27) boot: ESP-IDF v6.0.1 2nd stage bootloader[0m
+[0;32mI (28) boot: compile time Jun 22 2026 01:15:32[0m
+[0;32mI (29) boot: chip revision: v1.0[0m
+[0;32mI (29) boot: efuse block revision: v0.3[0m
+[0;32mI (31) boot.esp32c5: SPI Speed      : 80MHz[0m
+[0;32mI (35) boot.esp32c5: SPI Mode       : DIO[0m
+[0;32mI (39) boot.esp32c5: SPI Flash Size : 2MB[0m
+[0;32mI (43) boot: Enabling RNG early entropy source...[0m
+[0;32mI (47) boot: Partition Table:[0m
+[0;32mI (50) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (56) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (62) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (69) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (76) boot: End of partition table[0m
+[0;32mI (79) esp_image: segment 0: paddr=00010020 vaddr=420b0020 size=22f4ch (143180) map[0m
+[0;32mI (117) esp_image: segment 1: paddr=00032f74 vaddr=40800000 size=0d0a4h ( 53412) load[0m
+[0;32mI (131) esp_image: segment 2: paddr=00040020 vaddr=42000020 size=aa990h (698768) map[0m
+[0;32mI (275) esp_image: segment 3: paddr=000ea9b8 vaddr=4080d0a4 size=064fch ( 25852) load[0m
+[0;32mI (282) esp_image: segment 4: paddr=000f0ebc vaddr=40813600 size=04350h ( 17232) load[0m
+[0;32mI (295) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (295) boot: Disabling RNG early entropy source...[0m
+[0;32mI (306) MSPI Timing: Enter flash timing tuning[0m
+[0;32mI (307) cpu_start: Unicore app[0m
+[0;32mI (316) cpu_start: GPIO 12 and 11 are used as console UART I/O pins[0m
+[0;32mI (316) cpu_start: Pro cpu start user code[0m
+[0;32mI (316) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (318) app_init: Application information:[0m
+[0;32mI (322) app_init: Project name:     radiophobia[0m
+[0;32mI (326) app_init: App version:      0.1[0m
+[0;32mI (330) app_init: Compile time:     Jun 23 2026 02:38:50[0m
+[0;32mI (335) app_init: ELF file SHA256:  f2026e8da...[0m
+[0;32mI (339) app_init: ESP-IDF:          v6.0.1[0m
+[0;32mI (343) efuse_init: Min chip rev:     v1.0[0m
+[0;32mI (347) efuse_init: Max chip rev:     v1.99 [0m
+[0;32mI (351) efuse_init: Chip rev:         v1.0[0m
+[0;32mI (355) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (361) heap_init: At 4081DC10 len 0003E990 (250 KiB): RAM[0m
+[0;32mI (366) heap_init: At 4085C5A0 len 00002F58 (11 KiB): RAM[0m
+[0;32mI (371) heap_init: At 50000000 len 00003FE8 (15 KiB): RTCRAM[0m
+[0;32mI (377) spi_flash: detected chip: generic[0m
+[0;32mI (380) spi_flash: flash io: dio[0m
+[0;33mW (383) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (396) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (402) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;33mW (408) spi_flash: CPU frequency is set to 240MHz. esp_flash_write_encrypted() will automatically limit CPU frequency to 80MHz during execution.[0m
+[0;32mI (421) coexist: coex firmware version: b00e8cb[0m
+[0;32mI (425) coexist: coexist rom version 78e5c6e42[0m
+[0;32mI (430) main_task: Started on CPU0[0m
+[0;32mI (430) main_task: Calling app_main()[0m
+[0;32mI (440) pp: pp rom version: 78a72e9d5[0m
+[0;32mI (440) net80211: net80211 rom version: 78a72e9d5[0m
+[0;32mI (450) wifi:wifi driver task: 40824138, prio:23, stack:6656, core=0[0m
+[0;32mI (450) wifi:wifi firmware version: b37c951[0m
+[0;32mI (450) wifi:wifi certification version: v7.0[0m
+[0;32mI (450) wifi:config NVS flash: disabled[0m
+[0;32mI (460) wifi:config nano formatting: disabled[0m
+[0;32mI (460) wifi:mac_version:HAL_MAC_ESP32AX_752MP_ECO2,ut_version:N, band mode:0x3[0m
+[0;32mI (470) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (470) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (480) wifi:Init management short buffer num: 32[0m
+[0;32mI (480) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (490) wifi:Init static tx FG buffer num: 2[0m
+[0;32mI (490) wifi:Init static rx buffer size: 1700 (rxctrl:64, csi:512)[0m
+[0;32mI (500) wifi:Init static rx buffer num: 10[0m
+[0;32mI (500) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (500) wifi_init: rx ba win: 6[0m
+[0;32mI (510) wifi_init: accept mbox: 6[0m
+[0;32mI (510) wifi_init: tcpip mbox: 32[0m
+[0;32mI (510) wifi_init: udp mbox: 6[0m
+[0;32mI (520) wifi_init: tcp mbox: 6[0m
+[0;32mI (520) wifi_init: tcp tx win: 5760[0m
+[0;32mI (520) wifi_init: tcp rx win: 5760[0m
+[0;32mI (520) wifi_init: tcp mss: 1440[0m
+[0;32mI (530) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (530) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (540) wifi_init: WiFi SLP IRAM OP enabled[0m
+[0;32mI (540) phy_init: phy_version 108,cdfe9643,Dec  2 2025,11:38:11[0m
+[0;32mI (1130) wifi:11ax coex: WDEVAX_PTI0(0x55777555), WDEVAX_PTI1(0x00003377).[0m
+
+[0;32mI (1140) wifi:mode : sta (d0:cf:13:e4:9c:c4)[0m
+[0;32mI (1140) wifi:enable tsf[0m
+[0;32mI (16340) scan: Total APs scanned = 10, actual AP number ap_info holds = 10[0m
+[0;32mI (16340) scan: SSID 		Le3Stanze[0m
+[0;32mI (16340) scan: BSSID/MAC 	A4:91:B1:4C:75:C7[0m
+[0;32mI (16340) scan: RSSI 		-25[0m
+[0;32mI (16340) scan: Authmode 	WIFI_AUTH_WPA2_PSK[0m
+[0;32mI (16340) scan: Pairwise Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (16350) scan: Group Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (16350) scan: Channel 		1[0m
+[0;32mI (16360) scan: Band 		2.4 GHz[0m
+[0;32mI (16360) scan: SSID 		Le3Stanze[0m
+[0;32mI (16360) scan: BSSID/MAC 	A6:91:B1:4C:75:D0[0m
+[0;32mI (16370) scan: RSSI 		-25[0m
+[0;32mI (16370) scan: Authmode 	WIFI_AUTH_WPA2_PSK[0m
+[0;32mI (16370) scan: Pairwise Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (16380) scan: Group Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (16380) scan: Channel 		100[0m
+[0;32mI (16390) scan: Band 		5 GHz[0m
+[0;32mI (16390) scan: SSID 		Wind3 HUB - DD0AF1[0m
+[0;32mI (16390) scan: BSSID/MAC 	FC:40:09:DD:0A:F1[0m
+[0;32mI (16400) scan: RSSI 		-68[0m
+[0;32mI (16400) scan: Authmode 	WIFI_AUTH_WPA2_PSK[0m
+[0;32mI (16400) scan: Pairwise Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (16410) scan: Group Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (16410) scan: Channel 		13[0m
+[0;32mI (16410) scan: Band 		2.4 GHz[0m
+[0;32mI (16420) scan: SSID 		DIRECT-KZ-FireTV_4133[0m
+[0;32mI (16420) scan: BSSID/MAC 	16:91:38:FB:CC:59[0m
+[0;32mI (16420) scan: RSSI 		-68[0m
+[0;32mI (16430) scan: Authmode 	WIFI_AUTH_WPA2_PSK[0m
+[0;32mI (16430) scan: Pairwise Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (16440) scan: Group Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (16440) scan: Channel 		13[0m
+[0;32mI (16440) scan: Band 		2.4 GHz[0m
+[0;32mI (16450) scan: SSID 		FASTWEB-VM0ORB[0m
+[0;32mI (16450) scan: BSSID/MAC 	04:71:53:67:66:45[0m
+[0;32mI (16450) scan: RSSI 		-75[0m
+[0;32mI (16460) scan: Authmode 	WIFI_AUTH_WPA2_PSK[0m
+[0;32mI (16460) scan: Pairwise Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (16460) scan: Group Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (16470) scan: Channel 		1[0m
+[0;32mI (16470) scan: Band 		2.4 GHz[0m
+[0;32mI (16470) scan: SSID 		Wind3 HUB - 2B0DEA[0m
+[0;32mI (16480) scan: BSSID/MAC 	98:00:6A:2B:0D:EA[0m
+[0;32mI (16480) scan: RSSI 		-79[0m
+[0;32mI (16480) scan: Authmode 	WIFI_AUTH_WPA2_PSK[0m
+[0;32mI (16490) scan: Pairwise Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (16490) scan: Group Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (16500) scan: Channel 		6[0m
+[0;32mI (16500) scan: Band 		2.4 GHz[0m
+[0;32mI (16500) scan: SSID 		Wind3 HUB - DD0AF1[0m
+[0;32mI (16510) scan: BSSID/MAC 	FC:40:09:DD:0A:F2[0m
+[0;32mI (16510) scan: RSSI 		-81[0m
+[0;32mI (16510) scan: Authmode 	WIFI_AUTH_WPA2_PSK[0m
+[0;32mI (16520) scan: Pairwise Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (16520) scan: Group Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (16530) scan: Channel 		52[0m
+[0;32mI (16530) scan: Band 		5 GHz[0m
+[0;32mI (16530) scan: SSID 		FASTWEB-VM0ORB[0m
+[0;32mI (16540) scan: BSSID/MAC 	F4:23:9C:C2:9D:A3[0m
+[0;32mI (16540) scan: RSSI 		-82[0m
+[0;32mI (16540) scan: Authmode 	WIFI_AUTH_WPA2_PSK[0m
+[0;32mI (16550) scan: Pairwise Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (16550) scan: Group Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (16560) scan: Channel 		1[0m
+[0;32mI (16560) scan: Band 		2.4 GHz[0m
+[0;32mI (16560) scan: SSID 		SUN2000L-210107380010HC000369[0m
+[0;32mI (16570) scan: BSSID/MAC 	EC:68:19:C1:7A:E6[0m
+[0;32mI (16570) scan: RSSI 		-84[0m
+[0;32mI (16570) scan: Authmode 	WIFI_AUTH_WPA2_PSK[0m
+[0;32mI (16580) scan: Pairwise Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (16580) scan: Group Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (16590) scan: Channel 		3[0m
+[0;32mI (16590) scan: Band 		2.4 GHz[0m
+[0;32mI (16590) scan: SSID 		SKYWIFI_NVD9K[0m
+[0;32mI (16590) scan: BSSID/MAC 	00:A3:88:86:FD:14[0m
+[0;32mI (16600) scan: RSSI 		-88[0m
+[0;32mI (16600) scan: Authmode 	WIFI_AUTH_WPA2_PSK[0m
+[0;32mI (16600) scan: Pairwise Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (16610) scan: Group Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (16610) scan: Channel 		11[0m
+[0;32mI (16620) scan: Band 		2.4 GHz[0m
+[0;32mI (16620) deauth: DEAUTH IN ESECUZIONE[0m
+ESP_ERROR_CHECK failed: esp_err_t 0x101 (ESP_ERR_NO_MEM) at 0x4200ec84
+file: "components/wifiStuff/deauther.c" line 30
+func: deauther
+expression: esp_wifi_80211_tx(WIFI_IF_STA, &deauthPacket, sizeof(deauthPacket), false)
+
+abort() was called at PC 0x4080a20d on core 0
+Core  0 register dump:
+MEPC    : 0x4080a254  RA      : 0x4080a216  SP      : 0x40820710  GP      : 0x40813e04  
+TP      : 0x40820fb0  T0      : 0x37363534  T1      : 0x7271706f  T2      : 0x33323130  
+S0/FP   : 0x40820730  S1      : 0x40820730  A0      : 0x40820730  A1      : 0x40817998  
+A2      : 0x00000001  A3      : 0x4082075d  A4      : 0x00000000  A5      : 0x4082075e  
+A6      : 0x00000000  A7      : 0x76757473  S2      : 0x40820764  S3      : 0xffffff9c  
+S4      : 0x420b76e4  S5      : 0x00000001  S6      : 0x51eb851f  S7      : 0x00000000  
+S8      : 0x00000000  S9      : 0x00000000  S10     : 0x00000000  S11     : 0x00000000  
+T3      : 0x6e6d6c6b  T4      : 0x6a696867  T5      : 0x66656463  T6      : 0x62613938  
+MSTATUS : 0x00001881  MTVEC   : 0x40800003  MCAUSE  : 0x00000002  MTVAL   : 0x00000000  
+MHARTID : 0x00000000  
+
+add symbol table from file "/home/shakko/Documents/RadioPhobia/radiophobia/build/bootloader/bootloader.elf"
+panic_abort (details=0x40820730 "abort() was called at PC 0x4080a20d on core 0") at /home/shakko/.espressif/v6.0.1/esp-idf/components/esp_system/panic.c:473
+473	    asm("unimp");   // should be an invalid operation on RISC-V targets
+#0  panic_abort (details=0x40820730 "abort() was called at PC 0x4080a20d on core 0") at /home/shakko/.espressif/v6.0.1/esp-idf/components/esp_system/panic.c:473
+#1  0x4080a216 in esp_system_abort (details=0x40820730 "abort() was called at PC 0x4080a20d on core 0") at /home/shakko/.espressif/v6.0.1/esp-idf/components/esp_system/port/esp_system_chip.c:87
+#2  0x4080977a in abort () at /home/shakko/.espressif/v6.0.1/esp-idf/components/esp_libc/src/abort.c:38
+#3  0x4080a210 in _esp_error_check_failed (rc=<optimized out>, file=<optimized out>, line=<optimized out>, function=<optimized out>, expression=<optimized out>) at /home/shakko/.espressif/v6.0.1/esp-idf/components/esp_system/esp_err.c:49
+#4  0x4200ec88 in deauther () at /home/shakko/Documents/RadioPhobia/radiophobia/components/wifiStuff/deauther.c:30
+#5  0x4200e4d4 in app_main () at /home/shakko/Documents/RadioPhobia/radiophobia/main/radiophobia.c:24
+#6  0x00000000 in ?? ()
+Backtrace stopped: frame did not save the PC
+
+40820a90: 0x00000000 0x01000000 0x00000000 0x000000ae 0x00000003 0x00000004 0x00000004 0x00000000
+40820ab0: 0x000000c6 0x01045449 0x0000140d 0x00000000 0x00000000 0x00000030 0x00000001 0x00000000
+40820ad0: 0xc11968ec 0x5553e67a 0x3030324e 0x322d4c30 0x30313031 0x30383337 0x48303130 0x30303043
+40820af0: 0x00393633 0x03000000 0x00000000 0x000000ac 0x00000003 0x00000004 0x00000004 0x00000000
+
+
+
+ELF file SHA256: f2026e8da
+
+Rebooting...
+ESP-ROM:esp32c5-eco2-20250121
+Build:Jan 21 2025
+rst:0xc (SW_CPU),boot:0x18 (SPI_FAST_FLASH_BOOT)
+Core0 Saved PC:0x4080a32c
+SPI mode:DIO, clock div:1
+load:0x408556c0,len:0x1668
+load:0x4084bba0,len:0xda4
+load:0x4084e5a0,len:0x324c
+entry 0x4084bbaa
+[0;32mI (27) boot: ESP-IDF v6.0.1 2nd stage bootloader[0m
+[0;32mI (28) boot: compile time Jun 22 2026 01:15:32[0m
+[0;32mI (29) boot: chip revision: v1.0[0m
+[0;32mI (29) boot: efuse block revision: v0.3[0m
+[0;32mI (31) boot.esp32c5: SPI Speed      : 80MHz[0m
+[0;32mI (35) boot.esp32c5: SPI Mode       : DIO[0m
+[0;32mI (39) boot.esp32c5: SPI Flash Size : 2MB[0m
+[0;32mI (43) boot: Enabling RNG early entropy source...[0m
+[0;32mI (47) boot: Partition Table:[0m
+[0;32mI (50) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (56) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (62) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (69) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (76) boot: End of partition table[0m
+[0;32mI (79) esp_image: segment 0: paddr=00010020 vaddr=420b0020 size=22f4ch (143180) map[0m
+[0;32mI (117) esp_image: segment 1: paddr=00032f74 vaddr=40800000 size=0d0a4h ( 53412) load[0m
+[0;32mI (131) esp_image: segment 2: paddr=00040020 vaddr=42000020 size=aa990h (698768) map[0m
+[0;32mI (275) esp_image: segment 3: paddr=000ea9b8 vaddr=4080d0a4 size=064fch ( 25852) load[0m
+[0;32mI (282) esp_image: segment 4: paddr=000f0ebc vaddr=40813600 size=04350h ( 17232) load[0m
+[0;32mI (295) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (295) boot: Disabling RNG early entropy source...[0m
+[0;32mI (306) MSPI Timing: Enter flash timing tuning[0m
+[0;32mI (307) cpu_start: Unicore app[0m
+[0;32mI (316) cpu_start: GPIO 12 and 11 are used as console UART I/O pins[0m
+[0;32mI (316) cpu_start: Pro cpu start user code[0m
+[0;32mI (316) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (318) app_init: Application information:[0m
+[0;32mI (322) app_init: Project name:     radiophobia[0m
+[0;32mI (326) app_init: App version:      0.1[0m
+[0;32mI (330) app_init: Compile time:     Jun 23 2026 02:38:50[0m
+[0;32mI (335) app_init: ELF file SHA256:  f2026e8da...[0m
+[0;32mI (339) app_init: ESP-IDF:          v6.0.1[0m
+[0;32mI (343) efuse_init: Min chip rev:     v1.0[0m
+[0;32mI (347) efuse_init: Max chip rev:     v1.99 [0m
+[0;32mI (351) efuse_init: Chip rev:         v1.0[0m
+[0;32mI (355) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (361) heap_init: At 4081DC10 len 0003E990 (250 KiB): RAM[0m
+[0;32mI (366) heap_init: At 4085C5A0 len 00002F58 (11 KiB): RAM[0m
+[0;32mI (371) heap_init: At 50000000 len 00003FE8 (15 KiB): RTCRAM[0m
+[0;32mI (377) spi_flash: detected chip: generic[0m
+[0;32mI (380) spi_flash: flash io: dio[0m
+[0;33mW (383) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (396) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (402) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;33mW (408) spi_flash: CPU frequency is set to 240MHz. esp_flash_write_encrypted() will automatically limit CPU frequency to 80MHz during execution.[0m
+[0;32mI (421) coexist: coex firmware version: b00e8cb[0m
+[0;32mI (425) coexist: coexist rom version 78e5c6e42[0m
+[0;32mI (430) main_task: Started on CPU0[0m
+[0;32mI (430) main_task: Calling app_main()[0m
+[0;32mI (440) pp: pp rom version: 78a72e9d5[0m
+[0;32mI (440) net80211: net80211 rom version: 78a72e9d5[0m
+[0;32mI (450) wifi:wifi driver task: 40824138, prio:23, stack:6656, core=0[0m
+[0;32mI (450) wifi:wifi firmware version: b37c951[0m
+[0;32mI (450) wifi:wifi certification version: v7.0[0m
+[0;32mI (450) wifi:config NVS flash: disabled[0m
+[0;32mI (460) wifi:config nano formatting: disabled[0m
+[0;32mI (460) wifi:mac_version:HAL_MAC_ESP32AX_752MP_ECO2,ut_version:N, band mode:0x3[0m
+[0;32mI (470) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (470) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (480) wifi:Init management short buffer num: 32[0m
+[0;32mI (480) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (490) wifi:Init static tx FG buffer num: 2[0m
+[0;32mI (490) wifi:Init static rx buffer size: 1700 (rxctrl:64, csi:512)[0m
+[0;32mI (500) wifi:Init static rx buffer num: 10[0m
+[0;32mI (500) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (500) wifi_init: rx ba win: 6[0m
+[0;32mI (510) wifi_init: accept mbox: 6[0m
+[0;32mI (510) wifi_init: tcpip mbox: 32[0m
+[0;32mI (510) wifi_init: udp mbox: 6[0m
+[0;32mI (520) wifi_init: tcp mbox: 6[0m
+[0;32mI (520) wifi_init: tcp tx win: 5760[0m
+[0;32mI (520) wifi_init: tcp rx win: 5760[0m
+[0;32mI (520) wifi_init: tcp mss: 1440[0m
+[0;32mI (530) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (530) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (540) wifi_init: WiFi SLP IRAM OP enabled[0m
+[0;32mI (540) phy_init: phy_version 108,cdfe9643,Dec  2 2025,11:38:11[0m
+[0;32mI (1140) wifi:11ax coex: WDEVAX_PTI0(0x55777555), WDEVAX_PTI1(0x00003377).[0m
+
+[0;32mI (1140) wifi:mode : sta (d0:cf:13:e4:9c:c4)[0m
+[0;32mI (1140) wifi:enable tsf[0m
+[0;32mI (16340) scan: Total APs scanned = 11, actual AP number ap_info holds = 11[0m
+[0;32mI (16340) scan: SSID 		Le3Stanze[0m
+[0;32mI (16340) scan: BSSID/MAC 	A4:91:B1:4C:75:C7[0m
+[0;32mI (16340) scan: RSSI 		-22[0m
+[0;32mI (16340) scan: Authmode 	WIFI_AUTH_WPA2_PSK[0m
+[0;32mI (16340) scan: Pairwise Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (16350) scan: Group Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (16350) scan: Channel 		1[0m
+[0;32mI (16360) scan: Band 		2.4 GHz[0m
+[0;32mI (16360) scan: SSID 		Le3Stanze[0m
+[0;32mI (16360) scan: BSSID/MAC 	A6:91:B1:4C:75:D0[0m
+[0;32mI (16370) scan: RSSI 		-33[0m
+[0;32mI (16370) scan: Authmode 	WIFI_AUTH_WPA2_PSK[0m
+[0;32mI (16370) scan: Pairwise Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (16380) scan: Group Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (16380) scan: Channel 		100[0m
+[0;32mI (16390) scan: Band 		5 GHz[0m
+[0;32mI (16390) scan: SSID 		Wind3 HUB - DD0AF1[0m
+[0;32mI (16390) scan: BSSID/MAC 	FC:40:09:DD:0A:F1[0m
+[0;32mI (16400) scan: RSSI 		-66[0m
+[0;32mI (16400) scan: Authmode 	WIFI_AUTH_WPA2_PSK[0m
+[0;32mI (16400) scan: Pairwise Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (16410) scan: Group Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (16410) scan: Channel 		13[0m
+[0;32mI (16410) scan: Band 		2.4 GHz[0m
+[0;32mI (16420) scan: SSID 		DIRECT-KZ-FireTV_4133[0m
+[0;32mI (16420) scan: BSSID/MAC 	16:91:38:FB:CC:59[0m
+[0;32mI (16420) scan: RSSI 		-67[0m
+[0;32mI (16430) scan: Authmode 	WIFI_AUTH_WPA2_PSK[0m
+[0;32mI (16430) scan: Pairwise Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (16440) scan: Group Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (16440) scan: Channel 		13[0m
+[0;32mI (16440) scan: Band 		2.4 GHz[0m
+[0;32mI (16450) scan: SSID 		FASTWEB-VM0ORB[0m
+[0;32mI (16450) scan: BSSID/MAC 	04:71:53:67:66:45[0m
+[0;32mI (16450) scan: RSSI 		-74[0m
+[0;32mI (16460) scan: Authmode 	WIFI_AUTH_WPA2_PSK[0m
+[0;32mI (16460) scan: Pairwise Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (16460) scan: Group Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (16470) scan: Channel 		1[0m
+[0;32mI (16470) scan: Band 		2.4 GHz[0m
+[0;32mI (16470) scan: SSID 		Wind3 HUB - 2B0DEA[0m
+[0;32mI (16480) scan: BSSID/MAC 	98:00:6A:2B:0D:EA[0m
+[0;32mI (16480) scan: RSSI 		-78[0m
+[0;32mI (16480) scan: Authmode 	WIFI_AUTH_WPA2_PSK[0m
+[0;32mI (16490) scan: Pairwise Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (16490) scan: Group Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (16500) scan: Channel 		6[0m
+[0;32mI (16500) scan: Band 		2.4 GHz[0m
+[0;32mI (16500) scan: SSID 		Wind3 HUB - DD0AF1[0m
+[0;32mI (16510) scan: BSSID/MAC 	FC:40:09:DD:0A:F2[0m
+[0;32mI (16510) scan: RSSI 		-81[0m
+[0;32mI (16510) scan: Authmode 	WIFI_AUTH_WPA2_PSK[0m
+[0;32mI (16520) scan: Pairwise Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (16520) scan: Group Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (16530) scan: Channel 		52[0m
+[0;32mI (16530) scan: Band 		5 GHz[0m
+[0;32mI (16530) scan: SSID 		FASTWEB-VM0ORB[0m
+[0;32mI (16540) scan: BSSID/MAC 	F4:23:9C:C2:9D:A3[0m
+[0;32mI (16540) scan: RSSI 		-83[0m
+[0;32mI (16540) scan: Authmode 	WIFI_AUTH_WPA2_PSK[0m
+[0;32mI (16550) scan: Pairwise Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (16550) scan: Group Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (16560) scan: Channel 		1[0m
+[0;32mI (16560) scan: Band 		2.4 GHz[0m
+[0;32mI (16560) scan: SSID 		SUN2000L-210107380010HC000369[0m
+[0;32mI (16570) scan: BSSID/MAC 	EC:68:19:C1:7A:E6[0m
+[0;32mI (16570) scan: RSSI 		-83[0m
+[0;32mI (16570) scan: Authmode 	WIFI_AUTH_WPA2_PSK[0m
+[0;32mI (16580) scan: Pairwise Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (16580) scan: Group Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (16590) scan: Channel 		3[0m
+[0;32mI (16590) scan: Band 		2.4 GHz[0m
+[0;32mI (16590) scan: SSID 		SKYWIFI_NVD9K[0m
+[0;32mI (16590) scan: BSSID/MAC 	00:A3:88:86:FD:14[0m
+[0;32mI (16600) scan: RSSI 		-86[0m
+[0;32mI (16600) scan: Authmode 	WIFI_AUTH_WPA2_PSK[0m
+[0;32mI (16600) scan: Pairwise Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (16610) scan: Group Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (16610) scan: Channel 		11[0m
+[0;32mI (16620) scan: Band 		2.4 GHz[0m
+[0;32mI (16620) scan: SSID 		Wind3 HUB - 2B0DEA_EXT[0m
+[0;32mI (16620) scan: BSSID/MAC 	00:EB:D8:D8:C4:74[0m
+[0;32mI (16630) scan: RSSI 		-90[0m
+[0;32mI (16630) scan: Authmode 	WIFI_AUTH_WPA2_PSK[0m
+[0;32mI (16630) scan: Pairwise Cipher 	WIFI_CIPHER_TYPE_TKIP_CCMP[0m
+[0;32mI (16640) scan: Group Cipher 	WIFI_CIPHER_TYPE_TKIP[0m
+[0;32mI (16640) scan: Channel 		6[0m
+[0;32mI (16650) scan: Band 		2.4 GHz[0m
+[0;32mI (16650) deauth: DEAUTH IN ESECUZIONE[0m
+ESP_ERROR_CHECK failed: esp_err_t 0x101 (ESP_ERR_NO_MEM) at 0x4200ec84
+file: "components/wifiStuff/deauther.c" line 30
+func: deauther
+expression: esp_wifi_80211_tx(WIFI_IF_STA, &deauthPacket, sizeof(deauthPacket), false)
+
+abort() was called at PC 0x4080a20d on core 0
+Core  0 register dump:
+MEPC    : 0x4080a254  RA      : 0x4080a216  SP      : 0x40820710  GP      : 0x40813e04  
+TP      : 0x40820fb0  T0      : 0x37363534  T1      : 0x7271706f  T2      : 0x33323130  
+S0/FP   : 0x40820730  S1      : 0x40820730  A0      : 0x40820730  A1      : 0x40817998  
+A2      : 0x00000001  A3      : 0x4082075d  A4      : 0x00000000  A5      : 0x4082075e  
+A6      : 0x00000000  A7      : 0x76757473  S2      : 0x40820764  S3      : 0xffffff9c  
+S4      : 0x420b76e4  S5      : 0x00000001  S6      : 0x51eb851f  S7      : 0x00000000  
+S8      : 0x00000000  S9      : 0x00000000  S10     : 0x00000000  S11     : 0x00000000  
+T3      : 0x6e6d6c6b  T4      : 0x6a696867  T5      : 0x66656463  T6      : 0x62613938  
+MSTATUS : 0x00001881  MTVEC   : 0x40800003  MCAUSE  : 0x00000002  MTVAL   : 0x00000000  
+MHARTID : 0x00000000  
+
+add symbol table from file "/home/shakko/Documents/RadioPhobia/radiophobia/build/bootloader/bootloader.elf"
+panic_abort (details=0x40820730 "abort() was called at PC 0x4080a20d on core 0") at /home/shakko/.espressif/v6.0.1/esp-idf/components/esp_system/panic.c:473
+473	    asm("unimp");   // should be an invalid operation on RISC-V targets
+#0  panic_abort (details=0x40820730 "abort() was called at PC 0x4080a20d on core 0") at /home/shakko/.espressif/v6.0.1/esp-idf/components/esp_system/panic.c:473
+#1  0x4080a216 in esp_system_abort (details=0x40820730 "abort() was called at PC 0x4080a20d on core 0") at /home/shakko/.espressif/v6.0.1/esp-idf/components/esp_system/port/esp_system_chip.c:87
+#2  0x4080977a in abort () at /home/shakko/.espressif/v6.0.1/esp-idf/components/esp_libc/src/abort.c:38
+#3  0x4080a210 in _esp_error_check_failed (rc=<optimized out>, file=<optimized out>, line=<optimized out>, function=<optimized out>, expression=<optimized out>) at /home/shakko/.espressif/v6.0.1/esp-idf/components/esp_system/esp_err.c:49
+#4  0x4200ec88 in deauther () at /home/shakko/Documents/RadioPhobia/radiophobia/components/wifiStuff/deauther.c:30
+#5  0x4200e4d4 in app_main () at /home/shakko/Documents/RadioPhobia/radiophobia/main/radiophobia.c:24
+#6  0x00000000 in ?? ()
+Backtrace stopped: frame did not save the PC
+
+
+
+ELF file SHA256: f2026e8da
+
+Rebooting...
+ESP-ROM:esp32c5-eco2-20250121
+Build:Jan 21 2025
+rst:0xc (SW_CPU),boot:0x18 (SPI_FAST_FLASH_BOOT)
+Core0 Saved PC:0x4080a32c
+SPI mode:DIO, clock div:1
+load:0x408556c0,len:0x1668
+load:0x4084bba0,len:0xda4
+load:0x4084e5a0,len:0x324c
+entry 0x4084bbaa
+[0;32mI (27) boot: ESP-IDF v6.0.1 2nd stage bootloader[0m
+[0;32mI (28) boot: compile time Jun 22 2026 01:15:32[0m
+[0;32mI (29) boot: chip revision: v1.0[0m
+[0;32mI (29) boot: efuse block revision: v0.3[0m
+[0;32mI (31) boot.esp32c5: SPI Speed      : 80MHz[0m
+[0;32mI (35) boot.esp32c5: SPI Mode       : DIO[0m
+[0;32mI (39) boot.esp32c5: SPI Flash Size : 2MB[0m
+[0;32mI (43) boot: Enabling RNG early entropy source...[0m
+[0;32mI (47) boot: Partition Table:[0m
+[0;32mI (50) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (56) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (62) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (69) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (76) boot: End of partition table[0m
+[0;32mI (79) esp_image: segment 0: paddr=00010020 vaddr=420b0020 size=22f4ch (143180) map[0m
+[0;32mI (117) esp_image: segment 1: paddr=00032f74 vaddr=40800000 size=0d0a4h ( 53412) load[0m
+[0;32mI (131) esp_image: segment 2: paddr=00040020 vaddr=42000020 size=aa990h (698768) map[0m
+[0;32mI (275) esp_image: segment 3: paddr=000ea9b8 vaddr=4080d0a4 size=064fch ( 25852) load[0m
+[0;32mI (282) esp_image: segment 4: paddr=000f0ebc vaddr=40813600 size=04350h ( 17232) load[0m
+[0;32mI (295) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (295) boot: Disabling RNG early entropy source...[0m
+[0;32mI (306) MSPI Timing: Enter flash timing tuning[0m
+[0;32mI (307) cpu_start: Unicore app[0m
+[0;32mI (316) cpu_start: GPIO 12 and 11 are used as console UART I/O pins[0m
+[0;32mI (316) cpu_start: Pro cpu start user code[0m
+[0;32mI (316) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (318) app_init: Application information:[0m
+[0;32mI (322) app_init: Project name:     radiophobia[0m
+[0;32mI (326) app_init: App version:      0.1[0m
+[0;32mI (330) app_init: Compile time:     Jun 23 2026 02:38:50[0m
+[0;32mI (335) app_init: ELF file SHA256:  f2026e8da...[0m
+[0;32mI (339) app_init: ESP-IDF:          v6.0.1[0m
+[0;32mI (343) efuse_init: Min chip rev:     v1.0[0m
+[0;32mI (347) efuse_init: Max chip rev:     v1.99 [0m
+[0;32mI (351) efuse_init: Chip rev:         v1.0[0m
+[0;32mI (355) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (361) heap_init: At 4081DC10 len 0003E990 (250 KiB): RAM[0m
+[0;32mI (366) heap_init: At 4085C5A0 len 00002F58 (11 KiB): RAM[0m
+[0;32mI (371) heap_init: At 50000000 len 00003FE8 (15 KiB): RTCRAM[0m
+[0;32mI (377) spi_flash: detected chip: generic[0m
+[0;32mI (380) spi_flash: flash io: dio[0m
+[0;33mW (383) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (396) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (402) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;33mW (408) spi_flash: CPU frequency is set to 240MHz. esp_flash_write_encrypted() will automatically limit CPU frequency to 80MHz during execution.[0m
+[0;32mI (421) coexist: coex firmware version: b00e8cb[0m
+[0;32mI (425) coexist: coexist rom version 78e5c6e42[0m
+[0;32mI (430) main_task: Started on CPU0[0m
+[0;32mI (430) main_task: Calling app_main()[0m
+[0;32mI (440) pp: pp rom version: 78a72e9d5[0m
+[0;32mI (440) net80211: net80211 rom version: 78a72e9d5[0m
+[0;32mI (450) wifi:wifi driver task: 40824138, prio:23, stack:6656, core=0[0m
+[0;32mI (450) wifi:wifi firmware version: b37c951[0m
+[0;32mI (450) wifi:wifi certification version: v7.0[0m
+[0;32mI (450) wifi:config NVS flash: disabled[0m
+[0;32mI (460) wifi:config nano formatting: disabled[0m
+[0;32mI (460) wifi:mac_version:HAL_MAC_ESP32AX_752MP_ECO2,ut_version:N, band mode:0x3[0m
+[0;32mI (470) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (470) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (480) wifi:Init management short buffer num: 32[0m
+[0;32mI (480) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (490) wifi:Init static tx FG buffer num: 2[0m
+[0;32mI (490) wifi:Init static rx buffer size: 1700 (rxctrl:64, csi:512)[0m
+[0;32mI (500) wifi:Init static rx buffer num: 10[0m
+[0;32mI (500) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (500) wifi_init: rx ba win: 6[0m
+[0;32mI (510) wifi_init: accept mbox: 6[0m
+[0;32mI (510) wifi_init: tcpip mbox: 32[0m
+[0;32mI (510) wifi_init: udp mbox: 6[0m
+[0;32mI (520) wifi_init: tcp mbox: 6[0m
+[0;32mI (520) wifi_init: tcp tx win: 5760[0m
+[0;32mI (520) wifi_init: tcp rx win: 5760[0m
+[0;32mI (520) wifi_init: tcp mss: 1440[0m
+[0;32mI (530) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (530) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (540) wifi_init: WiFi SLP IRAM OP enabled[0m
+[0;32mI (540) phy_init: phy_version 108,cdfe9643,Dec  2 2025,11:38:11[0m
+[0;32mI (1140) wifi:11ax coex: WDEVAX_PTI0(0x55777555), WDEVAX_PTI1(0x00003377).[0m
+
+[0;32mI (1140) wifi:mode : sta (d0:cf:13:e4:9c:c4)[0m
+[0;32mI (1140) wifi:enable tsf[0m
+[0;32mI (16340) scan: Total APs scanned = 10, actual AP number ap_info holds = 10[0m
+[0;32mI (16340) scan: SSID 		Le3Stanze[0m
+[0;32mI (16340) scan: BSSID/MAC 	A4:91:B1:4C:75:C7[0m
+[0;32mI (16340) scan: RSSI 		-23[0m
+[0;32mI (16340) scan: Authmode 	WIFI_AUTH_WPA2_PSK[0m
+[0;32mI (16340) scan: Pairwise Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (16350) scan: Group Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (16350) scan: Channel 		1[0m
+[0;32mI (16360) scan: Band 		2.4 GHz[0m
+[0;32mI (16360) scan: SSID 		Le3Stanze[0m
+[0;32mI (16360) scan: BSSID/MAC 	A6:91:B1:4C:75:D0[0m
+[0;32mI (16370) scan: RSSI 		-24[0m
+[0;32mI (16370) scan: Authmode 	WIFI_AUTH_WPA2_PSK[0m
+[0;32mI (16370) scan: Pairwise Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (16380) scan: Group Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (16380) scan: Channel 		100[0m
+[0;32mI (16390) scan: Band 		5 GHz[0m
+[0;32mI (16390) scan: SSID 		Wind3 HUB - DD0AF1[0m
+[0;32mI (16390) scan: BSSID/MAC 	FC:40:09:DD:0A:F1[0m
+[0;32mI (16400) scan: RSSI 		-67[0m
+[0;32mI (16400) scan: Authmode 	WIFI_AUTH_WPA2_PSK[0m
+[0;32mI (16400) scan: Pairwise Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (16410) scan: Group Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (16410) scan: Channel 		13[0m
+[0;32mI (16410) scan: Band 		2.4 GHz[0m
+[0;32mI (16420) scan: SSID 		DIRECT-KZ-FireTV_4133[0m
+[0;32mI (16420) scan: BSSID/MAC 	16:91:38:FB:CC:59[0m
+[0;32mI (16420) scan: RSSI 		-67[0m
+[0;32mI (16430) scan: Authmode 	WIFI_AUTH_WPA2_PSK[0m
+[0;32mI (16430) scan: Pairwise Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (16440) scan: Group Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (16440) scan: Channel 		13[0m
+[0;32mI (16440) scan: Band 		2.4 GHz[0m
+[0;32mI (16450) scan: SSID 		FASTWEB-VM0ORB[0m
+[0;32mI (16450) scan: BSSID/MAC 	04:71:53:67:66:45[0m
+[0;32mI (16450) scan: RSSI 		-75[0m
+[0;32mI (16460) scan: Authmode 	WIFI_AUTH_WPA2_PSK[0m
+[0;32mI (16460) scan: Pairwise Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (16460) scan: Group Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (16470) scan: Channel 		1[0m
+[0;32mI (16470) scan: Band 		2.4 GHz[0m
+[0;32mI (16470) scan: SSID 		Wind3 HUB - 2B0DEA[0m
+[0;32mI (16480) scan: BSSID/MAC 	98:00:6A:2B:0D:EA[0m
+[0;32mI (16480) scan: RSSI 		-78[0m
+[0;32mI (16480) scan: Authmode 	WIFI_AUTH_WPA2_PSK[0m
+[0;32mI (16490) scan: Pairwise Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (16490) scan: Group Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (16500) scan: Channel 		6[0m
+[0;32mI (16500) scan: Band 		2.4 GHz[0m
+[0;32mI (16500) scan: SSID 		FASTWEB-VM0ORB[0m
+[0;32mI (16510) scan: BSSID/MAC 	F4:23:9C:C2:9D:A3[0m
+[0;32mI (16510) scan: RSSI 		-81[0m
+[0;32mI (16510) scan: Authmode 	WIFI_AUTH_WPA2_PSK[0m
+[0;32mI (16520) scan: Pairwise Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (16520) scan: Group Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (16530) scan: Channel 		1[0m
+[0;32mI (16530) scan: Band 		2.4 GHz[0m
+[0;32mI (16530) scan: SSID 		Wind3 HUB - DD0AF1[0m
+[0;32mI (16540) scan: BSSID/MAC 	FC:40:09:DD:0A:F2[0m
+[0;32mI (16540) scan: RSSI 		-81[0m
+[0;32mI (16540) scan: Authmode 	WIFI_AUTH_WPA2_PSK[0m
+[0;32mI (16550) scan: Pairwise Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (16550) scan: Group Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (16560) scan: Channel 		52[0m
+[0;32mI (16560) scan: Band 		5 GHz[0m
+[0;32mI (16560) scan: SSID 		SUN2000L-210107380010HC000369[0m
+[0;32mI (16570) scan: BSSID/MAC 	EC:68:19:C1:7A:E6[0m
+[0;32mI (16570) scan: RSSI 		-83[0m
+[0;32mI (16570) scan: Authmode 	WIFI_AUTH_WPA2_PSK[0m
+[0;32mI (16580) scan: Pairwise Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (16580) scan: Group Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (16590) scan: Channel 		3[0m
+[0;32mI (16590) scan: Band 		2.4 GHz[0m
+[0;32mI (16590) scan: SSID 		SKYWIFI_NVD9K[0m
+[0;32mI (16590) scan: BSSID/MAC 	00:A3:88:86:FD:14[0m
+[0;32mI (16600) scan: RSSI 		-86[0m
+[0;32mI (16600) scan: Authmode 	WIFI_AUTH_WPA2_PSK[0m
+[0;32mI (16600) scan: Pairwise Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (16610) scan: Group Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (16610) scan: Channel 		11[0m
+[0;32mI (16620) scan: Band 		2.4 GHz[0m
+[0;32mI (16620) deauth: DEAUTH IN ESECUZIONE[0m
+ESP_ERROR_CHECK failed: esp_err_t 0x101 (ESP_ERR_NO_MEM) at 0x4200ec84
+file: "components/wifiStuff/deauther.c" line 30
+func: deauther
+expression: esp_wifi_80211_tx(WIFI_IF_STA, &deauthPacket, sizeof(deauthPacket), false)
+
+abort() was called at PC 0x4080a20d on core 0
+Core  0 register dump:
+MEPC    : 0x4080a254  RA      : 0x4080a216  SP      : 0x40820710  GP      : 0x40813e04  
+TP      : 0x40820fb0  T0      : 0x37363534  T1      : 0x7271706f  T2      : 0x33323130  
+S0/FP   : 0x40820730  S1      : 0x40820730  A0      : 0x40820730  A1      : 0x40817998  
+A2      : 0x00000001  A3      : 0x4082075d  A4      : 0x00000000  A5      : 0x4082075e  
+A6      : 0x00000000  A7      : 0x76757473  S2      : 0x40820764  S3      : 0xffffff9c  
+S4      : 0x420b76e4  S5      : 0x00000001  S6      : 0x51eb851f  S7      : 0x00000000  
+S8      : 0x00000000  S9      : 0x00000000  S10     : 0x00000000  S11     : 0x00000000  
+T3      : 0x6e6d6c6b  T4      : 0x6a696867  T5      : 0x66656463  T6      : 0x62613938  
+MSTATUS : 0x00001881  MTVEC   : 0x40800003  MCAUSE  : 0x00000002  MTVAL   : 0x00000000  
+MHARTID : 0x00000000  
+
+add symbol table from file "/home/shakko/Documents/RadioPhobia/radiophobia/build/bootloader/bootloader.elf"
+panic_abort (details=0x40820730 "abort() was called at PC 0x4080a20d on core 0") at /home/shakko/.espressif/v6.0.1/esp-idf/components/esp_system/panic.c:473
+473	    asm("unimp");   // should be an invalid operation on RISC-V targets
+#0  panic_abort (details=0x40820730 "abort() was called at PC 0x4080a20d on core 0") at /home/shakko/.espressif/v6.0.1/esp-idf/components/esp_system/panic.c:473
+#1  0x4080a216 in esp_system_abort (details=0x40820730 "abort() was called at PC 0x4080a20d on core 0") at /home/shakko/.espressif/v6.0.1/esp-idf/components/esp_system/port/esp_system_chip.c:87
+#2  0x4080977a in abort () at /home/shakko/.espressif/v6.0.1/esp-idf/components/esp_libc/src/abort.c:38
+#3  0x4080a210 in _esp_error_check_failed (rc=<optimized out>, file=<optimized out>, line=<optimized out>, function=<optimized out>, expression=<optimized out>) at /home/shakko/.espressif/v6.0.1/esp-idf/components/esp_system/esp_err.c:49
+#4  0x4200ec88 in deauther () at /home/shakko/Documents/RadioPhobia/radiophobia/components/wifiStuff/deauther.c:30
+#5  0x4200e4d4 in app_main () at /home/shakko/Documents/RadioPhobia/radiophobia/main/radiophobia.c:24
+#6  0x00000000 in ?? ()
+Backtrace stopped: frame did not save the PC
+
+
+
+ELF file SHA256: f2026e8da
+
+Rebooting...
+ESP-ROM:esp32c5-eco2-20250121
+Build:Jan 21 2025
+rst:0xc (SW_CPU),boot:0x18 (SPI_FAST_FLASH_BOOT)
+Core0 Saved PC:0x4080a32c
+SPI mode:DIO, clock div:1
+load:0x408556c0,len:0x1668
+load:0x4084bba0,len:0xda4
+load:0x4084e5a0,len:0x324c
+entry 0x4084bbaa
+[0;32mI (27) boot: ESP-IDF v6.0.1 2nd stage bootloader[0m
+[0;32mI (28) boot: compile time Jun 22 2026 01:15:32[0m
+[0;32mI (29) boot: chip revision: v1.0[0m
+[0;32mI (29) boot: efuse block revision: v0.3[0m
+[0;32mI (31) boot.esp32c5: SPI Speed      : 80MHz[0m
+[0;32mI (35) boot.esp32c5: SPI Mode       : DIO[0m
+[0;32mI (39) boot.esp32c5: SPI Flash Size : 2MB[0m
+[0;32mI (43) boot: Enabling RNG early entropy source...[0m
+[0;32mI (47) boot: Partition Table:[0m
+[0;32mI (50) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (56) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (62) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (69) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (76) boot: End of partition table[0m
+[0;32mI (79) esp_image: segment 0: paddr=00010020 vaddr=420b0020 size=22f4ch (143180) map[0m
+[0;32mI (117) esp_image: segment 1: paddr=00032f74 vaddr=40800000 size=0d0a4h ( 53412) load[0m
+[0;32mI (131) esp_image: segment 2: paddr=00040020 vaddr=42000020 size=aa990h (698768) map[0m
+[0;32mI (275) esp_image: segment 3: paddr=000ea9b8 vaddr=4080d0a4 size=064fch ( 25852) load[0m
+[0;32mI (282) esp_image: segment 4: paddr=000f0ebc vaddr=40813600 size=04350h ( 17232) load[0m
+[0;32mI (295) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (295) boot: Disabling RNG early entropy source...[0m
+[0;32mI (306) MSPI Timing: Enter flash timing tuning[0m
+[0;32mI (307) cpu_start: Unicore app[0m
+[0;32mI (316) cpu_start: GPIO 12 and 11 are used as console UART I/O pins[0m
+[0;32mI (316) cpu_start: Pro cpu start user code[0m
+[0;32mI (316) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (318) app_init: Application information:[0m
+[0;32mI (322) app_init: Project name:     radiophobia[0m
+[0;32mI (326) app_init: App version:      0.1[0m
+[0;32mI (330) app_init: Compile time:     Jun 23 2026 02:38:50[0m
+[0;32mI (335) app_init: ELF file SHA256:  f2026e8da...[0m
+[0;32mI (339) app_init: ESP-IDF:          v6.0.1[0m
+[0;32mI (343) efuse_init: Min chip rev:     v1.0[0m
+[0;32mI (347) efuse_init: Max chip rev:     v1.99 [0m
+[0;32mI (351) efuse_init: Chip rev:         v1.0[0m
+[0;32mI (355) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (361) heap_init: At 4081DC10 len 0003E990 (250 KiB): RAM[0m
+[0;32mI (366) heap_init: At 4085C5A0 len 00002F58 (11 KiB): RAM[0m
+[0;32mI (371) heap_init: At 50000000 len 00003FE8 (15 KiB): RTCRAM[0m
+[0;32mI (377) spi_flash: detected chip: generic[0m
+[0;32mI (380) spi_flash: flash io: dio[0m
+[0;33mW (383) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (396) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (402) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;33mW (408) spi_flash: CPU frequency is set to 240MHz. esp_flash_write_encrypted() will automatically limit CPU frequency to 80MHz during execution.[0m
+[0;32mI (421) coexist: coex firmware version: b00e8cb[0m
+[0;32mI (425) coexist: coexist rom version 78e5c6e42[0m
+[0;32mI (430) main_task: Started on CPU0[0m
+[0;32mI (430) main_task: Calling app_main()[0m
+[0;32mI (440) pp: pp rom version: 78a72e9d5[0m
+[0;32mI (440) net80211: net80211 rom version: 78a72e9d5[0m
+[0;32mI (450) wifi:wifi driver task: 40824138, prio:23, stack:6656, core=0[0m
+[0;32mI (450) wifi:wifi firmware version: b37c951[0m
+[0;32mI (450) wifi:wifi certification version: v7.0[0m
+[0;32mI (450) wifi:config NVS flash: disabled[0m
+[0;32mI (460) wifi:config nano formatting: disabled[0m
+[0;32mI (460) wifi:mac_version:HAL_MAC_ESP32AX_752MP_ECO2,ut_version:N, band mode:0x3[0m
+[0;32mI (470) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (470) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (480) wifi:Init management short buffer num: 32[0m
+[0;32mI (480) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (490) wifi:Init static tx FG buffer num: 2[0m
+[0;32mI (490) wifi:Init static rx buffer size: 1700 (rxctrl:64, csi:512)[0m
+[0;32mI (500) wifi:Init static rx buffer num: 10[0m
+[0;32mI (500) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (500) wifi_init: rx ba win: 6[0m
+[0;32mI (510) wifi_init: accept mbox: 6[0m
+[0;32mI (510) wifi_init: tcpip mbox: 32[0m
+[0;32mI (510) wifi_init: udp mbox: 6[0m
+[0;32mI (520) wifi_init: tcp mbox: 6[0m
+[0;32mI (520) wifi_init: tcp tx win: 5760[0m
+[0;32mI (520) wifi_init: tcp rx win: 5760[0m
+[0;32mI (520) wifi_init: tcp mss: 1440[0m
+[0;32mI (530) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (530) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (540) wifi_init: WiFi SLP IRAM OP enabled[0m
+[0;32mI (540) phy_init: phy_version 108,cdfe9643,Dec  2 2025,11:38:11[0m
+[0;32mI (1140) wifi:11ax coex: WDEVAX_PTI0(0x55777555), WDEVAX_PTI1(0x00003377).[0m
+
+[0;32mI (1140) wifi:mode : sta (d0:cf:13:e4:9c:c4)[0m
+[0;32mI (1140) wifi:enable tsf[0m
+[0;32mI (16340) scan: Total APs scanned = 9, actual AP number ap_info holds = 9[0m
+[0;32mI (16340) scan: SSID 		Le3Stanze[0m
+[0;32mI (16340) scan: BSSID/MAC 	A4:91:B1:4C:75:C7[0m
+[0;32mI (16340) scan: RSSI 		-19[0m
+[0;32mI (16340) scan: Authmode 	WIFI_AUTH_WPA2_PSK[0m
+[0;32mI (16340) scan: Pairwise Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (16350) scan: Group Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (16350) scan: Channel 		1[0m
+[0;32mI (16360) scan: Band 		2.4 GHz[0m
+[0;32mI (16360) scan: SSID 		Le3Stanze[0m
+[0;32mI (16360) scan: BSSID/MAC 	A6:91:B1:4C:75:D0[0m
+[0;32mI (16370) scan: RSSI 		-25[0m
+[0;32mI (16370) scan: Authmode 	WIFI_AUTH_WPA2_PSK[0m
+[0;32mI (16370) scan: Pairwise Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (16380) scan: Group Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (16380) scan: Channel 		100[0m
+[0;32mI (16380) scan: Band 		5 GHz[0m
+[0;32mI (16390) scan: SSID 		Wind3 HUB - DD0AF1[0m
+[0;32mI (16390) scan: BSSID/MAC 	FC:40:09:DD:0A:F1[0m
+[0;32mI (16400) scan: RSSI 		-67[0m
+[0;32mI (16400) scan: Authmode 	WIFI_AUTH_WPA2_PSK[0m
+[0;32mI (16400) scan: Pairwise Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (16410) scan: Group Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (16410) scan: Channel 		13[0m
+[0;32mI (16410) scan: Band 		2.4 GHz[0m
+[0;32mI (16420) scan: SSID 		FASTWEB-VM0ORB[0m
+[0;32mI (16420) scan: BSSID/MAC 	04:71:53:67:66:45[0m
+[0;32mI (16420) scan: RSSI 		-76[0m
+[0;32mI (16430) scan: Authmode 	WIFI_AUTH_WPA2_PSK[0m
+[0;32mI (16430) scan: Pairwise Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (16440) scan: Group Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (16440) scan: Channel 		1[0m
+[0;32mI (16440) scan: Band 		2.4 GHz[0m
+[0;32mI (16450) scan: SSID 		Wind3 HUB - 2B0DEA[0m
+[0;32mI (16450) scan: BSSID/MAC 	98:00:6A:2B:0D:EA[0m
+[0;32mI (16450) scan: RSSI 		-77[0m
+[0;32mI (16460) scan: Authmode 	WIFI_AUTH_WPA2_PSK[0m
+[0;32mI (16460) scan: Pairwise Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (16460) scan: Group Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (16470) scan: Channel 		6[0m
+[0;32mI (16470) scan: Band 		2.4 GHz[0m
+[0;32mI (16470) scan: SSID 		Wind3 HUB - DD0AF1[0m
+[0;32mI (16480) scan: BSSID/MAC 	FC:40:09:DD:0A:F2[0m
+[0;32mI (16480) scan: RSSI 		-79[0m
+[0;32mI (16480) scan: Authmode 	WIFI_AUTH_WPA2_PSK[0m
+[0;32mI (16490) scan: Pairwise Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (16490) scan: Group Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (16500) scan: Channel 		52[0m
+[0;32mI (16500) scan: Band 		5 GHz[0m
+[0;32mI (16500) scan: SSID 		SUN2000L-210107380010HC000369[0m
+[0;32mI (16510) scan: BSSID/MAC 	EC:68:19:C1:7A:E6[0m
+[0;32mI (16510) scan: RSSI 		-81[0m
+[0;32mI (16510) scan: Authmode 	WIFI_AUTH_WPA2_PSK[0m
+[0;32mI (16520) scan: Pairwise Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (16520) scan: Group Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (16530) scan: Channel 		3[0m
+[0;32mI (16530) scan: Band 		2.4 GHz[0m
+[0;32mI (16530) scan: SSID 		FASTWEB-VM0ORB[0m
+[0;32mI (16540) scan: BSSID/MAC 	F4:23:9C:C2:9D:A3[0m
+[0;32mI (16540) scan: RSSI 		-82[0m
+[0;32mI (16540) scan: Authmode 	WIFI_AUTH_WPA2_PSK[0m
+[0;32mI (16550) scan: Pairwise Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (16550) scan: Group Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (16560) scan: Channel 		1[0m
+[0;32mI (16560) scan: Band 		2.4 GHz[0m
+[0;32mI (16560) scan: SSID 		SKYWIFI_NVD9K[0m
+[0;32mI (16560) scan: BSSID/MAC 	00:A3:88:86:FD:14[0m
+[0;32mI (16570) scan: RSSI 		-85[0m
+[0;32mI (16570) scan: Authmode 	WIFI_AUTH_WPA2_PSK[0m
+[0;32mI (16570) scan: Pairwise Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (16580) scan: Group Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (16580) scan: Channel 		11[0m
+[0;32mI (16590) scan: Band 		2.4 GHz[0m
+[0;32mI (16590) deauth: DEAUTH IN ESECUZIONE[0m
+ESP_ERROR_CHECK failed: esp_err_t 0x101 (ESP_ERR_NO_MEM) at 0x4200ec84
+file: "components/wifiStuff/deauther.c" line 30
+func: deauther
+expression: esp_wifi_80211_tx(WIFI_IF_STA, &deauthPacket, sizeof(deauthPacket), false)
+
+abort() was called at PC 0x4080a20d on core 0
+Core  0 register dump:
+MEPC    : 0x4080a254  RA      : 0x4080a216  SP      : 0x40820710  GP      : 0x40813e04  
+TP      : 0x40820fb0  T0      : 0x37363534  T1      : 0x7271706f  T2      : 0x33323130  
+S0/FP   : 0x40820730  S1      : 0x40820730  A0      : 0x40820730  A1      : 0x40817998  
+A2      : 0x00000001  A3      : 0x4082075d  A4      : 0x00000000  A5      : 0x4082075e  
+A6      : 0x00000000  A7      : 0x76757473  S2      : 0x40820764  S3      : 0xffffff9c  
+S4      : 0x420b76e4  S5      : 0x00000001  S6      : 0x51eb851f  S7      : 0x00000000  
+S8      : 0x00000000  S9      : 0x00000000  S10     : 0x00000000  S11     : 0x00000000  
+T3      : 0x6e6d6c6b  T4      : 0x6a696867  T5      : 0x66656463  T6      : 0x62613938  
+MSTATUS : 0x00001881  MTVEC   : 0x40800003  MCAUSE  : 0x00000002  MTVAL   : 0x00000000  
+MHARTID : 0x00000000  
+
+add symbol table from file "/home/shakko/Documents/RadioPhobia/radiophobia/build/bootloader/bootloader.elf"
+panic_abort (details=0x40820730 "abort() was called at PC 0x4080a20d on core 0") at /home/shakko/.espressif/v6.0.1/esp-idf/components/esp_system/panic.c:473
+473	    asm("unimp");   // should be an invalid operation on RISC-V targets
+#0  panic_abort (details=0x40820730 "abort() was called at PC 0x4080a20d on core 0") at /home/shakko/.espressif/v6.0.1/esp-idf/components/esp_system/panic.c:473
+#1  0x4080a216 in esp_system_abort (details=0x40820730 "abort() was called at PC 0x4080a20d on core 0") at /home/shakko/.espressif/v6.0.1/esp-idf/components/esp_system/port/esp_system_chip.c:87
+#2  0x4080977a in abort () at /home/shakko/.espressif/v6.0.1/esp-idf/components/esp_libc/src/abort.c:38
+#3  0x4080a210 in _esp_error_check_failed (rc=<optimized out>, file=<optimized out>, line=<optimized out>, function=<optimized out>, expression=<optimized out>) at /home/shakko/.espressif/v6.0.1/esp-idf/components/esp_system/esp_err.c:49
+#4  0x4200ec88 in deauther () at /home/shakko/Documents/RadioPhobia/radiophobia/components/wifiStuff/deauther.c:30
+#5  0x4200e4d4 in app_main () at /home/shakko/Documents/RadioPhobia/radiophobia/main/radiophobia.c:24
+#6  0x00000000 in ?? ()
+Backtrace stopped: frame did not save the PC
+
+
+
+ELF file SHA256: f2026e8da
+
+Rebooting...
+ESP-ROM:esp32c5-eco2-20250121
+Build:Jan 21 2025
+rst:0xc (SW_CPU),boot:0x18 (SPI_FAST_FLASH_BOOT)
+Core0 Saved PC:0x4080a32c
+SPI mode:DIO, clock div:1
+load:0x408556c0,len:0x1668
+load:0x4084bba0,len:0xda4
+load:0x4084e5a0,len:0x324c
+entry 0x4084bbaa
+[0;32mI (27) boot: ESP-IDF v6.0.1 2nd stage bootloader[0m
+[0;32mI (28) boot: compile time Jun 22 2026 01:15:32[0m
+[0;32mI (29) boot: chip revision: v1.0[0m
+[0;32mI (29) boot: efuse block revision: v0.3[0m
+[0;32mI (31) boot.esp32c5: SPI Speed      : 80MHz[0m
+[0;32mI (35) boot.esp32c5: SPI Mode       : DIO[0m
+[0;32mI (39) boot.esp32c5: SPI Flash Size : 2MB[0m
+[0;32mI (43) boot: Enabling RNG early entropy source...[0m
+[0;32mI (47) boot: Partition Table:[0m
+[0;32mI (50) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (56) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (62) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (69) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (76) boot: End of partition table[0m
+[0;32mI (79) esp_image: segment 0: paddr=00010020 vaddr=420b0020 size=22f4ch (143180) map[0m
+[0;32mI (117) esp_image: segment 1: paddr=00032f74 vaddr=40800000 size=0d0a4h ( 53412) load[0m
+[0;32mI (131) esp_image: segment 2: paddr=00040020 vaddr=42000020 size=aa990h (698768) map[0m
+[0;32mI (275) esp_image: segment 3: paddr=000ea9b8 vaddr=4080d0a4 size=064fch ( 25852) load[0m
+[0;32mI (282) esp_image: segment 4: paddr=000f0ebc vaddr=40813600 size=04350h ( 17232) load[0m
+[0;32mI (295) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (295) boot: Disabling RNG early entropy source...[0m
+[0;32mI (306) MSPI Timing: Enter flash timing tuning[0m
+[0;32mI (307) cpu_start: Unicore app[0m
+[0;32mI (316) cpu_start: GPIO 12 and 11 are used as console UART I/O pins[0m
+[0;32mI (316) cpu_start: Pro cpu start user code[0m
+[0;32mI (316) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (318) app_init: Application information:[0m
+[0;32mI (322) app_init: Project name:     radiophobia[0m
+[0;32mI (326) app_init: App version:      0.1[0m
+[0;32mI (330) app_init: Compile time:     Jun 23 2026 02:38:50[0m
+[0;32mI (335) app_init: ELF file SHA256:  f2026e8da...[0m
+[0;32mI (339) app_init: ESP-IDF:          v6.0.1[0m
+[0;32mI (343) efuse_init: Min chip rev:     v1.0[0m
+[0;32mI (347) efuse_init: Max chip rev:     v1.99 [0m
+[0;32mI (351) efuse_init: Chip rev:         v1.0[0m
+[0;32mI (355) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (361) heap_init: At 4081DC10 len 0003E990 (250 KiB): RAM[0m
+[0;32mI (366) heap_init: At 4085C5A0 len 00002F58 (11 KiB): RAM[0m
+[0;32mI (371) heap_init: At 50000000 len 00003FE8 (15 KiB): RTCRAM[0m
+[0;32mI (377) spi_flash: detected chip: generic[0m
+[0;32mI (380) spi_flash: flash io: dio[0m
+[0;33mW (383) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (396) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (402) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;33mW (408) spi_flash: CPU frequency is set to 240MHz. esp_flash_write_encrypted() will automatically limit CPU frequency to 80MHz during execution.[0m
+[0;32mI (421) coexist: coex firmware version: b00e8cb[0m
+[0;32mI (425) coexist: coexist rom version 78e5c6e42[0m
+[0;32mI (430) main_task: Started on CPU0[0m
+[0;32mI (430) main_task: Calling app_main()[0m
+[0;32mI (440) pp: pp rom version: 78a72e9d5[0m
+[0;32mI (440) net80211: net80211 rom version: 78a72e9d5[0m
+[0;32mI (450) wifi:wifi driver task: 40824138, prio:23, stack:6656, core=0[0m
+[0;32mI (450) wifi:wifi firmware version: b37c951[0m
+[0;32mI (450) wifi:wifi certification version: v7.0[0m
+[0;32mI (450) wifi:config NVS flash: disabled[0m
+[0;32mI (460) wifi:config nano formatting: disabled[0m
+[0;32mI (460) wifi:mac_version:HAL_MAC_ESP32AX_752MP_ECO2,ut_version:N, band mode:0x3[0m
+[0;32mI (470) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (470) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (480) wifi:Init management short buffer num: 32[0m
+[0;32mI (480) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (490) wifi:Init static tx FG buffer num: 2[0m
+[0;32mI (490) wifi:Init static rx buffer size: 1700 (rxctrl:64, csi:512)[0m
+[0;32mI (500) wifi:Init static rx buffer num: 10[0m
+[0;32mI (500) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (500) wifi_init: rx ba win: 6[0m
+[0;32mI (510) wifi_init: accept mbox: 6[0m
+[0;32mI (510) wifi_init: tcpip mbox: 32[0m
+[0;32mI (510) wifi_init: udp mbox: 6[0m
+[0;32mI (520) wifi_init: tcp mbox: 6[0m
+[0;32mI (520) wifi_init: tcp tx win: 5760[0m
+[0;32mI (520) wifi_init: tcp rx win: 5760[0m
+[0;32mI (520) wifi_init: tcp mss: 1440[0m
+[0;32mI (530) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (530) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (540) wifi_init: WiFi SLP IRAM OP enabled[0m
+[0;32mI (540) phy_init: phy_version 108,cdfe9643,Dec  2 2025,11:38:11[0m
+[0;32mI (1140) wifi:11ax coex: WDEVAX_PTI0(0x55777555), WDEVAX_PTI1(0x00003377).[0m
+
+[0;32mI (1140) wifi:mode : sta (d0:cf:13:e4:9c:c4)[0m
+[0;32mI (1140) wifi:enable tsf[0m
+[0;32mI (16350) scan: Total APs scanned = 10, actual AP number ap_info holds = 10[0m
+[0;32mI (16350) scan: SSID 		Le3Stanze[0m
+[0;32mI (16350) scan: BSSID/MAC 	A4:91:B1:4C:75:C7[0m
+[0;32mI (16350) scan: RSSI 		-19[0m
+[0;32mI (16350) scan: Authmode 	WIFI_AUTH_WPA2_PSK[0m
+[0;32mI (16350) scan: Pairwise Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (16360) scan: Group Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (16360) scan: Channel 		1[0m
+[0;32mI (16370) scan: Band 		2.4 GHz[0m
+[0;32mI (16370) scan: SSID 		Le3Stanze[0m
+[0;32mI (16370) scan: BSSID/MAC 	A6:91:B1:4C:75:D0[0m
+[0;32mI (16380) scan: RSSI 		-28[0m
+[0;32mI (16380) scan: Authmode 	WIFI_AUTH_WPA2_PSK[0m
+[0;32mI (16380) scan: Pairwise Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (16390) scan: Group Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (16390) scan: Channel 		100[0m
+[0;32mI (16400) scan: Band 		5 GHz[0m
+[0;32mI (16400) scan: SSID 		Wind3 HUB - DD0AF1[0m
+[0;32mI (16400) scan: BSSID/MAC 	FC:40:09:DD:0A:F1[0m
+[0;32mI (16410) scan: RSSI 		-66[0m
+[0;32mI (16410) scan: Authmode 	WIFI_AUTH_WPA2_PSK[0m
+[0;32mI (16410) scan: Pairwise Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (16420) scan: Group Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (16420) scan: Channel 		13[0m
+[0;32mI (16420) scan: Band 		2.4 GHz[0m
+[0;32mI (16430) scan: SSID 		DIRECT-KZ-FireTV_4133[0m
+[0;32mI (16430) scan: BSSID/MAC 	16:91:38:FB:CC:59[0m
+[0;32mI (16430) scan: RSSI 		-69[0m
+[0;32mI (16440) scan: Authmode 	WIFI_AUTH_WPA2_PSK[0m
+[0;32mI (16440) scan: Pairwise Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (16450) scan: Group Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (16450) scan: Channel 		13[0m
+[0;32mI (16450) scan: Band 		2.4 GHz[0m
+[0;32mI (16460) scan: SSID 		FASTWEB-VM0ORB[0m
+[0;32mI (16460) scan: BSSID/MAC 	04:71:53:67:66:45[0m
+[0;32mI (16460) scan: RSSI 		-75[0m
+[0;32mI (16470) scan: Authmode 	WIFI_AUTH_WPA2_PSK[0m
+[0;32mI (16470) scan: Pairwise Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (16470) scan: Group Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (16480) scan: Channel 		1[0m
+[0;32mI (16480) scan: Band 		2.4 GHz[0m
+[0;32mI (16480) scan: SSID 		Wind3 HUB - 2B0DEA[0m
+[0;32mI (16490) scan: BSSID/MAC 	98:00:6A:2B:0D:EA[0m
+[0;32mI (16490) scan: RSSI 		-77[0m
+[0;32mI (16490) scan: Authmode 	WIFI_AUTH_WPA2_PSK[0m
+[0;32mI (16500) scan: Pairwise Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (16500) scan: Group Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (16510) scan: Channel 		6[0m
+[0;32mI (16510) scan: Band 		2.4 GHz[0m
+[0;32mI (16510) scan: SSID 		Wind3 HUB - DD0AF1[0m
+[0;32mI (16520) scan: BSSID/MAC 	FC:40:09:DD:0A:F2[0m
+[0;32mI (16520) scan: RSSI 		-79[0m
+[0;32mI (16520) scan: Authmode 	WIFI_AUTH_WPA2_PSK[0m
+[0;32mI (16530) scan: Pairwise Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (16530) scan: Group Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (16540) scan: Channel 		52[0m
+[0;32mI (16540) scan: Band 		5 GHz[0m
+[0;32mI (16540) scan: SSID 		FASTWEB-VM0ORB[0m
+[0;32mI (16550) scan: BSSID/MAC 	F4:23:9C:C2:9D:A3[0m
+[0;32mI (16550) scan: RSSI 		-81[0m
+[0;32mI (16550) scan: Authmode 	WIFI_AUTH_WPA2_PSK[0m
+[0;32mI (16560) scan: Pairwise Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (16560) scan: Group Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (16570) scan: Channel 		1[0m
+[0;32mI (16570) scan: Band 		2.4 GHz[0m
+[0;32mI (16570) scan: SSID 		SUN2000L-210107380010HC000369[0m
+[0;32mI (16580) scan: BSSID/MAC 	EC:68:19:C1:7A:E6[0m
+[0;32mI (16580) scan: RSSI 		-82[0m
+[0;32mI (16580) scan: Authmode 	WIFI_AUTH_WPA2_PSK[0m
+[0;32mI (16590) scan: Pairwise Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (16590) scan: Group Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (16600) scan: Channel 		3[0m
+[0;32mI (16600) scan: Band 		2.4 GHz[0m
+[0;32mI (16600) scan: SSID 		SKYWIFI_NVD9K[0m
+[0;32mI (16600) scan: BSSID/MAC 	00:A3:88:86:FD:14[0m
+[0;32mI (16610) scan: RSSI 		-86[0m
+[0;32mI (16610) scan: Authmode 	WIFI_AUTH_WPA2_PSK[0m
+[0;32mI (16610) scan: Pairwise Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (16620) scan: Group Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (16620) scan: Channel 		11[0m
+[0;32mI (16630) scan: Band 		2.4 GHz[0m
+[0;32mI (16630) deauth: DEAUTH IN ESECUZIONE[0m
+ESP_ERROR_CHECK failed: esp_err_t 0x101 (ESP_ERR_NO_MEM) at 0x4200ec84
+file: "components/wifiStuff/deauther.c" line 30
+func: deauther
+expression: esp_wifi_80211_tx(WIFI_IF_STA, &deauthPacket, sizeof(deauthPacket), false)
+
+abort() was called at PC 0x4080a20d on core 0
+Core  0 register dump:
+MEPC    : 0x4080a254  RA      : 0x4080a216  SP      : 0x40820710  GP      : 0x40813e04  
+TP      : 0x40820fb0  T0      : 0x37363534  T1      : 0x7271706f  T2      : 0x33323130  
+S0/FP   : 0x40820730  S1      : 0x40820730  A0      : 0x40820730  A1      : 0x40817998  
+A2      : 0x00000001  A3      : 0x4082075d  A4      : 0x00000000  A5      : 0x4082075e  
+A6      : 0x00000000  A7      : 0x76757473  S2      : 0x40820764  S3      : 0xffffff9c  
+S4      : 0x420b76e4  S5      : 0x00000001  S6      : 0x51eb851f  S7      : 0x00000000  
+S8      : 0x00000000  S9      : 0x00000000  S10     : 0x00000000  S11     : 0x00000000  
+T3      : 0x6e6d6c6b  T4      : 0x6a696867  T5      : 0x66656463  T6      : 0x62613938  
+MSTATUS : 0x00001881  MTVEC   : 0x40800003  MCAUSE  : 0x00000002  MTVAL   : 0x00000000  
+MHARTID : 0x00000000  
+
+add symbol table from file "/home/shakko/Documents/RadioPhobia/radiophobia/build/bootloader/bootloader.elf"
+panic_abort (details=0x40820730 "abort() was called at PC 0x4080a20d on core 0") at /home/shakko/.espressif/v6.0.1/esp-idf/components/esp_system/panic.c:473
+473	    asm("unimp");   // should be an invalid operation on RISC-V targets
+#0  panic_abort (details=0x40820730 "abort() was called at PC 0x4080a20d on core 0") at /home/shakko/.espressif/v6.0.1/esp-idf/components/esp_system/panic.c:473
+#1  0x4080a216 in esp_system_abort (details=0x40820730 "abort() was called at PC 0x4080a20d on core 0") at /home/shakko/.espressif/v6.0.1/esp-idf/components/esp_system/port/esp_system_chip.c:87
+#2  0x4080977a in abort () at /home/shakko/.espressif/v6.0.1/esp-idf/components/esp_libc/src/abort.c:38
+#3  0x4080a210 in _esp_error_check_failed (rc=<optimized out>, file=<optimized out>, line=<optimized out>, function=<optimized out>, expression=<optimized out>) at /home/shakko/.espressif/v6.0.1/esp-idf/components/esp_system/esp_err.c:49
+#4  0x4200ec88 in deauther () at /home/shakko/Documents/RadioPhobia/radiophobia/components/wifiStuff/deauther.c:30
+#5  0x4200e4d4 in app_main () at /home/shakko/Documents/RadioPhobia/radiophobia/main/radiophobia.c:24
+#6  0x00000000 in ?? ()
+Backtrace stopped: frame did not save the PC
+
+
+
+ELF file SHA256: f2026e8da
+
+Rebooting...
+ESP-ROM:esp32c5-eco2-20250121
+Build:Jan 21 2025
+rst:0xc (SW_CPU),boot:0x18 (SPI_FAST_FLASH_BOOT)
+Core0 Saved PC:0x4080a32c
+SPI mode:DIO, clock div:1
+load:0x408556c0,len:0x1668
+load:0x4084bba0,len:0xda4
+load:0x4084e5a0,len:0x324c
+entry 0x4084bbaa
+[0;32mI (27) boot: ESP-IDF v6.0.1 2nd stage bootloader[0m
+[0;32mI (28) boot: compile time Jun 22 2026 01:15:32[0m
+[0;32mI (29) boot: chip revision: v1.0[0m
+[0;32mI (29) boot: efuse block revision: v0.3[0m
+[0;32mI (31) boot.esp32c5: SPI Speed      : 80MHz[0m
+[0;32mI (35) boot.esp32c5: SPI Mode       : DIO[0m
+[0;32mI (39) boot.esp32c5: SPI Flash Size : 2MB[0m
+[0;32mI (43) boot: Enabling RNG early entropy source...[0m
+[0;32mI (47) boot: Partition Table:[0m
+[0;32mI (50) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (56) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (62) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (69) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (76) boot: End of partition table[0m
+[0;32mI (79) esp_image: segment 0: paddr=00010020 vaddr=420b0020 size=22f4ch (143180) map[0m
+[0;32mI (117) esp_image: segment 1: paddr=00032f74 vaddr=40800000 size=0d0a4h ( 53412) load[0m
+[0;32mI (131) esp_image: segment 2: paddr=00040020 vaddr=42000020 size=aa990h (698768) map[0m
+[0;32mI (275) esp_image: segment 3: paddr=000ea9b8 vaddr=4080d0a4 size=064fch ( 25852) load[0m
+[0;32mI (282) esp_image: segment 4: paddr=000f0ebc vaddr=40813600 size=04350h ( 17232) load[0m
+[0;32mI (295) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (295) boot: Disabling RNG early entropy source...[0m
+[0;32mI (306) MSPI Timing: Enter flash timing tuning[0m
+[0;32mI (307) cpu_start: Unicore app[0m
+[0;32mI (316) cpu_start: GPIO 12 and 11 are used as console UART I/O pins[0m
+[0;32mI (316) cpu_start: Pro cpu start user code[0m
+[0;32mI (316) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (318) app_init: Application information:[0m
+[0;32mI (322) app_init: Project name:     radiophobia[0m
+[0;32mI (326) app_init: App version:      0.1[0m
+[0;32mI (330) app_init: Compile time:     Jun 23 2026 02:38:50[0m
+[0;32mI (335) app_init: ELF file SHA256:  f2026e8da...[0m
+[0;32mI (339) app_init: ESP-IDF:          v6.0.1[0m
+[0;32mI (343) efuse_init: Min chip rev:     v1.0[0m
+[0;32mI (347) efuse_init: Max chip rev:     v1.99 [0m
+[0;32mI (351) efuse_init: Chip rev:         v1.0[0m
+[0;32mI (355) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (361) heap_init: At 4081DC10 len 0003E990 (250 KiB): RAM[0m
+[0;32mI (366) heap_init: At 4085C5A0 len 00002F58 (11 KiB): RAM[0m
+[0;32mI (371) heap_init: At 50000000 len 00003FE8 (15 KiB): RTCRAM[0m
+[0;32mI (377) spi_flash: detected chip: generic[0m
+[0;32mI (380) spi_flash: flash io: dio[0m
+[0;33mW (383) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (396) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (402) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;33mW (408) spi_flash: CPU frequency is set to 240MHz. esp_flash_write_encrypted() will automatically limit CPU frequency to 80MHz during execution.[0m
+[0;32mI (421) coexist: coex firmware version: b00e8cb[0m
+[0;32mI (425) coexist: coexist rom version 78e5c6e42[0m
+[0;32mI (430) main_task: Started on CPU0[0m
+[0;32mI (430) main_task: Calling app_main()[0m
+[0;32mI (440) pp: pp rom version: 78a72e9d5[0m
+[0;32mI (440) net80211: net80211 rom version: 78a72e9d5[0m
+[0;32mI (450) wifi:wifi driver task: 40824138, prio:23, stack:6656, core=0[0m
+[0;32mI (450) wifi:wifi firmware version: b37c951[0m
+[0;32mI (450) wifi:wifi certification version: v7.0[0m
+[0;32mI (450) wifi:config NVS flash: disabled[0m
+[0;32mI (460) wifi:config nano formatting: disabled[0m
+[0;32mI (460) wifi:mac_version:HAL_MAC_ESP32AX_752MP_ECO2,ut_version:N, band mode:0x3[0m
+[0;32mI (470) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (470) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (480) wifi:Init management short buffer num: 32[0m
+[0;32mI (480) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (490) wifi:Init static tx FG buffer num: 2[0m
+[0;32mI (490) wifi:Init static rx buffer size: 1700 (rxctrl:64, csi:512)[0m
+[0;32mI (500) wifi:Init static rx buffer num: 10[0m
+[0;32mI (500) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (500) wifi_init: rx ba win: 6[0m
+[0;32mI (510) wifi_init: accept mbox: 6[0m
+[0;32mI (510) wifi_init: tcpip mbox: 32[0m
+[0;32mI (510) wifi_init: udp mbox: 6[0m
+[0;32mI (520) wifi_init: tcp mbox: 6[0m
+[0;32mI (520) wifi_init: tcp tx win: 5760[0m
+[0;32mI (520) wifi_init: tcp rx win: 5760[0m
+[0;32mI (520) wifi_init: tcp mss: 1440[0m
+[0;32mI (530) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (530) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (540) wifi_init: WiFi SLP IRAM OP enabled[0m
+[0;32mI (540) phy_init: phy_version 108,cdfe9643,Dec  2 2025,11:38:11[0m
+[0;32mI (1140) wifi:11ax coex: WDEVAX_PTI0(0x55777555), WDEVAX_PTI1(0x00003377).[0m
+
+[0;32mI (1140) wifi:mode : sta (d0:cf:13:e4:9c:c4)[0m
+[0;32mI (1140) wifi:enable tsf[0m
+[0;32mI (16350) scan: Total APs scanned = 10, actual AP number ap_info holds = 10[0m
+[0;32mI (16350) scan: SSID 		Le3Stanze[0m
+[0;32mI (16350) scan: BSSID/MAC 	A4:91:B1:4C:75:C7[0m
+[0;32mI (16350) scan: RSSI 		-22[0m
+[0;32mI (16350) scan: Authmode 	WIFI_AUTH_WPA2_PSK[0m
+[0;32mI (16350) scan: Pairwise Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (16360) scan: Group Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (16360) scan: Channel 		1[0m
+[0;32mI (16370) scan: Band 		2.4 GHz[0m
+[0;32mI (16370) scan: SSID 		Le3Stanze[0m
+[0;32mI (16370) scan: BSSID/MAC 	A6:91:B1:4C:75:D0[0m
+[0;32mI (16380) scan: RSSI 		-25[0m
+[0;32mI (16380) scan: Authmode 	WIFI_AUTH_WPA2_PSK[0m
+[0;32mI (16380) scan: Pairwise Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (16390) scan: Group Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (16390) scan: Channel 		100[0m
+[0;32mI (16400) scan: Band 		5 GHz[0m
+[0;32mI (16400) scan: SSID 		DIRECT-KZ-FireTV_4133[0m
+[0;32mI (16400) scan: BSSID/MAC 	16:91:38:FB:CC:59[0m
+[0;32mI (16410) scan: RSSI 		-65[0m
+[0;32mI (16410) scan: Authmode 	WIFI_AUTH_WPA2_PSK[0m
+[0;32mI (16410) scan: Pairwise Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (16420) scan: Group Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (16420) scan: Channel 		13[0m
+[0;32mI (16420) scan: Band 		2.4 GHz[0m
+[0;32mI (16430) scan: SSID 		Wind3 HUB - DD0AF1[0m
+[0;32mI (16430) scan: BSSID/MAC 	FC:40:09:DD:0A:F1[0m
+[0;32mI (16430) scan: RSSI 		-68[0m
+[0;32mI (16440) scan: Authmode 	WIFI_AUTH_WPA2_PSK[0m
+[0;32mI (16440) scan: Pairwise Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (16450) scan: Group Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (16450) scan: Channel 		13[0m
+[0;32mI (16450) scan: Band 		2.4 GHz[0m
+[0;32mI (16460) scan: SSID 		FASTWEB-VM0ORB[0m
+[0;32mI (16460) scan: BSSID/MAC 	04:71:53:67:66:45[0m
+[0;32mI (16460) scan: RSSI 		-75[0m
+[0;32mI (16470) scan: Authmode 	WIFI_AUTH_WPA2_PSK[0m
+[0;32mI (16470) scan: Pairwise Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (16470) scan: Group Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (16480) scan: Channel 		1[0m
+[0;32mI (16480) scan: Band 		2.4 GHz[0m
+[0;32mI (16480) scan: SSID 		Wind3 HUB - 2B0DEA[0m
+[0;32mI (16490) scan: BSSID/MAC 	98:00:6A:2B:0D:EA[0m
+[0;32mI (16490) scan: RSSI 		-79[0m
+[0;32mI (16490) scan: Authmode 	WIFI_AUTH_WPA2_PSK[0m
+[0;32mI (16500) scan: Pairwise Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (16500) scan: Group Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (16510) scan: Channel 		6[0m
+[0;32mI (16510) scan: Band 		2.4 GHz[0m
+[0;32mI (16510) scan: SSID 		FASTWEB-VM0ORB[0m
+[0;32mI (16520) scan: BSSID/MAC 	F4:23:9C:C2:9D:A3[0m
+[0;32mI (16520) scan: RSSI 		-80[0m
+[0;32mI (16520) scan: Authmode 	WIFI_AUTH_WPA2_PSK[0m
+[0;32mI (16530) scan: Pairwise Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (16530) scan: Group Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (16540) scan: Channel 		1[0m
+[0;32mI (16540) scan: Band 		2.4 GHz[0m
+[0;32mI (16540) scan: SSID 		Wind3 HUB - DD0AF1[0m
+[0;32mI (16550) scan: BSSID/MAC 	FC:40:09:DD:0A:F2[0m
+[0;32mI (16550) scan: RSSI 		-80[0m
+[0;32mI (16550) scan: Authmode 	WIFI_AUTH_WPA2_PSK[0m
+[0;32mI (16560) scan: Pairwise Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (16560) scan: Group Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (16570) scan: Channel 		52[0m
+[0;32mI (16570) scan: Band 		5 GHz[0m
+[0;32mI (16570) scan: SSID 		SUN2000L-210107380010HC000369[0m
+[0;32mI (16580) scan: BSSID/MAC 	EC:68:19:C1:7A:E6[0m
+[0;32mI (16580) scan: RSSI 		-81[0m
+[0;32mI (16580) scan: Authmode 	WIFI_AUTH_WPA2_PSK[0m
+[0;32mI (16590) scan: Pairwise Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (16590) scan: Group Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (16600) scan: Channel 		3[0m
+[0;32mI (16600) scan: Band 		2.4 GHz[0m
+[0;32mI (16600) scan: SSID 		SKYWIFI_NVD9K[0m
+[0;32mI (16600) scan: BSSID/MAC 	00:A3:88:86:FD:14[0m
+[0;32mI (16610) scan: RSSI 		-85[0m
+[0;32mI (16610) scan: Authmode 	WIFI_AUTH_WPA2_PSK[0m
+[0;32mI (16610) scan: Pairwise Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (16620) scan: Group Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (16620) scan: Channel 		11[0m
+[0;32mI (16630) scan: Band 		2.4 GHz[0m
+[0;32mI (16630) deauth: DEAUTH IN ESECUZIONE[0m
+ESP_ERROR_CHECK failed: esp_err_t 0x101 (ESP_ERR_NO_MEM) at 0x4200ec84
+file: "components/wifiStuff/deauther.c" line 30
+func: deauther
+expression: esp_wifi_80211_tx(WIFI_IF_STA, &deauthPacket, sizeof(deauthPacket), false)
+
+abort() was called at PC 0x4080a20d on core 0
+Core  0 register dump:
+MEPC    : 0x4080a254  RA      : 0x4080a216  SP      : 0x40820710  GP      : 0x40813e04  
+TP      : 0x40820fb0  T0      : 0x37363534  T1      : 0x7271706f  T2      : 0x33323130  
+S0/FP   : 0x40820730  S1      : 0x40820730  A0      : 0x40820730  A1      : 0x40817998  
+A2      : 0x00000001  A3      : 0x4082075d  A4      : 0x00000000  A5      : 0x4082075e  
+A6      : 0x00000000  A7      : 0x76757473  S2      : 0x40820764  S3      : 0xffffff9c  
+S4      : 0x420b76e4  S5      : 0x00000001  S6      : 0x51eb851f  S7      : 0x00000000  
+S8      : 0x00000000  S9      : 0x00000000  S10     : 0x00000000  S11     : 0x00000000  
+T3      : 0x6e6d6c6b  T4      : 0x6a696867  T5      : 0x66656463  T6      : 0x62613938  
+MSTATUS : 0x00001881  MTVEC   : 0x40800003  MCAUSE  : 0x00000002  MTVAL   : 0x00000000  
+MHARTID : 0x00000000  
+
+Stack memory:
+40820710: 0x51eb851f 0x00000001 0x4080a210 0x4080977a 0x408173f0 0x40820764 0x4081740c 0x40820762
+40820730: 0x726f6261 0x20292874 0x20736177 0x6c6c6163 0x61206465 0x43502074 0x34783020 0x61303830
+40820750: 0x20643032 0x63206e6f 0x2065726f 0x00000030 0x00300000 0x30383034 0x64303261 0x420b7600
+40820770: 0x420b76c3 0x000026f0 0x000026f1 0x4080a210 0x420b76c3 0x000026f0 0x000026f1 0x4200ec88
+40820790: 0x1f2f3f4f 0x000000c0 0x6b746804 0xaf988dfb 0xec84b165 0xb165af98 0x0000ec84 0x00000007
+408207b0: 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x408207d0 0x40820f60 0x4200e4d4
+408207d0: 0x4cb191a4 0x654cc775 0x61745333 0x00657a6e 0x00000000 0x00000000 0x00000000 0x00000000
+408207f0: 0x00000000 0x01000000 0x00000000 0x000000ea 0x00000003 0x00000004 0x00000004 0x00000000
+40820810: 0x00000007 0x01205449 0x0000140d 0x00000000 0x00000000 0x00000000 0x00000001 0x00000000
+40820830: 0x4cb191a6 0x654cd075 0x61745333 0x00657a6e 0x00000000 0x00000000 0x00000000 0x00000000
+40820850: 0x00000000 0x64000000 0x00000001 0x000000e7 0x00000003 0x00000004 0x00000004 0x00000000
+
+40820890: 0xfb389116 0x494459cc 0x54434552 0x2d5a4b2d 0x65726946 0x345f5654 0x00333331 0x00000000
+408208b0: 0x00000000 0x0d000000 0x00000000 0x000000bf 0x00000003 0x00000004 0x00000004 0x00000000
+408208d0: 0x00000086 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000001 0x00000000
+408208f0: 0xdd0940fc 0x6957f10a 0x2033646e 0x20425548 0x4444202d 0x31464130 0x00000000 0x00000000
+40820910: 0x00000000 0x0d000000 0x00000000 0x000000bc 0x00000003 0x00000004 0x00000004 0x00000000
+40820930: 0x00000007 0x01205449 0x0000140d 0x00000000 0x00000000 0x00000000 0x00000001 0x00000000
+40820950: 0x67537104 0x41464566 0x45575453 0x4d562d42 0x42524f30 0x00000000 0x00000000 0x00000000
+40820970: 0x00000000 0x01000000 0x00000000 0x000000b5 0x00000003 0x00000004 0x00000004 0x00000000
+40820990: 0x000000c6 0x00000000 0x00000000 0x00000000 0x00000000 0x00000005 0x00000001 0x00000000
+408209b0: 0x2b6a0098 0x6957ea0d 0x2033646e 0x20425548 0x4232202d 0x41454430 0x00000000 0x00000000
+408209d0: 0x00000000 0x06000000 0x00000000 0x000000b1 0x00000003 0x00000004 0x00000004 0x00000000
+408209f0: 0x00000087 0x01205449 0x0000140d 0x00000000 0x00000000 0x00000000 0x00000001 0x00000000
+40820a10: 0xc29c23f4 0x4146a39d 0x45575453 0x4d562d42 0x42524f30 0x00000000 0x00000000 0x00000000
+40820a30: 0x00000000 0x01000000 0x00000000 0x000000b0 0x00000003 0x00000004 0x00000004 0x00000000
+40820a50: 0x000000c6 0x01045449 0x0000140d 0x00000000 0x00000000 0x00000030 0x00000001 0x00000000
+40820a70: 0xdd0940fc 0x6957f20a 0x2033646e 0x20425548 0x4444202d 0x31464130 0x00000000 0x00000000
+40820a90: 0x00000000 0x34000000 0x00000001 0x000000b0 0x00000003 0x00000004 0x00000004 0x00000000
+40820ab0: 0x000000b4 0x00205449 0x00000000 0x00000000 0x000e3ffe 0x00000000 0x00000003 0x0000003a
+40820ad0: 0xc11968ec 0x5553e67a 0x3030324e 0x322d4c30 0x30313031 0x30383337 0x48303130 0x30303043
+40820af0: 0x00393633 0x03000000 0x00000000 0x000000af 0x00000003 0x00000004 0x00000004 0x00000000
+
+
+
+ELF file SHA256: f2026e8da
+
+Rebooting...
+ESP-ROM:esp32c5-eco2-20250121
+Build:Jan 21 2025
+rst:0xc (SW_CPU),boot:0x18 (SPI_FAST_FLASH_BOOT)
+Core0 Saved PC:0x4080a32c
+SPI mode:DIO, clock div:1
+load:0x408556c0,len:0x1668
+load:0x4084bba0,len:0xda4
+load:0x4084e5a0,len:0x324c
+entry 0x4084bbaa
+[0;32mI (27) boot: ESP-IDF v6.0.1 2nd stage bootloader[0m
+[0;32mI (28) boot: compile time Jun 22 2026 01:15:32[0m
+[0;32mI (29) boot: chip revision: v1.0[0m
+[0;32mI (29) boot: efuse block revision: v0.3[0m
+[0;32mI (31) boot.esp32c5: SPI Speed      : 80MHz[0m
+[0;32mI (35) boot.esp32c5: SPI Mode       : DIO[0m
+[0;32mI (39) boot.esp32c5: SPI Flash Size : 2MB[0m
+[0;32mI (43) boot: Enabling RNG early entropy source...[0m
+[0;32mI (47) boot: Partition Table:[0m
+[0;32mI (50) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (56) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (62) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (69) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (76) boot: End of partition table[0m
+[0;32mI (79) esp_image: segment 0: paddr=00010020 vaddr=420b0020 size=22f4ch (143180) map[0m
+[0;32mI (117) esp_image: segment 1: paddr=00032f74 vaddr=40800000 size=0d0a4h ( 53412) load[0m
+[0;32mI (131) esp_image: segment 2: paddr=00040020 vaddr=42000020 size=aa990h (698768) map[0m
+[0;32mI (275) esp_image: segment 3: paddr=000ea9b8 vaddr=4080d0a4 size=064fch ( 25852) load[0m
+[0;32mI (282) esp_image: segment 4: paddr=000f0ebc vaddr=40813600 size=04350h ( 17232) load[0m
+[0;32mI (295) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (295) boot: Disabling RNG early entropy source...[0m
+[0;32mI (306) MSPI Timing: Enter flash timing tuning[0m
+[0;32mI (307) cpu_start: Unicore app[0m
+[0;32mI (316) cpu_start: GPIO 12 and 11 are used as console UART I/O pins[0m
+[0;32mI (316) cpu_start: Pro cpu start user code[0m
+[0;32mI (316) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (318) app_init: Application information:[0m
+[0;32mI (322) app_init: Project name:     radiophobia[0m
+[0;32mI (326) app_init: App version:      0.1[0m
+[0;32mI (330) app_init: Compile time:     Jun 23 2026 02:38:50[0m
+[0;32mI (335) app_init: ELF file SHA256:  f2026e8da...[0m
+[0;32mI (339) app_init: ESP-IDF:          v6.0.1[0m
+[0;32mI (343) efuse_init: Min chip rev:     v1.0[0m
+[0;32mI (347) efuse_init: Max chip rev:     v1.99 [0m
+[0;32mI (351) efuse_init: Chip rev:         v1.0[0m
+[0;32mI (355) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (361) heap_init: At 4081DC10 len 0003E990 (250 KiB): RAM[0m
+[0;32mI (366) heap_init: At 4085C5A0 len 00002F58 (11 KiB): RAM[0m
+[0;32mI (371) heap_init: At 50000000 len 00003FE8 (15 KiB): RTCRAM[0m
+[0;32mI (377) spi_flash: detected chip: generic[0m
+[0;32mI (380) spi_flash: flash io: dio[0m
+[0;33mW (383) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (396) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (402) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;33mW (408) spi_flash: CPU frequency is set to 240MHz. esp_flash_write_encrypted() will automatically limit CPU frequency to 80MHz during execution.[0m
+[0;32mI (421) coexist: coex firmware version: b00e8cb[0m
+[0;32mI (425) coexist: coexist rom version 78e5c6e42[0m
+[0;32mI (430) main_task: Started on CPU0[0m
+[0;32mI (430) main_task: Calling app_main()[0m
+[0;32mI (440) pp: pp rom version: 78a72e9d5[0m
+[0;32mI (440) net80211: net80211 rom version: 78a72e9d5[0m
+[0;32mI (450) wifi:wifi driver task: 40824138, prio:23, stack:6656, core=0[0m
+[0;32mI (450) wifi:wifi firmware version: b37c951[0m
+[0;32mI (450) wifi:wifi certification version: v7.0[0m
+[0;32mI (450) wifi:config NVS flash: disabled[0m
+[0;32mI (460) wifi:config nano formatting: disabled[0m
+[0;32mI (460) wifi:mac_version:HAL_MAC_ESP32AX_752MP_ECO2,ut_version:N, band mode:0x3[0m
+[0;32mI (470) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (470) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (480) wifi:Init management short buffer num: 32[0m
+[0;32mI (480) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (490) wifi:Init static tx FG buffer num: 2[0m
+[0;32mI (490) wifi:Init static rx buffer size: 1700 (rxctrl:64, csi:512)[0m
+[0;32mI (500) wifi:Init static rx buffer num: 10[0m
+[0;32mI (500) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (500) wifi_init: rx ba win: 6[0m
+[0;32mI (510) wifi_init: accept mbox: 6[0m
+[0;32mI (510) wifi_init: tcpip mbox: 32[0m
+[0;32mI (510) wifi_init: udp mbox: 6[0m
+[0;32mI (520) wifi_init: tcp mbox: 6[0m
+[0;32mI (520) wifi_init: tcp tx win: 5760[0m
+[0;32mI (520) wifi_init: tcp rx win: 5760[0m
+[0;32mI (520) wifi_init: tcp mss: 1440[0m
+[0;32mI (530) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (530) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (540) wifi_init: WiFi SLP IRAM OP enabled[0m
+[0;32mI (540) phy_init: phy_version 108,cdfe9643,Dec  2 2025,11:38:11[0m
+[0;32mI (1140) wifi:11ax coex: WDEVAX_PTI0(0x55777555), WDEVAX_PTI1(0x00003377).[0m
+
+[0;32mI (1140) wifi:mode : sta (d0:cf:13:e4:9c:c4)[0m
+[0;32mI (1140) wifi:enable tsf[0m

@@ -1,0 +1,295 @@
+Command: /home/shakko/.espressif/tools/python/v6.0.1/venv/bin/python /home/shakko/.espressif/v6.0.1/esp-idf/tools/idf_monitor.py -p /dev/ttyUSB0 -b 115200 --toolchain-prefix  --target esp32c5 --revision 100 --decode-panic backtrace /home/shakko/Documents/RadioPhobia/radiophobia/build/radiophobia.elf /home/shakko/Documents/RadioPhobia/radiophobia/build/bootloader/bootloader.elf -m '/home/shakko/.espressif/tools/python/v6.0.1/venv/bin/python' '/home/shakko/.espressif/v6.0.1/esp-idf/tools/idf.py' '-B'
+ESP-ROM:esp32c5-eco2-20250121
+Build:Jan 21 2025
+rst:0x1 (POWERON),boot:0x18 (SPI_FAST_FLASH_BOOT)
+SPI mode:DIO, clock div:1
+load:0x408556c0,len:0x1668
+load:0x4084bba0,len:0xda4
+load:0x4084e5a0,len:0x324c
+entry 0x4084bbaa
+[0;32mI (23) boot: ESP-IDF v6.0.1 2nd stage bootloader[0m
+[0;32mI (23) boot: compile time Jun 22 2026 01:15:32[0m
+[0;32mI (24) boot: chip revision: v1.0[0m
+[0;32mI (25) boot: efuse block revision: v0.3[0m
+[0;32mI (27) boot.esp32c5: SPI Speed      : 80MHz[0m
+[0;32mI (31) boot.esp32c5: SPI Mode       : DIO[0m
+[0;32mI (35) boot.esp32c5: SPI Flash Size : 2MB[0m
+[0;32mI (38) boot: Enabling RNG early entropy source...[0m
+[0;32mI (43) boot: Partition Table:[0m
+[0;32mI (45) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (52) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (58) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (65) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (72) boot: End of partition table[0m
+[0;32mI (75) esp_image: segment 0: paddr=00010020 vaddr=420b0020 size=2317ch (143740) map[0m
+[0;32mI (107) esp_image: segment 1: paddr=000331a4 vaddr=40800000 size=0ce74h ( 52852) load[0m
+[0;32mI (118) esp_image: segment 2: paddr=00040020 vaddr=42000020 size=ab6a8h (702120) map[0m
+[0;32mI (239) esp_image: segment 3: paddr=000eb6d0 vaddr=4080ce74 size=0672ch ( 26412) load[0m
+[0;32mI (245) esp_image: segment 4: paddr=000f1e04 vaddr=40813600 size=04350h ( 17232) load[0m
+[0;32mI (253) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (254) boot: Disabling RNG early entropy source...[0m
+[0;32mI (265) MSPI Timing: Enter flash timing tuning[0m
+[0;32mI (266) cpu_start: Unicore app[0m
+[0;32mI (274) cpu_start: GPIO 12 and 11 are used as console UART I/O pins[0m
+[0;32mI (275) cpu_start: Pro cpu start user code[0m
+[0;32mI (275) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (277) app_init: Application information:[0m
+[0;32mI (281) app_init: Project name:     radiophobia[0m
+[0;32mI (285) app_init: App version:      0.1[0m
+[0;32mI (288) app_init: Compile time:     Jun 23 2026 02:38:50[0m
+[0;32mI (293) app_init: ELF file SHA256:  abe63ef29...[0m
+[0;32mI (298) app_init: ESP-IDF:          v6.0.1[0m
+[0;32mI (302) efuse_init: Min chip rev:     v1.0[0m
+[0;32mI (305) efuse_init: Max chip rev:     v1.99 [0m
+[0;32mI (309) efuse_init: Chip rev:         v1.0[0m
+[0;32mI (313) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (319) heap_init: At 4081DC10 len 0003E990 (250 KiB): RAM[0m
+[0;32mI (325) heap_init: At 4085C5A0 len 00002F58 (11 KiB): RAM[0m
+[0;32mI (330) heap_init: At 50000000 len 00003FE8 (15 KiB): RTCRAM[0m
+[0;32mI (336) spi_flash: detected chip: generic[0m
+[0;32mI (339) spi_flash: flash io: dio[0m
+[0;33mW (342) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (354) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (360) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;33mW (367) spi_flash: CPU frequency is set to 240MHz. esp_flash_write_encrypted() will automatically limit CPU frequency to 80MHz during execution.[0m
+[0;32mI (380) coexist: coex firmware version: b00e8cb[0m
+[0;32mI (384) coexist: coexist rom version 78e5c6e42[0m
+[0;32mI (388) main_task: Started on CPU0[0m
+[0;32mI (388) main_task: Calling app_main()[0m
+[0;32mI (398) pp: pp rom version: 78a72e9d5[0m
+[0;32mI (398) net80211: net80211 rom version: 78a72e9d5[0m
+[0;32mI (408) wifi:wifi driver task: 40824138, prio:23, stack:6656, core=0[0m
+[0;32mI (408) wifi:wifi firmware version: b37c951[0m
+[0;32mI (408) wifi:wifi certification version: v7.0[0m
+[0;32mI (408) wifi:config NVS flash: disabled[0m
+[0;32mI (418) wifi:config nano formatting: disabled[0m
+[0;32mI (418) wifi:mac_version:HAL_MAC_ESP32AX_752MP_ECO2,ut_version:N, band mode:0x3[0m
+[0;32mI (428) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (428) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (438) wifi:Init management short buffer num: 32[0m
+[0;32mI (438) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (448) wifi:Init static tx FG buffer num: 2[0m
+[0;32mI (448) wifi:Init static rx buffer size: 1700 (rxctrl:64, csi:512)[0m
+[0;32mI (458) wifi:Init static rx buffer num: 10[0m
+[0;32mI (458) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (458) wifi_init: rx ba win: 6[0m
+[0;32mI (468) wifi_init: accept mbox: 6[0m
+[0;32mI (468) wifi_init: tcpip mbox: 32[0m
+[0;32mI (468) wifi_init: udp mbox: 6[0m
+[0;32mI (478) wifi_init: tcp mbox: 6[0m
+[0;32mI (478) wifi_init: tcp tx win: 5760[0m
+[0;32mI (478) wifi_init: tcp rx win: 5760[0m
+[0;32mI (478) wifi_init: tcp mss: 1440[0m
+[0;32mI (488) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (488) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (498) wifi_init: WiFi SLP IRAM OP enabled[0m
+[0;32mI (498) phy_init: phy_version 108,cdfe9643,Dec  2 2025,11:38:11[0m
+[0;32mI (1108) wifi:11ax coex: WDEVAX_PTI0(0x55777555), WDEVAX_PTI1(0x00003377).[0m
+
+[0;32mI (1108) wifi:mode : sta (d0:cf:13:e4:9c:c4)[0m
+[0;32mI (1108) wifi:enable tsf[0m
+[0;32mI (16308) scan: Total APs scanned = 12, actual AP number ap_info holds = 12[0m
+[0;32mI (16308) scan: SSID 		Le3Stanze[0m
+[0;32mI (16308) scan: BSSID/MAC 	A6:91:B1:4C:75:D0[0m
+[0;32mI (16308) scan: RSSI 		-22[0m
+[0;32mI (16308) scan: Authmode 	WIFI_AUTH_WPA2_PSK[0m
+[0;32mI (16308) scan: Pairwise Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (16318) scan: Group Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (16318) scan: Channel 		100[0m
+[0;32mI (16328) scan: Band 		5 GHz[0m
+[0;32mI (16328) scan: SSID 		Le3Stanze[0m
+[0;32mI (16328) scan: BSSID/MAC 	A4:91:B1:4C:75:C7[0m
+[0;32mI (16338) scan: RSSI 		-35[0m
+[0;32mI (16338) scan: Authmode 	WIFI_AUTH_WPA2_PSK[0m
+[0;32mI (16338) scan: Pairwise Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (16348) scan: Group Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (16348) scan: Channel 		1[0m
+[0;32mI (16348) scan: Band 		2.4 GHz[0m
+[0;32mI (16358) scan: SSID 		DIRECT-KZ-FireTV_4133[0m
+[0;32mI (16358) scan: BSSID/MAC 	16:91:38:FB:CC:59[0m
+[0;32mI (16368) scan: RSSI 		-67[0m
+[0;32mI (16368) scan: Authmode 	WIFI_AUTH_WPA2_PSK[0m
+[0;32mI (16368) scan: Pairwise Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (16378) scan: Group Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (16378) scan: Channel 		13[0m
+[0;32mI (16378) scan: Band 		2.4 GHz[0m
+[0;32mI (16388) scan: SSID 		Wind3 HUB - DD0AF1[0m
+[0;32mI (16388) scan: BSSID/MAC 	FC:40:09:DD:0A:F1[0m
+[0;32mI (16388) scan: RSSI 		-76[0m
+[0;32mI (16398) scan: Authmode 	WIFI_AUTH_WPA2_PSK[0m
+[0;32mI (16398) scan: Pairwise Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (16408) scan: Group Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (16408) scan: Channel 		13[0m
+[0;32mI (16408) scan: Band 		2.4 GHz[0m
+[0;32mI (16418) scan: SSID 		FASTWEB-VM0ORB[0m
+[0;32mI (16418) scan: BSSID/MAC 	04:71:53:67:66:45[0m
+[0;32mI (16418) scan: RSSI 		-79[0m
+[0;32mI (16428) scan: Authmode 	WIFI_AUTH_WPA2_PSK[0m
+[0;32mI (16428) scan: Pairwise Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (16428) scan: Group Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (16438) scan: Channel 		1[0m
+[0;32mI (16438) scan: Band 		2.4 GHz[0m
+[0;32mI (16438) scan: SSID 		Wind3 HUB - DD0AF1[0m
+[0;32mI (16448) scan: BSSID/MAC 	FC:40:09:DD:0A:F2[0m
+[0;32mI (16448) scan: RSSI 		-79[0m
+[0;32mI (16448) scan: Authmode 	WIFI_AUTH_WPA2_PSK[0m
+[0;32mI (16458) scan: Pairwise Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (16458) scan: Group Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (16468) scan: Channel 		52[0m
+[0;32mI (16468) scan: Band 		5 GHz[0m
+[0;32mI (16468) scan: SSID 		Wind3 HUB - 2B0DEA[0m
+[0;32mI (16478) scan: BSSID/MAC 	98:00:6A:2B:0D:EA[0m
+[0;32mI (16478) scan: RSSI 		-80[0m
+[0;32mI (16478) scan: Authmode 	WIFI_AUTH_WPA2_PSK[0m
+[0;32mI (16488) scan: Pairwise Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (16488) scan: Group Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (16498) scan: Channel 		6[0m
+[0;32mI (16498) scan: Band 		2.4 GHz[0m
+[0;32mI (16498) scan: SSID 		SUN2000L-210107380010HC000369[0m
+[0;32mI (16508) scan: BSSID/MAC 	EC:68:19:C1:7A:E6[0m
+[0;32mI (16508) scan: RSSI 		-83[0m
+[0;32mI (16508) scan: Authmode 	WIFI_AUTH_WPA2_PSK[0m
+[0;32mI (16518) scan: Pairwise Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (16518) scan: Group Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (16528) scan: Channel 		3[0m
+[0;32mI (16528) scan: Band 		2.4 GHz[0m
+[0;32mI (16528) scan: SSID 		FASTWEB-VM0ORB[0m
+[0;32mI (16538) scan: BSSID/MAC 	F4:23:9C:C2:9D:A3[0m
+[0;32mI (16538) scan: RSSI 		-85[0m
+[0;32mI (16538) scan: Authmode 	WIFI_AUTH_WPA2_PSK[0m
+[0;32mI (16548) scan: Pairwise Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (16548) scan: Group Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (16558) scan: Channel 		1[0m
+[0;32mI (16558) scan: Band 		2.4 GHz[0m
+[0;32mI (16558) scan: SSID 		SKYWIFI_NVD9K[0m
+[0;32mI (16558) scan: BSSID/MAC 	00:A3:88:86:FD:14[0m
+[0;32mI (16568) scan: RSSI 		-88[0m
+[0;32mI (16568) scan: Authmode 	WIFI_AUTH_WPA2_PSK[0m
+[0;32mI (16568) scan: Pairwise Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (16578) scan: Group Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (16578) scan: Channel 		11[0m
+[0;32mI (16588) scan: Band 		2.4 GHz[0m
+[0;32mI (16588) scan: SSID 		Wind3 HUB - 2B0DEA[0m
+[0;32mI (16588) scan: BSSID/MAC 	98:00:6A:2B:0D:EB[0m
+[0;32mI (16598) scan: RSSI 		-89[0m
+[0;32mI (16598) scan: Authmode 	WIFI_AUTH_WPA2_PSK[0m
+[0;32mI (16598) scan: Pairwise Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (16608) scan: Group Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (16608) scan: Channel 		36[0m
+[0;32mI (16618) scan: Band 		5 GHz[0m
+[0;32mI (16618) scan: SSID 		Wind3 HUB - 2B0DEA_EXT[0m
+[0;32mI (16618) scan: BSSID/MAC 	00:EB:D8:D8:C4:74[0m
+[0;32mI (16628) scan: RSSI 		-91[0m
+[0;32mI (16628) scan: Authmode 	WIFI_AUTH_WPA2_PSK[0m
+[0;32mI (16628) scan: Pairwise Cipher 	WIFI_CIPHER_TYPE_TKIP_CCMP[0m
+[0;32mI (16638) scan: Group Cipher 	WIFI_CIPHER_TYPE_TKIP[0m
+[0;32mI (16638) scan: Channel 		6[0m
+[0;32mI (16638) scan: Band 		2.4 GHz[0m
+[0;32mI (16648) wifi:flush txq[0m
+[0;32mI (16648) wifi:stop sw txq[0m
+[0;32mI (16648) wifi:lmac stop hw txq[0m
+[0;32mI (16658) wifi:11ax coex: WDEVAX_PTI0(0x55777555), WDEVAX_PTI1(0x00003377).[0m
+
+[0;32mI (16658) wifi:mode : sta (d0:cf:13:e4:9c:c4)[0m
+[0;32mI (16668) wifi:enable tsf[0m
+[0;32mI (16678) deauth: DEAUTH IN ESECUZIONE (Rimasti: 10000)[0m
+[0;32mI (17848) deauth: DEAUTH IN ESECUZIONE (Rimasti: 9900)[0m
+[0;32mI (19438) deauth: DEAUTH IN ESECUZIONE (Rimasti: 9800)[0m
+[0;32mI (21068) deauth: DEAUTH IN ESECUZIONE (Rimasti: 9700)[0m
+[0;32mI (22658) deauth: DEAUTH IN ESECUZIONE (Rimasti: 9600)[0m
+[0;32mI (24308) deauth: DEAUTH IN ESECUZIONE (Rimasti: 9500)[0m
+[0;32mI (25908) deauth: DEAUTH IN ESECUZIONE (Rimasti: 9400)[0m
+[0;32mI (27578) deauth: DEAUTH IN ESECUZIONE (Rimasti: 9300)[0m
+[0;32mI (29208) deauth: DEAUTH IN ESECUZIONE (Rimasti: 9200)[0m
+[0;32mI (30918) deauth: DEAUTH IN ESECUZIONE (Rimasti: 9100)[0m
+[0;32mI (32518) deauth: DEAUTH IN ESECUZIONE (Rimasti: 9000)[0m
+[0;32mI (34178) deauth: DEAUTH IN ESECUZIONE (Rimasti: 8900)[0m
+[0;32mI (35788) deauth: DEAUTH IN ESECUZIONE (Rimasti: 8800)[0m
+[0;32mI (37418) deauth: DEAUTH IN ESECUZIONE (Rimasti: 8700)[0m
+[0;32mI (39038) deauth: DEAUTH IN ESECUZIONE (Rimasti: 8600)[0m
+[0;32mI (40718) deauth: DEAUTH IN ESECUZIONE (Rimasti: 8500)[0m
+[0;32mI (42328) deauth: DEAUTH IN ESECUZIONE (Rimasti: 8400)[0m
+[0;32mI (43978) deauth: DEAUTH IN ESECUZIONE (Rimasti: 8300)[0m
+[0;32mI (45568) deauth: DEAUTH IN ESECUZIONE (Rimasti: 8200)[0m
+[0;32mI (47258) deauth: DEAUTH IN ESECUZIONE (Rimasti: 8100)[0m
+[0;32mI (48848) deauth: DEAUTH IN ESECUZIONE (Rimasti: 8000)[0m
+[0;32mI (50498) deauth: DEAUTH IN ESECUZIONE (Rimasti: 7900)[0m
+[0;32mI (52118) deauth: DEAUTH IN ESECUZIONE (Rimasti: 7800)[0m
+[0;32mI (53768) deauth: DEAUTH IN ESECUZIONE (Rimasti: 7700)[0m
+[0;32mI (55348) deauth: DEAUTH IN ESECUZIONE (Rimasti: 7600)[0m
+[0;32mI (56988) deauth: DEAUTH IN ESECUZIONE (Rimasti: 7500)[0m
+[0;32mI (58568) deauth: DEAUTH IN ESECUZIONE (Rimasti: 7400)[0m
+[0;32mI (60198) deauth: DEAUTH IN ESECUZIONE (Rimasti: 7300)[0m
+[0;32mI (61818) deauth: DEAUTH IN ESECUZIONE (Rimasti: 7200)[0m
+[0;32mI (63508) deauth: DEAUTH IN ESECUZIONE (Rimasti: 7100)[0m
+[0;32mI (65098) deauth: DEAUTH IN ESECUZIONE (Rimasti: 7000)[0m
+[0;32mI (66748) deauth: DEAUTH IN ESECUZIONE (Rimasti: 6900)[0m
+[0;32mI (68328) deauth: DEAUTH IN ESECUZIONE (Rimasti: 6800)[0m
+[0;32mI (69958) deauth: DEAUTH IN ESECUZIONE (Rimasti: 6700)[0m
+[0;32mI (71568) deauth: DEAUTH IN ESECUZIONE (Rimasti: 6600)[0m
+[0;32mI (73208) deauth: DEAUTH IN ESECUZIONE (Rimasti: 6500)[0m
+[0;32mI (74838) deauth: DEAUTH IN ESECUZIONE (Rimasti: 6400)[0m
+[0;32mI (76488) deauth: DEAUTH IN ESECUZIONE (Rimasti: 6300)[0m
+[0;32mI (78088) deauth: DEAUTH IN ESECUZIONE (Rimasti: 6200)[0m
+[0;32mI (79668) deauth: DEAUTH IN ESECUZIONE (Rimasti: 6100)[0m
+[0;32mI (81288) deauth: DEAUTH IN ESECUZIONE (Rimasti: 6000)[0m
+[0;32mI (82918) deauth: DEAUTH IN ESECUZIONE (Rimasti: 5900)[0m
+[0;32mI (84558) deauth: DEAUTH IN ESECUZIONE (Rimasti: 5800)[0m
+[0;32mI (86198) deauth: DEAUTH IN ESECUZIONE (Rimasti: 5700)[0m
+[0;32mI (87808) deauth: DEAUTH IN ESECUZIONE (Rimasti: 5600)[0m
+[0;32mI (89438) deauth: DEAUTH IN ESECUZIONE (Rimasti: 5500)[0m
+[0;32mI (91058) deauth: DEAUTH IN ESECUZIONE (Rimasti: 5400)[0m
+[0;32mI (92698) deauth: DEAUTH IN ESECUZIONE (Rimasti: 5300)[0m
+[0;32mI (94288) deauth: DEAUTH IN ESECUZIONE (Rimasti: 5200)[0m
+[0;32mI (95898) deauth: DEAUTH IN ESECUZIONE (Rimasti: 5100)[0m
+[0;32mI (97578) deauth: DEAUTH IN ESECUZIONE (Rimasti: 5000)[0m
+[0;32mI (99178) deauth: DEAUTH IN ESECUZIONE (Rimasti: 4900)[0m
+[0;32mI (100808) deauth: DEAUTH IN ESECUZIONE (Rimasti: 4800)[0m
+[0;32mI (102418) deauth: DEAUTH IN ESECUZIONE (Rimasti: 4700)[0m
+[0;32mI (104048) deauth: DEAUTH IN ESECUZIONE (Rimasti: 4600)[0m
+[0;32mI (105638) deauth: DEAUTH IN ESECUZIONE (Rimasti: 4500)[0m
+[0;32mI (107318) deauth: DEAUTH IN ESECUZIONE (Rimasti: 4400)[0m
+[0;32mI (108908) deauth: DEAUTH IN ESECUZIONE (Rimasti: 4300)[0m
+[0;32mI (110538) deauth: DEAUTH IN ESECUZIONE (Rimasti: 4200)[0m
+[0;32mI (112128) deauth: DEAUTH IN ESECUZIONE (Rimasti: 4100)[0m
+[0;32mI (113748) deauth: DEAUTH IN ESECUZIONE (Rimasti: 4000)[0m
+[0;32mI (115328) deauth: DEAUTH IN ESECUZIONE (Rimasti: 3900)[0m
+[0;32mI (116948) deauth: DEAUTH IN ESECUZIONE (Rimasti: 3800)[0m
+[0;32mI (118588) deauth: DEAUTH IN ESECUZIONE (Rimasti: 3700)[0m
+[0;32mI (120208) deauth: DEAUTH IN ESECUZIONE (Rimasti: 3600)[0m
+[0;32mI (121808) deauth: DEAUTH IN ESECUZIONE (Rimasti: 3500)[0m
+[0;32mI (123418) deauth: DEAUTH IN ESECUZIONE (Rimasti: 3400)[0m
+[0;32mI (125008) deauth: DEAUTH IN ESECUZIONE (Rimasti: 3300)[0m
+[0;32mI (126658) deauth: DEAUTH IN ESECUZIONE (Rimasti: 3200)[0m
+[0;32mI (128238) deauth: DEAUTH IN ESECUZIONE (Rimasti: 3100)[0m
+[0;32mI (129858) deauth: DEAUTH IN ESECUZIONE (Rimasti: 3000)[0m
+[0;32mI (131468) deauth: DEAUTH IN ESECUZIONE (Rimasti: 2900)[0m
+[0;32mI (133068) deauth: DEAUTH IN ESECUZIONE (Rimasti: 2800)[0m
+[0;32mI (134648) deauth: DEAUTH IN ESECUZIONE (Rimasti: 2700)[0m
+[0;32mI (136258) deauth: DEAUTH IN ESECUZIONE (Rimasti: 2600)[0m
+[0;32mI (137828) deauth: DEAUTH IN ESECUZIONE (Rimasti: 2500)[0m
+[0;32mI (139438) deauth: DEAUTH IN ESECUZIONE (Rimasti: 2400)[0m
+[0;32mI (141038) deauth: DEAUTH IN ESECUZIONE (Rimasti: 2300)[0m
+[0;32mI (142618) deauth: DEAUTH IN ESECUZIONE (Rimasti: 2200)[0m
+[0;32mI (144198) deauth: DEAUTH IN ESECUZIONE (Rimasti: 2100)[0m
+[0;32mI (145818) deauth: DEAUTH IN ESECUZIONE (Rimasti: 2000)[0m
+[0;32mI (147408) deauth: DEAUTH IN ESECUZIONE (Rimasti: 1900)[0m
+[0;32mI (149028) deauth: DEAUTH IN ESECUZIONE (Rimasti: 1800)[0m
+[0;32mI (150598) deauth: DEAUTH IN ESECUZIONE (Rimasti: 1700)[0m
+[0;32mI (152208) deauth: DEAUTH IN ESECUZIONE (Rimasti: 1600)[0m
+[0;32mI (153778) deauth: DEAUTH IN ESECUZIONE (Rimasti: 1500)[0m
+[0;32mI (155478) deauth: DEAUTH IN ESECUZIONE (Rimasti: 1400)[0m
+[0;32mI (157068) deauth: DEAUTH IN ESECUZIONE (Rimasti: 1300)[0m
+[0;32mI (158698) deauth: DEAUTH IN ESECUZIONE (Rimasti: 1200)[0m
+[0;32mI (160288) deauth: DEAUTH IN ESECUZIONE (Rimasti: 1100)[0m
+[0;32mI (161948) deauth: DEAUTH IN ESECUZIONE (Rimasti: 1000)[0m
+[0;32mI (163548) deauth: DEAUTH IN ESECUZIONE (Rimasti: 900)[0m
+[0;32mI (165218) deauth: DEAUTH IN ESECUZIONE (Rimasti: 800)[0m
+[0;32mI (166818) deauth: DEAUTH IN ESECUZIONE (Rimasti: 700)[0m
+[0;32mI (168448) deauth: DEAUTH IN ESECUZIONE (Rimasti: 600)[0m
+[0;32mI (170028) deauth: DEAUTH IN ESECUZIONE (Rimasti: 500)[0m
+[0;32mI (171668) deauth: DEAUTH IN ESECUZIONE (Rimasti: 400)[0m
+[0;32mI (173268) deauth: DEAUTH IN ESECUZIONE (Rimasti: 300)[0m
+[0;32mI (174908) deauth: DEAUTH IN ESECUZIONE (Rimasti: 200)[0m
+[0;32mI (176548) deauth: DEAUTH IN ESECUZIONE (Rimasti: 100)[0m
+[0;32mI (178188) main_task: Returned from app_main()[0m

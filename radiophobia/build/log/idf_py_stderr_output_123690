@@ -1,0 +1,146 @@
+Command: /home/shakko/.espressif/tools/python/v6.0.1/venv/bin/python /home/shakko/.espressif/v6.0.1/esp-idf/tools/idf_monitor.py -p /dev/ttyUSB0 -b 115200 --toolchain-prefix  --target esp32c5 --revision 100 --decode-panic backtrace /home/shakko/Documents/RadioPhobia/radiophobia/build/radiophobia.elf /home/shakko/Documents/RadioPhobia/radiophobia/build/bootloader/bootloader.elf -m '/home/shakko/.espressif/tools/python/v6.0.1/venv/bin/python' '/home/shakko/.espressif/v6.0.1/esp-idf/tools/idf.py' '-B'
+[0;33m--- esp-idf-monitor 1.9.0 on /dev/ttyUSB0 115200[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H[0m
+[0m--- 0x4084bba0: [0;33mesp_bootloader_get_description[0m[0m at [0;32m/home/shakko/.espressif/v6.0.1/esp-idf/components/esp_bootloader_format/esp_bootloader_desc.c[0m[0m:[1;31m40[0m
+[0m--- 0x4084e5a0: [0;33mis_xmc_chip_strict[0m[0m at [0;32m/home/shakko/.espressif/v6.0.1/esp-idf/components/bootloader_support/bootloader_flash/src/bootloader_flash.c[0m[0m:[1;31m925[0m
+[0m--- 0x4084bbaa: [0;33mcall_start_cpu0[0m[0m at [0;32m/home/shakko/.espressif/v6.0.1/esp-idf/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m27[0m
+[0m--- 0x4200ec80: [0;33mdeauther[0m[0m at [0;32m/home/shakko/Documents/RadioPhobia/radiophobia/components/wifiStuff/deauther.c[0m[0m:[1;31m25[0m
+[0m--- 0x4080a20d: [0;33m_esp_error_check_failed[0m[0m at [0;32m/home/shakko/.espressif/v6.0.1/esp-idf/components/esp_system/esp_err.c[0m[0m:[1;31m49[0m
+[0;33m--- Stack dump detected[0m
+[0m--- 0x4080a254: [0;33mpanic_abort[0m[0m at [0;32m/home/shakko/.espressif/v6.0.1/esp-idf/components/esp_system/panic.c[0m[0m:[1;31m473[0m
+[0m--- 0x4080a216: [0;33mesp_vApplicationTickHook[0m[0m at [0;32m/home/shakko/.espressif/v6.0.1/esp-idf/components/esp_system/freertos_hooks.c[0m[0m:[1;31m31[0m
+[0m--- 0x40800003: [0;33m_vector_table[0m[0m at [0;32m??[0m[0m:[1;31m?[0m
+[0;33m
+--- Backtrace:
+
+[0m
+[0m--- 0x4080a210: [0;33mesp_system_abort[0m[0m at [0;32m/home/shakko/.espressif/v6.0.1/esp-idf/components/esp_system/port/esp_system_chip.c[0m[0m:[1;31m86[0m
+[0m--- 0x4200ec84: [0;33minterrupt_clic_ll_set_vectored[0m[0m at [0;32m/home/shakko/.espressif/v6.0.1/esp-idf/components/hal/include/hal/interrupt_clic_ll.h[0m[0m:[1;31m101[0m
+[0m--- (inlined by) [0;33mesprv_int_set_vectored[0m[0m at [0;32m/home/shakko/.espressif/v6.0.1/esp-idf/components/riscv/interrupt_clic.c[0m[0m:[1;31m41[0m
+[0m--- 0x4200e4d4: [0;33mapp_main[0m[0m at [0;32m/home/shakko/Documents/RadioPhobia/radiophobia/main/radiophobia.c[0m[0m:[1;31m25[0m
+[0m--- 0x4080a32c: [0;33mesp_restart_noos[0m[0m at [0;32m/home/shakko/.espressif/v6.0.1/esp-idf/components/esp_system/port/soc/esp32c5/system_internal.c[0m[0m:[1;31m155[0m
+[0m--- 0x4084bba0: [0;33mesp_bootloader_get_description[0m[0m at [0;32m/home/shakko/.espressif/v6.0.1/esp-idf/components/esp_bootloader_format/esp_bootloader_desc.c[0m[0m:[1;31m40[0m
+[0m--- 0x4084e5a0: [0;33mis_xmc_chip_strict[0m[0m at [0;32m/home/shakko/.espressif/v6.0.1/esp-idf/components/bootloader_support/bootloader_flash/src/bootloader_flash.c[0m[0m:[1;31m925[0m
+[0m--- 0x4084bbaa: [0;33mcall_start_cpu0[0m[0m at [0;32m/home/shakko/.espressif/v6.0.1/esp-idf/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m27[0m
+[0m--- 0x4200ec80: [0;33mdeauther[0m[0m at [0;32m/home/shakko/Documents/RadioPhobia/radiophobia/components/wifiStuff/deauther.c[0m[0m:[1;31m25[0m
+[0m--- 0x4080a20d: [0;33m_esp_error_check_failed[0m[0m at [0;32m/home/shakko/.espressif/v6.0.1/esp-idf/components/esp_system/esp_err.c[0m[0m:[1;31m49[0m
+[0;33m--- Stack dump detected[0m
+[0m--- 0x4080a254: [0;33mpanic_abort[0m[0m at [0;32m/home/shakko/.espressif/v6.0.1/esp-idf/components/esp_system/panic.c[0m[0m:[1;31m473[0m
+[0m--- 0x4080a216: [0;33mesp_vApplicationTickHook[0m[0m at [0;32m/home/shakko/.espressif/v6.0.1/esp-idf/components/esp_system/freertos_hooks.c[0m[0m:[1;31m31[0m
+[0m--- 0x40800003: [0;33m_vector_table[0m[0m at [0;32m??[0m[0m:[1;31m?[0m
+[0;33m
+--- Backtrace:
+
+[0m
+[0m--- 0x4080a32c: [0;33mesp_restart_noos[0m[0m at [0;32m/home/shakko/.espressif/v6.0.1/esp-idf/components/esp_system/port/soc/esp32c5/system_internal.c[0m[0m:[1;31m155[0m
+[0m--- 0x4084bba0: [0;33mesp_bootloader_get_description[0m[0m at [0;32m/home/shakko/.espressif/v6.0.1/esp-idf/components/esp_bootloader_format/esp_bootloader_desc.c[0m[0m:[1;31m40[0m
+[0m--- 0x4084e5a0: [0;33mis_xmc_chip_strict[0m[0m at [0;32m/home/shakko/.espressif/v6.0.1/esp-idf/components/bootloader_support/bootloader_flash/src/bootloader_flash.c[0m[0m:[1;31m925[0m
+[0m--- 0x4084bbaa: [0;33mcall_start_cpu0[0m[0m at [0;32m/home/shakko/.espressif/v6.0.1/esp-idf/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m27[0m
+[0m--- 0x4200ec80: [0;33mdeauther[0m[0m at [0;32m/home/shakko/Documents/RadioPhobia/radiophobia/components/wifiStuff/deauther.c[0m[0m:[1;31m25[0m
+[0m--- 0x4080a20d: [0;33m_esp_error_check_failed[0m[0m at [0;32m/home/shakko/.espressif/v6.0.1/esp-idf/components/esp_system/esp_err.c[0m[0m:[1;31m49[0m
+[0;33m--- Stack dump detected[0m
+[0m--- 0x4080a254: [0;33mpanic_abort[0m[0m at [0;32m/home/shakko/.espressif/v6.0.1/esp-idf/components/esp_system/panic.c[0m[0m:[1;31m473[0m
+[0m--- 0x4080a216: [0;33mesp_vApplicationTickHook[0m[0m at [0;32m/home/shakko/.espressif/v6.0.1/esp-idf/components/esp_system/freertos_hooks.c[0m[0m:[1;31m31[0m
+[0m--- 0x40800003: [0;33m_vector_table[0m[0m at [0;32m??[0m[0m:[1;31m?[0m
+[0;33m
+--- Backtrace:
+
+[0m
+[0m--- 0x4200e4d4: [0;33mapp_main[0m[0m at [0;32m/home/shakko/Documents/RadioPhobia/radiophobia/main/radiophobia.c[0m[0m:[1;31m25[0m
+[0m--- 0x4080a32c: [0;33mesp_restart_noos[0m[0m at [0;32m/home/shakko/.espressif/v6.0.1/esp-idf/components/esp_system/port/soc/esp32c5/system_internal.c[0m[0m:[1;31m155[0m
+[0m--- 0x4084bba0: [0;33mesp_bootloader_get_description[0m[0m at [0;32m/home/shakko/.espressif/v6.0.1/esp-idf/components/esp_bootloader_format/esp_bootloader_desc.c[0m[0m:[1;31m40[0m
+[0m--- 0x4084e5a0: [0;33mis_xmc_chip_strict[0m[0m at [0;32m/home/shakko/.espressif/v6.0.1/esp-idf/components/bootloader_support/bootloader_flash/src/bootloader_flash.c[0m[0m:[1;31m925[0m
+[0m--- 0x4084bbaa: [0;33mcall_start_cpu0[0m[0m at [0;32m/home/shakko/.espressif/v6.0.1/esp-idf/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m27[0m
+[0m--- 0x4200ec80: [0;33mdeauther[0m[0m at [0;32m/home/shakko/Documents/RadioPhobia/radiophobia/components/wifiStuff/deauther.c[0m[0m:[1;31m25[0m
+[0m--- 0x4080a20d: [0;33m_esp_error_check_failed[0m[0m at [0;32m/home/shakko/.espressif/v6.0.1/esp-idf/components/esp_system/esp_err.c[0m[0m:[1;31m49[0m
+[0;33m--- Stack dump detected[0m
+[0m--- 0x4080a254: [0;33mpanic_abort[0m[0m at [0;32m/home/shakko/.espressif/v6.0.1/esp-idf/components/esp_system/panic.c[0m[0m:[1;31m473[0m
+[0m--- 0x4080a216: [0;33mesp_vApplicationTickHook[0m[0m at [0;32m/home/shakko/.espressif/v6.0.1/esp-idf/components/esp_system/freertos_hooks.c[0m[0m:[1;31m31[0m
+[0m--- 0x40800003: [0;33m_vector_table[0m[0m at [0;32m??[0m[0m:[1;31m?[0m
+[0;33m
+--- Backtrace:
+
+[0m
+[0m--- 0x4080a210: [0;33mesp_system_abort[0m[0m at [0;32m/home/shakko/.espressif/v6.0.1/esp-idf/components/esp_system/port/esp_system_chip.c[0m[0m:[1;31m86[0m
+[0m--- 0x4200ec84: [0;33minterrupt_clic_ll_set_vectored[0m[0m at [0;32m/home/shakko/.espressif/v6.0.1/esp-idf/components/hal/include/hal/interrupt_clic_ll.h[0m[0m:[1;31m101[0m
+[0m--- (inlined by) [0;33mesprv_int_set_vectored[0m[0m at [0;32m/home/shakko/.espressif/v6.0.1/esp-idf/components/riscv/interrupt_clic.c[0m[0m:[1;31m41[0m
+[0m--- 0x4200e4d4: [0;33mapp_main[0m[0m at [0;32m/home/shakko/Documents/RadioPhobia/radiophobia/main/radiophobia.c[0m[0m:[1;31m25[0m
+[0m--- 0x4080a32c: [0;33mesp_restart_noos[0m[0m at [0;32m/home/shakko/.espressif/v6.0.1/esp-idf/components/esp_system/port/soc/esp32c5/system_internal.c[0m[0m:[1;31m155[0m
+[0m--- 0x4084bba0: [0;33mesp_bootloader_get_description[0m[0m at [0;32m/home/shakko/.espressif/v6.0.1/esp-idf/components/esp_bootloader_format/esp_bootloader_desc.c[0m[0m:[1;31m40[0m
+[0m--- 0x4084e5a0: [0;33mis_xmc_chip_strict[0m[0m at [0;32m/home/shakko/.espressif/v6.0.1/esp-idf/components/bootloader_support/bootloader_flash/src/bootloader_flash.c[0m[0m:[1;31m925[0m
+[0m--- 0x4084bbaa: [0;33mcall_start_cpu0[0m[0m at [0;32m/home/shakko/.espressif/v6.0.1/esp-idf/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m27[0m
+[0m--- 0x4200ec80: [0;33mdeauther[0m[0m at [0;32m/home/shakko/Documents/RadioPhobia/radiophobia/components/wifiStuff/deauther.c[0m[0m:[1;31m25[0m
+[0m--- 0x4080a20d: [0;33m_esp_error_check_failed[0m[0m at [0;32m/home/shakko/.espressif/v6.0.1/esp-idf/components/esp_system/esp_err.c[0m[0m:[1;31m49[0m
+[0;33m--- Stack dump detected[0m
+[0m--- 0x4080a254: [0;33mpanic_abort[0m[0m at [0;32m/home/shakko/.espressif/v6.0.1/esp-idf/components/esp_system/panic.c[0m[0m:[1;31m473[0m
+[0m--- 0x4080a216: [0;33mesp_vApplicationTickHook[0m[0m at [0;32m/home/shakko/.espressif/v6.0.1/esp-idf/components/esp_system/freertos_hooks.c[0m[0m:[1;31m31[0m
+[0m--- 0x40800003: [0;33m_vector_table[0m[0m at [0;32m??[0m[0m:[1;31m?[0m
+[0;33m
+--- Backtrace:
+
+[0m
+[0m--- 0x4080a32c: [0;33mesp_restart_noos[0m[0m at [0;32m/home/shakko/.espressif/v6.0.1/esp-idf/components/esp_system/port/soc/esp32c5/system_internal.c[0m[0m:[1;31m155[0m
+[0m--- 0x4084bba0: [0;33mesp_bootloader_get_description[0m[0m at [0;32m/home/shakko/.espressif/v6.0.1/esp-idf/components/esp_bootloader_format/esp_bootloader_desc.c[0m[0m:[1;31m40[0m
+[0m--- 0x4084e5a0: [0;33mis_xmc_chip_strict[0m[0m at [0;32m/home/shakko/.espressif/v6.0.1/esp-idf/components/bootloader_support/bootloader_flash/src/bootloader_flash.c[0m[0m:[1;31m925[0m
+[0m--- 0x4084bbaa: [0;33mcall_start_cpu0[0m[0m at [0;32m/home/shakko/.espressif/v6.0.1/esp-idf/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m27[0m
+[0m--- 0x4200ec80: [0;33mdeauther[0m[0m at [0;32m/home/shakko/Documents/RadioPhobia/radiophobia/components/wifiStuff/deauther.c[0m[0m:[1;31m25[0m
+[0m--- 0x4080a20d: [0;33m_esp_error_check_failed[0m[0m at [0;32m/home/shakko/.espressif/v6.0.1/esp-idf/components/esp_system/esp_err.c[0m[0m:[1;31m49[0m
+[0;33m--- Stack dump detected[0m
+[0m--- 0x4080a254: [0;33mpanic_abort[0m[0m at [0;32m/home/shakko/.espressif/v6.0.1/esp-idf/components/esp_system/panic.c[0m[0m:[1;31m473[0m
+[0m--- 0x4080a216: [0;33mesp_vApplicationTickHook[0m[0m at [0;32m/home/shakko/.espressif/v6.0.1/esp-idf/components/esp_system/freertos_hooks.c[0m[0m:[1;31m31[0m
+[0m--- 0x40800003: [0;33m_vector_table[0m[0m at [0;32m??[0m[0m:[1;31m?[0m
+[0;33m
+--- Backtrace:
+
+[0m
+[0m--- 0x4080a32c: [0;33mesp_restart_noos[0m[0m at [0;32m/home/shakko/.espressif/v6.0.1/esp-idf/components/esp_system/port/soc/esp32c5/system_internal.c[0m[0m:[1;31m155[0m
+[0m--- 0x4084bba0: [0;33mesp_bootloader_get_description[0m[0m at [0;32m/home/shakko/.espressif/v6.0.1/esp-idf/components/esp_bootloader_format/esp_bootloader_desc.c[0m[0m:[1;31m40[0m
+[0m--- 0x4084e5a0: [0;33mis_xmc_chip_strict[0m[0m at [0;32m/home/shakko/.espressif/v6.0.1/esp-idf/components/bootloader_support/bootloader_flash/src/bootloader_flash.c[0m[0m:[1;31m925[0m
+[0m--- 0x4084bbaa: [0;33mcall_start_cpu0[0m[0m at [0;32m/home/shakko/.espressif/v6.0.1/esp-idf/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m27[0m
+[0m--- 0x4200ec80: [0;33mdeauther[0m[0m at [0;32m/home/shakko/Documents/RadioPhobia/radiophobia/components/wifiStuff/deauther.c[0m[0m:[1;31m25[0m
+[0m--- 0x4080a20d: [0;33m_esp_error_check_failed[0m[0m at [0;32m/home/shakko/.espressif/v6.0.1/esp-idf/components/esp_system/esp_err.c[0m[0m:[1;31m49[0m
+[0;33m--- Stack dump detected[0m
+[0m--- 0x4080a254: [0;33mpanic_abort[0m[0m at [0;32m/home/shakko/.espressif/v6.0.1/esp-idf/components/esp_system/panic.c[0m[0m:[1;31m473[0m
+[0m--- 0x4080a216: [0;33mesp_vApplicationTickHook[0m[0m at [0;32m/home/shakko/.espressif/v6.0.1/esp-idf/components/esp_system/freertos_hooks.c[0m[0m:[1;31m31[0m
+[0m--- 0x40800003: [0;33m_vector_table[0m[0m at [0;32m??[0m[0m:[1;31m?[0m
+[0;33m--- Warning: Failed to run gdb_panic_server.py script: Command '['gdb', '--batch', '-n', '/home/shakko/Documents/RadioPhobia/radiophobia/build/radiophobia.elf', '-ex', 'add-symbol-file /home/shakko/Documents/RadioPhobia/radiophobia/build/bootloader/bootloader.elf', '-ex', 'target remote | "/home/shakko/.espressif/tools/python/v6.0.1/venv/bin/python" -m esp_idf_panic_decoder --target esp32c5 "/tmp/tmpghjnp49t"', '-ex', 'bt']' returned non-zero exit status 1.
+--- Warning: b'add symbol table from file "/home/shakko/Documents/RadioPhobia/radiophobia/build/bootloader/bootloader.elf"\nRemote communication error.  Target disconnected: error while reading: Connection reset by peer.\nNo stack.\n'
+
+[0m
+[0m--- 0x4080a210: [0;33mesp_system_abort[0m[0m at [0;32m/home/shakko/.espressif/v6.0.1/esp-idf/components/esp_system/port/esp_system_chip.c[0m[0m:[1;31m86[0m
+[0m--- 0x4200ec84: [0;33minterrupt_clic_ll_set_vectored[0m[0m at [0;32m/home/shakko/.espressif/v6.0.1/esp-idf/components/hal/include/hal/interrupt_clic_ll.h[0m[0m:[1;31m101[0m
+[0m--- (inlined by) [0;33mesprv_int_set_vectored[0m[0m at [0;32m/home/shakko/.espressif/v6.0.1/esp-idf/components/riscv/interrupt_clic.c[0m[0m:[1;31m41[0m
+[0m--- 0x4200e4d4: [0;33mapp_main[0m[0m at [0;32m/home/shakko/Documents/RadioPhobia/radiophobia/main/radiophobia.c[0m[0m:[1;31m25[0m
+[0m--- 0x4080a32c: [0;33mesp_restart_noos[0m[0m at [0;32m/home/shakko/.espressif/v6.0.1/esp-idf/components/esp_system/port/soc/esp32c5/system_internal.c[0m[0m:[1;31m155[0m
+[0m--- 0x4084bba0: [0;33mesp_bootloader_get_description[0m[0m at [0;32m/home/shakko/.espressif/v6.0.1/esp-idf/components/esp_bootloader_format/esp_bootloader_desc.c[0m[0m:[1;31m40[0m
+[0m--- 0x4084e5a0: [0;33mis_xmc_chip_strict[0m[0m at [0;32m/home/shakko/.espressif/v6.0.1/esp-idf/components/bootloader_support/bootloader_flash/src/bootloader_flash.c[0m[0m:[1;31m925[0m
+[0m--- 0x4084bbaa: [0;33mcall_start_cpu0[0m[0m at [0;32m/home/shakko/.espressif/v6.0.1/esp-idf/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m27[0m
+[0m--- 0x4200ec80: [0;33mdeauther[0m[0m at [0;32m/home/shakko/Documents/RadioPhobia/radiophobia/components/wifiStuff/deauther.c[0m[0m:[1;31m25[0m
+[0m--- 0x4080a20d: [0;33m_esp_error_check_failed[0m[0m at [0;32m/home/shakko/.espressif/v6.0.1/esp-idf/components/esp_system/esp_err.c[0m[0m:[1;31m49[0m
+[0;33m--- Stack dump detected[0m
+[0m--- 0x4080a254: [0;33mpanic_abort[0m[0m at [0;32m/home/shakko/.espressif/v6.0.1/esp-idf/components/esp_system/panic.c[0m[0m:[1;31m473[0m
+[0m--- 0x4080a216: [0;33mesp_vApplicationTickHook[0m[0m at [0;32m/home/shakko/.espressif/v6.0.1/esp-idf/components/esp_system/freertos_hooks.c[0m[0m:[1;31m31[0m
+[0m--- 0x40800003: [0;33m_vector_table[0m[0m at [0;32m??[0m[0m:[1;31m?[0m
+[0;33m
+--- Backtrace:
+
+[0m
+[0m--- 0x4080a32c: [0;33mesp_restart_noos[0m[0m at [0;32m/home/shakko/.espressif/v6.0.1/esp-idf/components/esp_system/port/soc/esp32c5/system_internal.c[0m[0m:[1;31m155[0m
+[0m--- 0x4084bba0: [0;33mesp_bootloader_get_description[0m[0m at [0;32m/home/shakko/.espressif/v6.0.1/esp-idf/components/esp_bootloader_format/esp_bootloader_desc.c[0m[0m:[1;31m40[0m
+[0m--- 0x4084e5a0: [0;33mis_xmc_chip_strict[0m[0m at [0;32m/home/shakko/.espressif/v6.0.1/esp-idf/components/bootloader_support/bootloader_flash/src/bootloader_flash.c[0m[0m:[1;31m925[0m
+[0m--- 0x4084bbaa: [0;33mcall_start_cpu0[0m[0m at [0;32m/home/shakko/.espressif/v6.0.1/esp-idf/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m27[0m
+[0m--- 0x4200ec80: [0;33mdeauther[0m[0m at [0;32m/home/shakko/Documents/RadioPhobia/radiophobia/components/wifiStuff/deauther.c[0m[0m:[1;31m25[0m
+[0m--- 0x4080a20d: [0;33m_esp_error_check_failed[0m[0m at [0;32m/home/shakko/.espressif/v6.0.1/esp-idf/components/esp_system/esp_err.c[0m[0m:[1;31m49[0m
+[0;33m--- Stack dump detected[0m
+[0m--- 0x4080a254: [0;33mpanic_abort[0m[0m at [0;32m/home/shakko/.espressif/v6.0.1/esp-idf/components/esp_system/panic.c[0m[0m:[1;31m473[0m
+[0m--- 0x4080a216: [0;33mesp_vApplicationTickHook[0m[0m at [0;32m/home/shakko/.espressif/v6.0.1/esp-idf/components/esp_system/freertos_hooks.c[0m[0m:[1;31m31[0m
+[0m--- 0x40800003: [0;33m_vector_table[0m[0m at [0;32m??[0m[0m:[1;31m?[0m
+[0;33m
+--- Backtrace:
+
+[0m
+[0m--- 0x4080a32c: [0;33mesp_restart_noos[0m[0m at [0;32m/home/shakko/.espressif/v6.0.1/esp-idf/components/esp_system/port/soc/esp32c5/system_internal.c[0m[0m:[1;31m155[0m
+[0m--- 0x4084bba0: [0;33mesp_bootloader_get_description[0m[0m at [0;32m/home/shakko/.espressif/v6.0.1/esp-idf/components/esp_bootloader_format/esp_bootloader_desc.c[0m[0m:[1;31m40[0m
+[0m--- 0x4084e5a0: [0;33mis_xmc_chip_strict[0m[0m at [0;32m/home/shakko/.espressif/v6.0.1/esp-idf/components/bootloader_support/bootloader_flash/src/bootloader_flash.c[0m[0m:[1;31m925[0m
+[0m--- 0x4084bbaa: [0;33mcall_start_cpu0[0m[0m at [0;32m/home/shakko/.espressif/v6.0.1/esp-idf/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m27[0m
+[0m
