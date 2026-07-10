@@ -27,6 +27,6 @@ struct _80211_header {
     uint16_t reason_code;
 } __attribute__((__packed__));
 
-void deautherSetup(void);
+void deauth(void);
 
 #endif

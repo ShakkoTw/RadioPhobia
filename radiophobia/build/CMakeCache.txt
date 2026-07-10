@@ -574,7 +574,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=159
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=160
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //Platform information initialized
@@ -616,9 +616,9 @@ CMAKE_UNAME:INTERNAL=/usr/bin/uname
 //ADVANCED property for variable: CMAKE_VERBOSE_MAKEFILE
 CMAKE_VERBOSE_MAKEFILE-ADVANCED:INTERNAL=1
 //Details about finding Git
-FIND_PACKAGE_MESSAGE_DETAILS_Git:INTERNAL=[/usr/bin/git][v2.54.0()]
+FIND_PACKAGE_MESSAGE_DETAILS_Git:INTERNAL=[/usr/bin/git][v2.55.0()]
 //Details about finding Python3
-FIND_PACKAGE_MESSAGE_DETAILS_Python3:INTERNAL=[/home/shakko/.espressif/tools/python/v6.0.1/venv/bin/python][found components: Interpreter ][v3.14.5()]
+FIND_PACKAGE_MESSAGE_DETAILS_Python3:INTERNAL=[/home/shakko/.espressif/tools/python/v6.0.1/venv/bin/python][found components: Interpreter ][v3.14.6()]
 //Details about finding Threads
 FIND_PACKAGE_MESSAGE_DETAILS_Threads:INTERNAL=[TRUE][v()]
 //ADVANCED property for variable: GIT_EXECUTABLE
@@ -631,7 +631,7 @@ _Python3_Compiler_REASON_FAILURE:INTERNAL=
 _Python3_Development_REASON_FAILURE:INTERNAL=
 _Python3_EXECUTABLE:INTERNAL=/home/shakko/.espressif/tools/python/v6.0.1/venv/bin/python
 //Python3 Properties
-_Python3_INTERPRETER_PROPERTIES:INTERNAL=Python;3;14;5;32;64;;;abi3;/usr/lib/python3.14;/home/shakko/.espressif/tools/python/v6.0.1/venv/lib/python3.14;/home/shakko/.espressif/tools/python/v6.0.1/venv/lib/python3.14/site-packages;/home/shakko/.espressif/tools/python/v6.0.1/venv/lib/python3.14/site-packages
+_Python3_INTERPRETER_PROPERTIES:INTERNAL=Python;3;14;6;32;64;;;abi3;/usr/lib/python3.14;/home/shakko/.espressif/tools/python/v6.0.1/venv/lib/python3.14;/home/shakko/.espressif/tools/python/v6.0.1/venv/lib/python3.14/site-packages;/home/shakko/.espressif/tools/python/v6.0.1/venv/lib/python3.14/site-packages
 _Python3_INTERPRETER_SIGNATURE:INTERNAL=90de0af1d80c399ce415beb92b785613
 //NumPy reason failure
 _Python3_NumPy_REASON_FAILURE:INTERNAL=

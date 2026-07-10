@@ -2305,6 +2305,25 @@ rule C_STATIC_LIBRARY_LINKER____idf_main_
 #############################################
 # Rule for compiling C files.
 
+rule C_COMPILER____idf_captivePortal_unscanned_
+  depfile = $DEP_FILE
+  deps = gcc
+  command = ${LAUNCHER}${CODE_CHECK}/home/shakko/.espressif/tools/esp-clang/esp-20.1.1_20250829/esp-clang/bin/clang $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
+  description = Building C object $out
+
+
+#############################################
+# Rule for linking C static library.
+
+rule C_STATIC_LIBRARY_LINKER____idf_captivePortal_
+  command = $PRE_LINK && /home/shakko/.espressif/tools/cmake/4.0.3/bin/cmake -E rm -f $TARGET_FILE && llvm-ar qc $TARGET_FILE $LINK_FLAGS $in && llvm-ranlib $TARGET_FILE && $POST_BUILD
+  description = Linking C static library $TARGET_FILE
+  restat = $RESTAT
+
+
+#############################################
+# Rule for compiling C files.
+
 rule C_COMPILER____idf_wifiStuff_unscanned_
   depfile = $DEP_FILE
   deps = gcc

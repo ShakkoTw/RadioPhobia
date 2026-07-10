@@ -1,15 +1,12 @@
-#include <stdio.h>
 #include "beaconScanner.h"
+#include "wifiSetup.h"
 #include "esp_wifi_types_generic.h"
 #include "freertos/FreeRTOS.h"
 #include "freertos/event_groups.h"
 #include "esp_wifi.h"
 #include "esp_log.h"
-#include "esp_event.h"
 
-void prova(char* roba){
-	printf("%s", roba);
-}
+#define SCAN_SIZE 20
 
 static const char *TAG = "scan";
 
@@ -131,20 +128,9 @@ static void print_cipher_type(int pairwise_cipher, int group_cipher)
 }
 
 void wifiScan(wifi_ap_record_t *ap_info, uint16_t scanSize){
+    wifiSetupSTA();
 
-    ESP_ERROR_CHECK(esp_netif_init());
-    ESP_ERROR_CHECK(esp_event_loop_create_default());
-    esp_netif_t *sta_netif = esp_netif_create_default_wifi_sta();
-    assert(sta_netif);
-
-    wifi_init_config_t cfg = WIFI_INIT_CONFIG_DEFAULT();
-    cfg.nvs_enable = false; //non voglio immagazzinare nessun dato o config nella NVM
-    ESP_ERROR_CHECK(esp_wifi_init(&cfg));
-    
     uint16_t ap_count = 0;
-
-    ESP_ERROR_CHECK(esp_wifi_set_mode(WIFI_MODE_STA));
-    ESP_ERROR_CHECK(esp_wifi_start());
 
     wifi_scan_config_t scanCfg = {0};
     scanCfg.ssid = NULL;
@@ -153,6 +139,7 @@ void wifiScan(wifi_ap_record_t *ap_info, uint16_t scanSize){
     scanCfg.show_hidden = 1;
     scanCfg.scan_type = WIFI_SCAN_TYPE_PASSIVE;
     scanCfg.scan_time.passive = 360;
+
     esp_wifi_scan_start(&scanCfg, true);
 
     ESP_ERROR_CHECK(esp_wifi_scan_get_ap_num(&ap_count));
@@ -179,4 +166,5 @@ void wifiScan(wifi_ap_record_t *ap_info, uint16_t scanSize){
         }
     }
 
+    ESP_ERROR_CHECK(esp_wifi_stop());
 }

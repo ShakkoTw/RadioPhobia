@@ -209,4 +209,5 @@
 /home/shakko/Documents/RadioPhobia/radiophobia/build/esp-idf/rt/librt.a
 /home/shakko/Documents/RadioPhobia/radiophobia/build/esp-idf/spiffs/libspiffs.a
 /home/shakko/Documents/RadioPhobia/radiophobia/build/esp-idf/main/libmain.a
+/home/shakko/Documents/RadioPhobia/radiophobia/build/esp-idf/captivePortal/libcaptivePortal.a
 /home/shakko/Documents/RadioPhobia/radiophobia/build/esp-idf/wifiStuff/libwifiStuff.a

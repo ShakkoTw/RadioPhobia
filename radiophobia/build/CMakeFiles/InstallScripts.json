@@ -159,6 +159,7 @@
 		"/home/shakko/Documents/RadioPhobia/radiophobia/build/esp-idf/spiffs/cmake_install.cmake",
 		"/home/shakko/Documents/RadioPhobia/radiophobia/build/esp-idf/ulp/cmake_install.cmake",
 		"/home/shakko/Documents/RadioPhobia/radiophobia/build/esp-idf/main/cmake_install.cmake",
+		"/home/shakko/Documents/RadioPhobia/radiophobia/build/esp-idf/captivePortal/cmake_install.cmake",
 		"/home/shakko/Documents/RadioPhobia/radiophobia/build/esp-idf/wifiStuff/cmake_install.cmake"
 	],
 	"Parallel" : false

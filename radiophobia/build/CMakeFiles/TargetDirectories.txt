@@ -1107,6 +1107,13 @@
 /home/shakko/Documents/RadioPhobia/radiophobia/build/esp-idf/main/CMakeFiles/install.dir
 /home/shakko/Documents/RadioPhobia/radiophobia/build/esp-idf/main/CMakeFiles/install/local.dir
 /home/shakko/Documents/RadioPhobia/radiophobia/build/esp-idf/main/CMakeFiles/install/strip.dir
+/home/shakko/Documents/RadioPhobia/radiophobia/build/esp-idf/captivePortal/CMakeFiles/__idf_captivePortal.dir
+/home/shakko/Documents/RadioPhobia/radiophobia/build/esp-idf/captivePortal/CMakeFiles/edit_cache.dir
+/home/shakko/Documents/RadioPhobia/radiophobia/build/esp-idf/captivePortal/CMakeFiles/rebuild_cache.dir
+/home/shakko/Documents/RadioPhobia/radiophobia/build/esp-idf/captivePortal/CMakeFiles/list_install_components.dir
+/home/shakko/Documents/RadioPhobia/radiophobia/build/esp-idf/captivePortal/CMakeFiles/install.dir
+/home/shakko/Documents/RadioPhobia/radiophobia/build/esp-idf/captivePortal/CMakeFiles/install/local.dir
+/home/shakko/Documents/RadioPhobia/radiophobia/build/esp-idf/captivePortal/CMakeFiles/install/strip.dir
 /home/shakko/Documents/RadioPhobia/radiophobia/build/esp-idf/wifiStuff/CMakeFiles/__idf_wifiStuff.dir
 /home/shakko/Documents/RadioPhobia/radiophobia/build/esp-idf/wifiStuff/CMakeFiles/edit_cache.dir
 /home/shakko/Documents/RadioPhobia/radiophobia/build/esp-idf/wifiStuff/CMakeFiles/rebuild_cache.dir

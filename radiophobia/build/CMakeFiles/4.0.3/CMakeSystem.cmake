@@ -1,6 +1,6 @@
-set(CMAKE_HOST_SYSTEM "Linux-7.0.12-1-cachyos")
+set(CMAKE_HOST_SYSTEM "Linux-7.1.3-1-cachyos")
 set(CMAKE_HOST_SYSTEM_NAME "Linux")
-set(CMAKE_HOST_SYSTEM_VERSION "7.0.12-1-cachyos")
+set(CMAKE_HOST_SYSTEM_VERSION "7.1.3-1-cachyos")
 set(CMAKE_HOST_SYSTEM_PROCESSOR "x86_64")
 
 include("/home/shakko/.espressif/v6.0.1/esp-idf/tools/cmake/toolchain-clang-esp32c5.cmake")
