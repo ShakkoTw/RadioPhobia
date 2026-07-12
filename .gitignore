@@ -1,4 +1,6 @@
 radiophobia/.cache
 radiophobia/build
 radiophobia/Session.vim
-sdkconfig.old
+radiophobia/sdkconfig.old
+radiophobia/managed_components
+.DS_Store
