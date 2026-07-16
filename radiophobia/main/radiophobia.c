@@ -3,6 +3,7 @@
 #include "beaconScanner.h"
 #include "deauther.h"
 #include "captivePortal.h"
+#include "jammer.h"
 
 #define SCAN_SIZE 20
 
@@ -17,6 +18,8 @@ void app_main(void)
 
     //deauth();
 
-    wifiSetupAP();
-    captivePortal();
+    //wifiSetupAP();
+    //captivePortal();
+
+    wifiJam();
 }

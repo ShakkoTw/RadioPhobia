@@ -1,3 +1,4 @@
+#include "deauther.h"
 #include <stdint.h>
 #include <string.h>
 #include "deauther.h"
