@@ -21,5 +21,7 @@ void app_main(void)
     //wifiSetupAP();
     //captivePortal();
 
-    wifiJam();
+    wifiJamSingle(ap_info[0].primary);
+    //wifiJamAll();
+    //bluetoothJam();
 }

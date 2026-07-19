@@ -39,6 +39,8 @@ public:
     void begin(spi_host_device_t busNo = DEFAULT_SPI_BUS, uint32_t speed = RF24_SPI_SPEED);
     void begin(spi_host_device_t busNo, uint32_t speed, uint8_t mode, spi_bus_config_t* busConfig);
 
+    void end(spi_host_device_t busNo);
+
     void beginTransaction();
 
     void endTransaction();

@@ -1,6 +1,9 @@
 #include <string.h> // memset()
 #include "spi.h"
+#include "driver/spi_common.h"
+#include "esp_err.h"
 #include "freertos/FreeRTOS.h"
+#include "hal/spi_types.h"
 
 SPIClass::SPIClass() : bus(nullptr)
 {
@@ -60,6 +63,15 @@ void SPIClass::begin(spi_host_device_t busNo, uint32_t speed, uint8_t mode, spi_
     device_conf.queue_size = 1;
 
     ret = spi_bus_add_device(busNo, &device_conf, &bus);
+    ESP_ERROR_CHECK(ret);
+}
+
+void SPIClass::end(spi_host_device_t busNo)
+{
+    esp_err_t ret = spi_bus_remove_device(bus);
+    ESP_ERROR_CHECK(ret);
+
+    ret = spi_bus_free(busNo);
     ESP_ERROR_CHECK(ret);
 }
 
